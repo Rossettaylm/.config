@@ -1,16 +1,3 @@
-d
-filter vector
-filter incl
-filter rando
-filter nvim
-rename 软件概要说明书.md
-unzip notebook.zip 
-!unzip notebook.zip 
-deletey
-rename Typora-linux-x64
-filter stl_vec
-filter vec
-filter user
 filter pic
 filter idea
 filter vim
@@ -45,6 +32,19 @@ filter zsh
 filter sof
 rename zsh-autosuggestions
 rename zsh-syntax-highlighting
-filter 
 filter ala
+filter code
+rename scripts
+filter .config
+filter .git
+filter .gitignore
+filter git
+rename alacritty
+filter scri
+rename ranger
+rename zsh
+filter neo
+rename neofetch
+filter 
 delete
+rename nvim
