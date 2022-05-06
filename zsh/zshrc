@@ -2,20 +2,24 @@
 # 加载环境变量
 source $HOME/.config/zsh/env.zsh
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+source $OHMYZSH/oh-my-zsh.sh
+
+[ -f "$ZSH_HOME/mappings.zsh" ] && source $ZSH_HOME/mappings.zsh
+
+[ -f "$ZSH_HOME/fzf.zsh" ] && source "$ZSH_HOME/fzf.zsh"
+
+[ -f "$ZSH_HOME/aliases.zsh" ] && source "$ZSH_HOME/aliases.zsh"
+
+[ -f "$ZSH_HOME/functions.zsh" ] && source "$ZSH_HOME/functions.zsh"
+
 # ZSH_THEME="steeef"
 ZSH_THEME="awesomepanda"
 # ZSH_THEME="gozilla"
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+# 刷新自动补全
+zstyle ':completion:*' rehash true
 
+# 系统目录 $ZSH/plugins 自定义目录$ZSH/custom/plugins
 plugins=(git
     sudo 
     web-search
@@ -23,34 +27,6 @@ plugins=(git
     zsh-autosuggestions
 )
 
-source $OHMYZSH/oh-my-zsh.sh
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-
-ranger_cd() {
-    temp_file="$(mktemp -t "ranger_cd.XXXXXXXXXX")"
-    ranger --choosedir="$temp_file" -- "${@:-$PWD}"
-    if chosen_dir="$(cat -- "$temp_file")" && [ -n "$chosen_dir" ] && [ "$chosen_dir" != "$PWD" ]; then
-        cd -- "$chosen_dir"
-    fi
-    rm -f -- "$temp_file"
-}
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -67,8 +43,3 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# source fzf.zsh
-[ -f "$ZSH_HOME/fzf.zsh" ] && source "$ZSH_HOME/fzf.zsh"
-
-# source aliases.zsh
-[ -f "$ZSH_HOME/aliases.zsh" ] && source "$ZSH_HOME/aliases.zsh"

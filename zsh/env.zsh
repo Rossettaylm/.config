@@ -9,10 +9,11 @@ export GDB_HOME="/usr/local/gdb-11.1"
 export TOMCAT_HOME="/usr/share/tomcat8"
 export CLION_PROJECT="/home/rossetta/CLionProjects"
 export GITHUB_ACCOUNT_PREFIX="https://github.com/Rossettaylm"
+export SCRIPTS_HOME="$HOME/.config/scripts"
 
 export PATH=$PATH:$CMAKE_HOME/bin
 export PATH=$PATH:$GDB_HOME/bin
-export PATH=$PATH:/home/rossetta/Code/shell/myscripts
+export PATH=$PATH:$SCRIPTS_HOME
 
 # Path to your oh-my-zsh installation.
 export ZSH_HOME="$HOME/.config/zsh"
