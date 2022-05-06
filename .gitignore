@@ -9,5 +9,6 @@
 !/ranger
 /ranger/bookmarks
 /ranger/history
+/ranger/__pycache__/
 !/scripts
 !/.gitignore
