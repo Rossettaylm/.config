@@ -10,16 +10,15 @@ ranger_cd() {
 }
 
 update-config () {
-    cd ${HOME}/.config
-    echo "update .config ..."
+    DIR=`dirname $(realpath $0)`
+    echo "update $DIR ..."
     git pull 
     git status
-    cd 
 }
 
 commit-config () {
-    cd ${HOME}/.config
-    echo "checking .config status"
+    DIR=`dirname $(realpath $0)`
+    echo "checking $DIR status"
     git status
     echo "Do you want to save your changes? [yes / no]"
     read cmd
@@ -29,5 +28,4 @@ commit-config () {
     else
         echo "nothing gonna be changed."
     fi
-    cd
 }
