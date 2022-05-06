@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/rossetta/Downloads/node-v14.17.0-linux-x64/include'
+let g:netrw_dirhist_3='/home/rossetta/Public'
+let g:netrw_dirhist_2='/home/rossetta/.oh-my-zsh'
+let g:netrw_dirhist_1='/home/rossetta/Downloads/software'

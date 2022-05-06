@@ -1,0 +1,768 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty itself.
+env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: xterm-256color
+  #WINIT_X11_SCALE_FACTOR: '2.0'
+
+hide_cursor_when_typing: true
+
+window:
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  dimensions:
+    columns: 100
+    lines: 30
+
+  opacity: 0.88
+
+
+  # Window position (changes require restart)
+  #
+  # Specified in number of pixels.
+  # If the position is not set, the window manager will handle the placement.
+  # position:
+   # x: 40
+   # y: 30
+
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  # padding:
+    # x: 5
+    # y: 5
+
+  # Spread additional padding evenly around the terminal content.
+  dynamic_padding: true
+
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Values for `decorations` (macOS only):
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background, but no title bar buttons
+  decorations: full
+
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+  startup_mode: Windowed
+
+  # Window title
+  title: Rossetta
+
+  # Window class (Linux/BSD only):
+  #class:
+    # Application instance name
+    #instance: Alacritty
+    # General application class
+    #general: Alacritty
+
+  # GTK theme variant (Linux/BSD only)
+  #
+  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
+  # Set this to `None` to use the default theme variant.
+  gtk_theme_variant: dark
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 1000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  #multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: CaskaydiaCove Nerd Font
+
+    # The `style` can be specified to pick a specific face.
+    style: Medium
+
+  # Bold font face
+  bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: CaskaydiaCove Nerd Font
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold
+
+  # Italic font face
+  italic:
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: CaskaydiaCove Nerd Font
+
+    # The `style` can be specified to pick a specific face.
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    # Font family
+    #
+    # If the bold italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: CaskaydiaCove Nerd Font
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold Italic
+
+  # Point size
+  size: 18
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+  offset:
+    x: 0
+    y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the right,
+  # increasing `y` moves the glyph upwards.
+  #glyph_offset:
+  #  x: 0
+  #  y: 0
+
+  # Thin stroke font rendering (macOS only)
+  #
+  # Thin strokes are suitable for retina displays, but for non-retina screens
+  # it is recommended to set `use_thin_strokes` to `false`
+  #
+  # macOS >= 10.14.x:
+  #
+  # If the font quality on non-retina display looks bad then set
+  # `use_thin_strokes` to `true` and enable font smoothing by running the
+  # following command:
+  #   `defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO`
+  #
+  # This is a global setting and will require a log out or restart to take
+  # effect.
+  #use_thin_strokes: true
+
+# If `true`, bold text is drawn using the bright color variants.
+
+
+# color (snazzy)
+draw_bold_text_with_bright_colors: true
+
+# Add the following to your alacritty.yml file
+colors:
+  # COLORSCHEME: base16-snazzy-256.yml
+  # Default colors
+  primary:
+    # hard contrast: background = '0xf9f5d7'
+    background: '0x282a36'
+    foreground: '0xe2e4e5'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  selection:
+    text: '#282a36'
+    background: '#feffff'
+
+  normal:
+    black: '0x282a36'
+    red: '0xff5c57'
+    green: '0x5af78e'
+    yellow: '0xf3f99d'
+    blue: '0x57c7ff'
+    magenta: '0xff6ac1'
+    cyan: '0x9aedfe'
+    white: '0xe2e4e5'
+
+  # Bright colors
+  bright:
+    black: '0x78787e'
+    red: '0xff5c57'
+    green: '0x5af78e'
+    yellow: '0xf3f99d'
+    blue: '0x57c7ff'
+    magenta: '0xff6ac1'
+    cyan: '0x9aedfe'
+    white: '0xf1f1f0'
+
+  cursor:
+    text: '0x282a36'
+    cursor: '0xe2e4e5'
+
+  # Normal colors
+  indexed_colors:
+    - {index: 16, color: '0xff9f43'}
+    - {index: 17, color: '0xb2643c'}
+    - {index: 18, color: '0x34353e'}
+    - {index: 19, color: '0x43454f'}
+    - {index: 20, color: '0xa5a5a9'}
+    - {index: 21, color: '0xeff0eb'}
+selection:
+  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: false
+
+# Allow terminal applications to change Alacritty's window title.
+dynamic_title: true
+
+cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Block
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
+
+# Live config reload (changes require restart)
+live_config_reload: true
+
+# Shell
+#
+# You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
+# Entries in `shell.args` are passed unmodified as arguments to the shell.
+#
+# Default:
+#   - (macOS) /bin/bash --login
+#   - (Linux/BSD) user login shell
+#   - (Windows) powershell
+shell:
+  program: /bin/zsh
+    #  args:
+    #  - --login
+
+# Startup directory
+#
+# Directory the shell is started in. If this is unset, or `None`, the working
+# directory of the parent process will be used.
+#working_directory: None
+
+# WinPTY backend (Windows only)
+#
+# Alacritty defaults to using the newer ConPTY backend if it is available,
+# since it resolves a lot of bugs and is quite a bit faster. If it is not
+# available, the the WinPTY backend will be used instead.
+#
+# Setting this option to `true` makes Alacritty use the legacy WinPTY backend,
+# even if the ConPTY backend is available.
+#winpty_backend: false
+
+# Send ESC (\x1b) before characters when alt is pressed.
+#alt_send_esc: true
+
+#mouse:
+  # Click settings
+  #
+  # The `double_click` and `triple_click` settings control the time
+  # alacritty should wait for accepting multiple clicks as one double
+  # or triple click.
+  #double_click: { threshold: 300 }
+  #triple_click: { threshold: 300 }
+
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  #hide_when_typing: false
+
+  #url:
+    # URL launcher
+    #
+    # This program is executed when clicking on a text which is recognized as a URL.
+    # The URL is always added to the command as the last parameter.
+    #
+    # When set to `None`, URL launching will be disabled completely.
+    #
+    # Default:
+    #   - (macOS) open
+    #   - (Linux/BSD) xdg-open
+    #   - (Windows) explorer
+    #launcher:
+    #  program: xdg-open
+    #  args: []
+
+    # URL modifiers
+    #
+    # These are the modifiers that need to be held down for opening URLs when clicking
+    # on them. The available modifiers are documented in the key binding section.
+    #modifiers: None
+
+# Mouse bindings
+#
+# Mouse bindings are specified as a list of objects, much like the key
+# bindings further below.
+#
+# To trigger mouse bindings when an application running within Alacritty captures the mouse, the
+# `Shift` modifier is automatically added as a requirement.
+#
+# Each mouse binding will specify a:
+#
+# - `mouse`:
+#
+#   - Middle
+#   - Left
+#   - Right
+#   - Numeric identifier such as `5`
+#
+# - `action` (see key bindings)
+#
+# And optionally:
+#
+# - `mods` (see key bindings)
+#mouse_bindings:
+#  - { mouse: Middle, action: PasteSelection }
+
+# Key bindings
+#
+# Key bindings are specified as a list of objects. For example, this is the
+# default paste binding:
+#
+# `- { key: V, mods: Control|Shift, action: Paste }`
+#
+# Each key binding will specify a:
+#
+# - `key`: Identifier of the key pressed
+#
+#    - A-Z
+#    - F1-F24
+#    - Key0-Key9
+#
+#    A full list with available key codes can be found here:
+#    https://docs.rs/glutin/*/glutin/event/enum.VirtualKeyCode.html#variants
+#
+#    Instead of using the name of the keys, the `key` field also supports using
+#    the scancode of the desired key. Scancodes have to be specified as a
+#    decimal number. This command will allow you to display the hex scancodes
+#    for certain keys:
+#
+#       `showkey --scancodes`.
+#
+# Then exactly one of:
+#
+# - `chars`: Send a byte sequence to the running application
+#
+#    The `chars` field writes the specified string to the terminal. This makes
+#    it possible to pass escape sequences. To find escape codes for bindings
+#    like `PageUp` (`"\x1b[5~"`), you can run the command `showkey -a` outside
+#    of tmux. Note that applications use terminfo to map escape sequences back
+#    to keys. It is therefore required to update the terminfo when changing an
+#    escape sequence.
+#
+# - `action`: Execute a predefined action
+#
+#   - Copy
+#   - Paste
+#   - PasteSelection
+#   - IncreaseFontSize
+#   - DecreaseFontSize
+#   - ResetFontSize
+#   - ScrollPageUp
+#   - ScrollPageDown
+#   - ScrollLineUp
+#   - ScrollLineDown
+#   - ScrollToTop
+#   - ScrollToBottom
+#   - ClearHistory
+#   - Hide
+#   - Minimize
+#   - Quit
+#   - ToggleFullscreen
+#   - SpawnNewInstance
+#   - ClearLogNotice
+#   - ReceiveChar
+#   - None
+#
+#   (macOS only):
+#   - ToggleSimpleFullscreen: Enters fullscreen without occupying another space
+#
+# - `command`: Fork and execute a specified command plus arguments
+#
+#    The `command` field must be a map containing a `program` string and an
+#    `args` array of command line parameter strings. For example:
+#       `{ program: "alacritty", args: ["-e", "vttest"] }`
+#
+# And optionally:
+#
+# - `mods`: Key modifiers to filter binding actions
+#
+#    - Command
+#    - Control
+#    - Option
+#    - Super
+#    - Shift
+#    - Alt
+#
+#    Multiple `mods` can be combined using `|` like this:
+#       `mods: Control|Shift`.
+#    Whitespace and capitalization are relevant and must match the example.
+#
+# - `mode`: Indicate a binding for only specific terminal reported modes
+#
+#    This is mainly used to send applications the correct escape sequences
+#    when in different modes.
+#
+#    - AppCursor
+#    - AppKeypad
+#    - Alt
+#
+#    A `~` operator can be used before a mode to apply the binding whenever
+#    the mode is *not* active, e.g. `~Alt`.
+#
+# Bindings are always filled by default, but will be replaced when a new
+# binding with the same triggers is defined. To unset a default binding, it can
+# be mapped to the `ReceiveChar` action. Alternatively, you can use `None` for
+# a no-op if you do not wish to receive input characters for that binding.
+#
+# If the same trigger is assigned to multiple actions, all of them are executed
+# at once.
+key_bindings:
+  # (Windows/Linux only)
+  #- { key: V,        mods: Control,        action: Paste            }
+  #- { key: C,        mods: Control,        action: Copy             }
+  #- { key: Insert,   mods: Shift,         action: PasteSelection   }
+  #- { key: Key0,     mods: Control,       action: ResetFontSize    }
+  #- { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  #- { key: Add,      mods: Control,       action: IncreaseFontSize }
+  #- { key: Subtract, mods: Control,       action: DecreaseFontSize }
+  #- { key: Minus,    mods: Control,       action: DecreaseFontSize }
+
+
+  #- { key: Comma,     mods: Command,      command:
+      #{program: "open", args: ["~/.config/alacritty/alacritty.yml"]}     }
+  #- { key: N,         mods: Command,      action: SpawnNewInstance       }
+  #- { key: Space,     mods: Alt,          chars: " "                     }
+
+  - {key: A, mods: Command, chars: "\x01"}
+  - {key: B, mods: Command, chars: "\x02"}
+  - {key: C, mods: Command, chars: "\x03"}
+  - {key: D, mods: Command, chars: "\x04"}
+  - {key: E, mods: Command, chars: "\x05"}
+  - {key: F, mods: Command, chars: "\x06"}
+  - {key: G, mods: Command, chars: "\a"}
+  - {key: H, mods: Command, chars: "\b"}
+  - {key: I, mods: Command, chars: "\t"}
+  - {key: J, mods: Command, chars: "\n"}
+  - {key: K, mods: Command, chars: "\v"}
+  - {key: L, mods: Command, chars: "\f"}
+  - {key: M, mods: Command, chars: "\r"}
+  - {key: N, mods: Command, chars: "\x0E"}
+  - {key: O, mods: Command, chars: "\x0F"}
+  - {key: P, mods: Command, chars: "\x10"}
+  - {key: Q, mods: Command, chars: "\x11"}
+  - {key: R, mods: Command, chars: "\x12"}
+  - {key: S, mods: Command, chars: "\x13"}
+  - {key: T, mods: Command, chars: "\x14"}
+  - {key: U, mods: Command, chars: "\x15"}
+  - {key: V, mods: Command, chars: "\x16"}
+  - {key: W, mods: Command, chars: "\x17"}
+  - {key: X, mods: Command, chars: "\x18"}
+  - {key: Y, mods: Command, chars: "\x19"}
+  - {key: Z, mods: Command, chars: "\x1A"}
+  - {key: Key1, mods: Command, chars: "\eOP"}
+  - {key: Key2, mods: Command, chars: "\eOQ"}
+  - {key: Key3, mods: Command, chars: "\eOR"}
+  - {key: Key4, mods: Command, chars: "\eOS"}
+  - {key: Key5, mods: Command, chars: "\e[15~"}
+  - {key: Key6, mods: Command, chars: "\e[17~"}
+  - {key: Key7, mods: Command, chars: "\e[18~"}
+  - {key: Key8, mods: Command, chars: "\e[19~"}
+  - {key: Key9, mods: Command, chars: "\e[20~"}
+  - {key: Key0, mods: Command, chars: "\e[21~"}
+  #- { key: Key11,                     chars: "\x1b[23~"                        }
+  #- { key: Key12,                     chars: "\x1b[24~"                        }
+  #- { key: Key1,       mods: Shift,   chars: "\x1b[1;2P"                       }
+  #- { key: Key2,       mods: Shift,   chars: "\x1b[1;2Q"                       }
+  #- { key: Key3,       mods: Shift,   chars: "\x1b[1;2R"                       }
+  #- { key: Key4,       mods: Shift,   chars: "\x1b[1;2S"                       }
+  #- { key: Key5,       mods: Shift,   chars: "\x1b[15;2~"                      }
+  #- { key: Key6,       mods: Shift,   chars: "\x1b[17;2~"                      }
+  #- { key: Key7,       mods: Shift,   chars: "\x1b[18;2~"                      }
+  #- { key: Key8,       mods: Shift,   chars: "\x1b[19;2~"                      }
+  #- { key: Key9,       mods: Shift,   chars: "\x1b[20;2~"                      }
+  #- { key: Key0,      mods: Shift,   chars: "\x1b[21;2~"                      }
+  #- { key: Key11,      mods: Shift,   chars: "\x1b[23;2~"                      }
+  #- { key: Key12,      mods: Shift,   chars: "\x1b[24;2~"                      }
+  #- { key: A,         mods: Command|Shift, chars: "\x1bA"                       }
+  #- { key: B,         mods: Command|Shift, chars: "\x1bB"                       }
+  #- { key: C,         mods: Command|Shift, chars: "\x1bC"                       }
+  #- { key: D,         mods: Command|Shift, chars: "\x1bD"                       }
+  #- { key: E,         mods: Command|Shift, chars: "\x1bE"                       }
+  #- { key: F,         mods: Command|Shift, chars: "\x1bF"                       }
+  #- { key: G,         mods: Command|Shift, chars: "\x1bG"                       }
+  #- { key: H,         mods: Command|Shift, chars: "\x1bH"                       }
+  #- { key: I,         mods: Command|Shift, chars: "\x1bI"                       }
+  #- { key: J,         mods: Command|Shift, chars: "\x1bJ"                       }
+  #- { key: K,         mods: Command|Shift, chars: "\x1bK"                       }
+  #- { key: L,         mods: Command|Shift, chars: "\x1bL"                       }
+  #- { key: M,         mods: Command|Shift, chars: "\x1bM"                       }
+  #- { key: N,         mods: Command|Shift, chars: "\x1bN"                       }
+  #- { key: O,         mods: Command|Shift, chars: "\x1bO"                       }
+  #- { key: P,         mods: Command|Shift, chars: "\x1bP"                       }
+  #- { key: Q,         mods: Command|Shift, chars: "\x1bQ"                       }
+  #- { key: R,         mods: Command|Shift, chars: "\x1bR"                       }
+  #- { key: S,         mods: Command|Shift, chars: "\x1bS"                       }
+  #- { key: T,         mods: Command|Shift, chars: "\x1bT"                       }
+  #- { key: U,         mods: Command|Shift, chars: "\x1bU"                       }
+  #- { key: V,         mods: Command|Shift, chars: "\x1bV"                       }
+  #- { key: W,         mods: Command|Shift, chars: "\x1bW"                       }
+  #- { key: X,         mods: Command|Shift, chars: "\x1bX"                       }
+  #- { key: Y,         mods: Command|Shift, chars: "\x1bY"                       }
+  #- { key: Z,         mods: Command|Shift, chars: "\x1bZ"                       }
+  #- { key: Key1,      mods: Command,       chars: "\x1b1"                       }
+  #- { key: Key2,      mods: Command,       chars: "\x1b2"                       }
+  #- { key: Key3,      mods: Command,       chars: "\x1b3"                       }
+  #- { key: Key4,      mods: Command,       chars: "\x1b4"                       }
+  #- { key: Key5,      mods: Command,       chars: "\x1b5"                       }
+  #- { key: Key6,      mods: Command,       chars: "\x1b6"                       }
+  #- { key: Key7,      mods: Command,       chars: "\x1b7"                       }
+  #- { key: Key8,      mods: Command,       chars: "\x1b8"                       }
+  #- { key: Key9,      mods: Command,       chars: "\x1b9"                       }
+  #- { key: Key0,      mods: Command,       chars: "\x1b0"                       }
+  #- { key: Space,     mods: Control,   chars: "\x1B"                        } # Ctrl + Space
+  #- { key: Grave,     mods: Option,       chars: "\x1B`"                       } # Alt + `
+  #- { key: Grave,     mods: Option|Shift, chars: "\x1B~"                       } # Alt + ~
+  #- { key: Period,    mods: Option,       chars: "\x1B."                       } # Alt + .
+  #- { key: Key8,      mods: Option|Shift, chars: "\x1B*"                       } # Alt + *
+  #- { key: Key3,      mods: Option|Shift, chars: "\x1B#"                       } # Alt + #
+  #- { key: Period,    mods: Option|Shift, chars: "\x1B>"                       } # Alt + >
+  #- { key: Comma,     mods: Option|Shift, chars: "\x1B<"                       } # Alt + <
+  #- { key: Minus,     mods: Option|Shift, chars: "\x1B_"                       } # Alt + _
+  #- { key: Key5,      mods: Option|Shift, chars: "\x1B%"                       } # Alt + %
+  #- { key: Key6,      mods: Option|Shift, chars: "\x1B^"                       } # Alt + ^
+  #- { key: Backslash, mods: Option,       chars: "\x1B\\"                      } # Alt + \
+  #- { key: Backslash, mods: Option|Shift, chars: "\x1B|"                       } # Alt + |
+
+
+  # Fix Alt as Meta in macOS
+  - {key: A, mods: Option, chars: "\ea"}
+  - {key: B, mods: Option, chars: "\eb"}
+  - {key: C, mods: Option, chars: "\ec"}
+  - {key: D, mods: Option, chars: "\ed"}
+  - {key: E, mods: Option, chars: "\ee"}
+  - {key: F, mods: Option, chars: "\ef"}
+  - {key: G, mods: Option, chars: "\eg"}
+  - {key: H, mods: Option, chars: "\eh"}
+  - {key: I, mods: Option, chars: "\ei"}
+  - {key: J, mods: Option, chars: "\ej"}
+  - {key: K, mods: Option, chars: "\ek"}
+  - {key: L, mods: Option, chars: "\el"}
+  - {key: M, mods: Option, chars: "\em"}
+  - {key: N, mods: Option, chars: "\en"}
+  - {key: O, mods: Option, chars: "\eo"}
+  - {key: P, mods: Option, chars: "\ep"}
+  - {key: Q, mods: Option, chars: "\eq"}
+  - {key: R, mods: Option, chars: "\er"}
+  - {key: S, mods: Option, chars: "\es"}
+  - {key: T, mods: Option, chars: "\et"}
+  - {key: U, mods: Option, chars: "\eu"}
+  - {key: V, mods: Option, chars: "\ev"}
+  - {key: W, mods: Option, chars: "\ew"}
+  - {key: X, mods: Option, chars: "\ex"}
+  - {key: Y, mods: Option, chars: "\ey"}
+  - {key: Z, mods: Option, chars: "\ez"}
+  - {key: A, mods: Option|Shift, chars: "\eA"}
+  - {key: B, mods: Option|Shift, chars: "\eB"}
+  - {key: C, mods: Option|Shift, chars: "\eC"}
+  - {key: D, mods: Option|Shift, chars: "\eD"}
+  - {key: E, mods: Option|Shift, chars: "\eE"}
+  - {key: F, mods: Option|Shift, chars: "\eF"}
+  - {key: G, mods: Option|Shift, chars: "\eG"}
+  - {key: H, mods: Option|Shift, chars: "\eH"}
+  - {key: I, mods: Option|Shift, chars: "\eI"}
+  - {key: J, mods: Option|Shift, chars: "\eJ"}
+  - {key: K, mods: Option|Shift, chars: "\eK"}
+  - {key: L, mods: Option|Shift, chars: "\eL"}
+  - {key: M, mods: Option|Shift, chars: "\eM"}
+  - {key: N, mods: Option|Shift, chars: "\eN"}
+  - {key: O, mods: Option|Shift, chars: "\eO"}
+  - {key: P, mods: Option|Shift, chars: "\eP"}
+  - {key: Q, mods: Option|Shift, chars: "\eQ"}
+  - {key: R, mods: Option|Shift, chars: "\eR"}
+  - {key: S, mods: Option|Shift, chars: "\eS"}
+  - {key: T, mods: Option|Shift, chars: "\eT"}
+  - {key: U, mods: Option|Shift, chars: "\eU"}
+  - {key: V, mods: Option|Shift, chars: "\eV"}
+  - {key: W, mods: Option|Shift, chars: "\eW"}
+  - {key: X, mods: Option|Shift, chars: "\eX"}
+  - {key: Y, mods: Option|Shift, chars: "\eY"}
+  - {key: Z, mods: Option|Shift, chars: "\eZ"}
+  - {key: Key1, mods: Option, chars: "\e1"}
+  - {key: Key2, mods: Option, chars: "\e2"}
+  - {key: Key3, mods: Option, chars: "\e3"}
+  - {key: Key4, mods: Option, chars: "\e4"}
+  - {key: Key5, mods: Option, chars: "\e5"}
+  - {key: Key6, mods: Option, chars: "\e6"}
+  - {key: Key7, mods: Option, chars: "\e7"}
+  - {key: Key8, mods: Option, chars: "\e8"}
+  - {key: Key9, mods: Option, chars: "\e9"}
+  - {key: Key0, mods: Option, chars: "\e0"}
+  - {key: Space, mods: Control, chars: "\e"}                                  # Ctrl + Space
+  - {key: Grave, mods: Option, chars: "\e`"}                                     # Alt + `
+  - {key: Grave, mods: Option|Shift, chars: "\e~"}                               # Alt + ~
+  - {key: Period, mods: Option, chars: "\e."}                                    # Alt + .
+  - {key: Key8, mods: Option|Shift, chars: "\e*"}                                # Alt + *
+  - {key: Key3, mods: Option|Shift, chars: "\e#"}                                # Alt + #
+  - {key: Period, mods: Option|Shift, chars: "\e>"}                              # Alt + >
+  - {key: Comma, mods: Option|Shift, chars: "\e<"}                               # Alt + <
+  - {key: Minus, mods: Option|Shift, chars: "\e_"}                               # Alt + _
+  - {key: Key5, mods: Option|Shift, chars: "\e%"}                                # Alt + %
+  - {key: Key6, mods: Option|Shift, chars: "\e^"}                                # Alt + ^
+  - {key: Backslash, mods: Option, chars: "\e\\"}                                # Alt + \
+  - {key: Backslash, mods: Option|Shift, chars: "\e|"}                           # Alt + |
+
+  - {key: Up, mods: control, action: ScrollLineUp}
+  - {key: Down, mods: control, action: ScrollLineDown}
+  - {key: F11, action: ToggleFullscreen}
+
+  # (macOS only)
+  #- { key: Key0,   mods: Command, action: ResetFontSize    }
+  #- { key: Equals, mods: Command, action: IncreaseFontSize }
+  #- { key: Add,    mods: Command, action: IncreaseFontSize }
+  #- { key: Minus,  mods: Command, action: DecreaseFontSize }
+  #- { key: K,      mods: Command, action: ClearHistory     }
+  #- { key: N,      mods: Command, action: SpawnNewInstance     }
+  #- { key: K,      mods: Command, chars: "\x0c"            }
+  #- { key: V,      mods: Command, action: Paste            }
+  #- { key: C,      mods: Command, action: Copy             }
+  #- { key: H,      mods: Command, action: Hide             }
+  #- { key: Q,      mods: Command, action: Quit             }
+  #- { key: W,      mods: Command, action: Quit             }
+
+  - {key: Paste, action: Paste}
+  - {key: Copy, action: Copy}
+  - {key: L, mods: Control, action: ClearLogNotice}
+  - {key: F, mods: Command|Shift, action: ToggleFullscreen}
+  - {key: L, mods: Control, chars: "\f"}
+  - {key: Home, mods: Alt, chars: "\e[1;3H"}
+  - {key: Home, chars: "\eOH", mode: AppCursor}
+  - {key: Home, chars: "\e[H", mode: ~AppCursor}
+  - {key: End, mods: Alt, chars: "\e[1;3F"}
+  - {key: End, chars: "\eOF", mode: AppCursor}
+  - {key: End, chars: "\e[F", mode: ~AppCursor}
+  - {key: PageUp, mods: Shift, action: ScrollPageUp, mode: ~Alt}
+  - {key: PageUp, mods: Shift, chars: "\e[5;2~", mode: Alt}
+  - {key: PageUp, mods: Control, chars: "\e[5;5~"}
+  - {key: PageUp, mods: Alt, chars: "\e[5;3~"}
+  - {key: PageUp, chars: "\e[5~"}
+  - {key: PageDown, mods: Shift, action: ScrollPageDown, mode: ~Alt}
+  - {key: PageDown, mods: Shift, chars: "\e[6;2~", mode: Alt}
+  - {key: PageDown, mods: Control, chars: "\e[6;5~"}
+  - {key: PageDown, mods: Alt, chars: "\e[6;3~"}
+  - {key: PageDown, chars: "\e[6~"}
+  - {key: Tab, mods: Shift, chars: "\e[Z"}
+  - {key: Back, chars: "\x7F"}
+  - {key: Back, mods: Alt, chars: "\e\x7F"}
+  - {key: Insert, chars: "\e[2~"}
+  - {key: Delete, chars: "\e[3~"}
+  - {key: Left, mods: Shift, chars: "\e[1;2D"}
+  - {key: Left, mods: Control, chars: "\e[1;5D"}
+  - {key: Left, mods: Alt, chars: "\e[1;3D"}
+  - {key: Left, chars: "\e[D", mode: ~AppCursor}
+  - {key: Left, chars: "\eOD", mode: AppCursor}
+  - {key: Right, mods: Shift, chars: "\e[1;2C"}
+  - {key: Right, mods: Control, chars: "\e[1;5C"}
+  - {key: Right, mods: Alt, chars: "\e[1;3C"}
+  - {key: Right, chars: "\e[C", mode: ~AppCursor}
+  - {key: Right, chars: "\eOC", mode: AppCursor}
+  - {key: Up, mods: Shift, chars: "\e[1;2A"}
+  - {key: Up, mods: Control, chars: "\e[1;5A"}
+  - {key: Up, mods: Alt, chars: "\e[1;3A"}
+  - {key: Up, chars: "\e[A", mode: ~AppCursor}
+  - {key: Up, chars: "\eOA", mode: AppCursor}
+  - {key: Down, mods: Shift, chars: "\e[1;2B"}
+  - {key: Down, mods: Control, chars: "\e[1;5B"}
+  - {key: Down, mods: Alt, chars: "\e[1;3B"}
+  - {key: Down, chars: "\e[B", mode: ~AppCursor}
+  - {key: Down, chars: "\eOB", mode: AppCursor}
+  - {key: F1, chars: "\eOP"}
+  - {key: F2, chars: "\eOQ"}
+  - {key: F3, chars: "\eOR"}
+  - {key: F4, chars: "\eOS"}
+  - {key: F5, chars: "\e[15~"}
+  - {key: F6, chars: "\e[17~"}
+  - {key: F7, chars: "\e[18~"}
+  - {key: F8, chars: "\e[19~"}
+  - {key: F9, chars: "\e[20~"}
+  - {key: F10, chars: "\e[21~"}
+  - {key: F11, chars: "\e[23~"}
+  - {key: F12, chars: "\e[24~"}
+  - {key: F1, mods: Shift, chars: "\e[1;2P"}
+  - {key: F2, mods: Shift, chars: "\e[1;2Q"}
+  - {key: F3, mods: Shift, chars: "\e[1;2R"}
+  - {key: F4, mods: Shift, chars: "\e[1;2S"}
+  - {key: F5, mods: Shift, chars: "\e[15;2~"}
+  - {key: F6, mods: Shift, chars: "\e[17;2~"}
+  - {key: F7, mods: Shift, chars: "\e[18;2~"}
+  - {key: F8, mods: Shift, chars: "\e[19;2~"}
+  - {key: F9, mods: Shift, chars: "\e[20;2~"}
+  - {key: F10, mods: Shift, chars: "\e[21;2~"}
+  - {key: F11, mods: Shift, chars: "\e[23;2~"}
+  - {key: F12, mods: Shift, chars: "\e[24;2~"}
+  - {key: F1, mods: Control, chars: "\e[1;5P"}
+  - {key: F2, mods: Control, chars: "\e[1;5Q"}
+  - {key: F3, mods: Control, chars: "\e[1;5R"}
+  - {key: F4, mods: Control, chars: "\e[1;5S"}
+  - {key: F5, mods: Control, chars: "\e[15;5~"}
+  - {key: F6, mods: Control, chars: "\e[17;5~"}
+  - {key: F7, mods: Control, chars: "\e[18;5~"}
+  - {key: F8, mods: Control, chars: "\e[19;5~"}
+  - {key: F9, mods: Control, chars: "\e[20;5~"}
+  - {key: F10, mods: Control, chars: "\e[21;5~"}
+  - {key: F11, mods: Control, chars: "\e[23;5~"}
+  - {key: F12, mods: Control, chars: "\e[24;5~"}
+  - {key: F1, mods: Alt, chars: "\e[1;6P"}
+  - {key: F2, mods: Alt, chars: "\e[1;6Q"}
+  - {key: F3, mods: Alt, chars: "\e[1;6R"}
+  - {key: F4, mods: Alt, chars: "\e[1;6S"}
+  - {key: F5, mods: Alt, chars: "\e[15;6~"}
+  - {key: F6, mods: Alt, chars: "\e[17;6~"}
+  - {key: F7, mods: Alt, chars: "\e[18;6~"}
+  - {key: F8, mods: Alt, chars: "\e[19;6~"}
+  - {key: F9, mods: Alt, chars: "\e[20;6~"}
+  - {key: F10, mods: Alt, chars: "\e[21;6~"}
+  - {key: F11, mods: Alt, chars: "\e[23;6~"}
+  - {key: F12, mods: Alt, chars: "\e[24;6~"}
+  - {key: F1, mods: Super, chars: "\e[1;3P"}
+  - {key: F2, mods: Super, chars: "\e[1;3Q"}
+  - {key: F3, mods: Super, chars: "\e[1;3R"}
+  - {key: F4, mods: Super, chars: "\e[1;3S"}
+  - {key: F5, mods: Super, chars: "\e[15;3~"}
+  - {key: F6, mods: Super, chars: "\e[17;3~"}
+  - {key: F7, mods: Super, chars: "\e[18;3~"}
+  - {key: F8, mods: Super, chars: "\e[19;3~"}
+  - {key: F9, mods: Super, chars: "\e[20;3~"}
+  - {key: F10, mods: Super, chars: "\e[21;3~"}
+  - {key: F11, mods: Super, chars: "\e[23;3~"}
+  - {key: F12, mods: Super, chars: "\e[24;3~"}
+  - {key: NumpadEnter, chars: "\n"}
