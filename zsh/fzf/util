@@ -1,0 +1,35 @@
+#!/bin/bash
+
+local helptxt="pins       [pacman:install]
+puins      [pacman:uninstall]
+kp         [kill:path]
+ks         [kill:tcp]
+fps        [find:pid]
+nvimsh     [script]             nvim 'file' && chmod 700 'file'
+rmnvimswap [script]             rm -rf 'nvimSwapFile'
+commit     [function:git]       git add . / git commit -a / git push
+update     [funciton:git]       git pull
+ll         [alias]              ls -lh
+la         [alias]              ls -a
+setproxy   [alias]              export http_proxy='http://127.0.0.1:7890' && export https_proxy='https://127.0.0.1:7890'
+unsetproxy [alias]              unset http_proxy && unset https_proxy
+e          [alias]              exit
+neo        [alias]              neofetch
+ra         [alias]              ranger_cd
+who        [alias]              who -h
+c          [alias]              clear
+szsh       [alias]              source $home/.zshrc
+ezsh       [alias]              nvim $zsh_home/zshrc
+base       [alias]              conda activate base
+sra        [alias]              sudo -e ranger_cd
+vim        [alias]              nvim
+gg         [alias]              git clone
+gs         [alias]              git config credential.helper store"
+
+local cmd=$(echo $helptxt | eval "fzf ${FZF_DEFAULT_OPTS} --header='[utils:show]'" | awk '{print $1}')
+
+if [[ -n $cmd ]]; then
+    eval ${cmd}
+fi
+
+

@@ -4,9 +4,9 @@
 # |  _|  / /_|  _|  
 # |_|   /____|_|    
 #
-                  
+
 export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude '.git'"
-export FZF_DEFAULT_OPTS="--height 60% --layout reverse --border "
+export FZF_DEFAULT_OPTS='--height 60% --layout reverse --border'
 export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude '.git'"
 export FZF_ALT_C_COMMAND="fd --type d --hidden --exclude '.git'"
 # export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :500 {}'" # file or directory
@@ -16,6 +16,12 @@ export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border-horizon
 
 # change to ctrl-h
 export FZF_CTRL_R_OPTS="" # history
+
+_fzf_fpath=${0:h}/fzf
+fpath+=$_fzf_fpath
+autoload -U $_fzf_fpath/*(.:t)
+unset _fzf_fpath
+                  
 # ---------
 # Setup fzf
 if [[ ! "$PATH" == *$FZF_HOME/bin* ]]; then

@@ -1,0 +1,13 @@
+# pacman + fzf 实现package的查找安装
+
+local REPO="^core|^extra|^community|^multilib|^archlinuxcn|^archlinuxfr"
+local inst=`sudo pacman -Ss | grep -E $REPO | fzf -m --header="[Pacman:Install]"`
+
+local inst=${inst#*/}
+local inst=${inst%% *}
+
+if [[ -n $inst ]]; then 
+    sudo pacman -S $inst
+fi
+
+

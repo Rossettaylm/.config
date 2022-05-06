@@ -1,0 +1,10 @@
+# pacman + fzf 实现本地package的模糊查找和卸载
+
+local uinst=`sudo pacman -Qs | grep -E "^local" | fzf -m --header="[Pacman:uninstall]"`
+
+local uinst=${uinst#*/}
+local uinst=${uinst%% *}
+
+if [[ -n "$uinst" ]]; then
+    sudo pacman -Rns $uinst
+fi
