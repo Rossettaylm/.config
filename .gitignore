@@ -12,3 +12,4 @@
 /ranger/__pycache__/
 !/scripts
 !/.gitignore
+!/README.md
