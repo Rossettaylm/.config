@@ -9,14 +9,14 @@ ranger_cd() {
     rm -f -- "$temp_file"
 }
 
-update-config () {
+update () {
     DIR=`dirname $(realpath $0)`
     echo "update $DIR ..."
     git pull 
     git status
 }
 
-commit-config () {
+commit () {
     DIR=`dirname $(realpath $0)`
     echo "checking $DIR status"
     git status
@@ -25,7 +25,10 @@ commit-config () {
     if [[ -n "$cmd" && $cmd = "yes" ]]; then 
         git add . 
         git commit -a
+        git push 
     else
         echo "nothing gonna be changed."
     fi
+    git status
 }
+
