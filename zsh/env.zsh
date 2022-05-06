@@ -17,7 +17,7 @@ export PATH=$PATH:$SCRIPTS_HOME
 
 # Path to your oh-my-zsh installation.
 export ZSH_HOME="$HOME/.config/zsh"
-export OHMYZSH="$ZSH_HOME/oh-my-zsh"
+export ZSH="$ZSH_HOME/oh-my-zsh"
 export FZF_HOME="$HOME/Softwares/fzf"
 
 export EDITOR=nvim

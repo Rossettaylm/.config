@@ -2,16 +2,6 @@
 # 加载环境变量
 source $HOME/.config/zsh/env.zsh
 
-source $OHMYZSH/oh-my-zsh.sh
-
-[ -f "$ZSH_HOME/mappings.zsh" ] && source $ZSH_HOME/mappings.zsh
-
-[ -f "$ZSH_HOME/fzf.zsh" ] && source "$ZSH_HOME/fzf.zsh"
-
-[ -f "$ZSH_HOME/aliases.zsh" ] && source "$ZSH_HOME/aliases.zsh"
-
-[ -f "$ZSH_HOME/functions.zsh" ] && source "$ZSH_HOME/functions.zsh"
-
 # ZSH_THEME="steeef"
 ZSH_THEME="awesomepanda"
 # ZSH_THEME="gozilla"
@@ -43,3 +33,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+source $ZSH/oh-my-zsh.sh
+
+[ -f "$ZSH_HOME/fzf.zsh" ] && source "$ZSH_HOME/fzf.zsh"
+
+[ -f "$ZSH_HOME/aliases.zsh" ] && source "$ZSH_HOME/aliases.zsh"
+
+[ -f "$ZSH_HOME/functions.zsh" ] && source "$ZSH_HOME/functions.zsh"
+
+[ -f "$ZSH_HOME/mappings.zsh" ] && source $ZSH_HOME/mappings.zsh
