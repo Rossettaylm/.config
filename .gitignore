@@ -10,6 +10,7 @@
 /ranger/bookmarks
 /ranger/history
 /ranger/__pycache__/
+!/clash/config.yaml
 !/scripts
 !/.gitignore
 !/README.md
