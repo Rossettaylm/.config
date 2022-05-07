@@ -1,13 +1,10 @@
 /*
-/*/
-
 
 !/zsh
 !/alacritty
 !/nvim
 !/neofetch
 !/ranger
-/ranger/__pycache__/
 !/clash/config.yaml
 !/scripts
 !/.gitignore
@@ -16,3 +13,4 @@
 /ranger/bookmarks
 /ranger/history
 /nvim/plugged/*
+__pycache__/
