@@ -5,12 +5,15 @@
 !/nvim
 !/neofetch
 !/ranger
+ranger/__pycache__/*
+ranger/plugins/__pycache__/*
+ranger/colorschemes/__pycache__/*
+ranger/folders.conf
+/ranger/history
 !/clash/config.yaml
 !/scripts
 !/.gitignore
 !/README.md
 
-/ranger/bookmarks
-/ranger/history
 /nvim/plugged/*
 __pycache__/
