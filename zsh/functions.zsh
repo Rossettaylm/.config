@@ -20,14 +20,20 @@ commit () {
     DIR=`dirname $(realpath $0)`
     echo "checking $DIR status"
     git status
-    echo "Do you want to save your changes? [yes / no]"
-    read cmd
-    if [[ -n "$cmd" && $cmd = "yes" ]]; then 
+    echo "Do you want to save your changes? [y / n]"
+    read local commitcmd
+    if [[ -z "$commitcmd" || $commitcmd = "y" ]]; then 
         git add . 
         git commit -a
-        git push 
     else
-        echo "nothing gonna be changed."
+        echo "COMMIT: nothing gonna be changed."
+    fi
+    echo "Do you want to push your change? [y / n]"
+    read local pushcmd
+    if [[ -z "$pushcmd" || $pushcmd = "y" ]]; then 
+        git push
+    else
+        echo "PUSH: nothing gonna be changed."
     fi
     git status
 }
