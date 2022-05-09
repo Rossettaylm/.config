@@ -1,0 +1,17 @@
+[Desktop Entry]
+Categories=System;Utility;
+Comment[zh_CN]=启动输入法
+Comment=Start Input Method
+Exec=fcitx
+GenericName[zh_CN]=输入法
+GenericName=Input Method
+Icon=fcitx
+Name[zh_CN]=Fcitx
+Name=Fcitx
+StartupNotify=false
+Terminal=false
+Type=Application
+X-GNOME-AutoRestart=false
+X-GNOME-Autostart-Notify=false
+X-KDE-StartupNotify=false
+X-KDE-autostart-after=panel
