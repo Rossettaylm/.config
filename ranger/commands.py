@@ -1,5 +1,4 @@
 # This is a sample commands.py.  You can add your own commands here.
-#
 # Please refer to commands_full.py for all the default commands and a complete
 # documentation.  Do NOT add them all here, or you may end up with defunct
 # commands when upgrading ranger.
@@ -156,7 +155,7 @@ class fzf_select(Command):
 
         env = os.environ.copy()
         env['FZF_DEFAULT_COMMAND'] = fzf_default_command
-        env['FZF_DEFAULT_OPTS'] = '--height=40% --layout=reverse --ansi --preview="{}"'.format('''
+        env['FZF_DEFAULT_OPTS'] = '--height=70% --layout=reverse --ansi --preview="{}"'.format('''
             (
                 batcat --color=always {} ||
                 bat --color=always {} ||
@@ -194,8 +193,8 @@ class compress(Command):
         au_flags = parts[1:]
 
         descr = "compressing files in: " + os.path.basename(parts[1])
-        obj = CommandLoader(args=['apack'] + au_flags +
-                            [os.path.relpath(f.path, cwd.path) for f in marked_files], descr=descr, read=True)
+        obj = CommandLoader(args=['apack'] + au_flags + \
+                [os.path.relpath(f.path, cwd.path) for f in marked_files], descr=descr, read=True)
 
         obj.signal_bind('after', refresh)
         self.fm.loader.add(obj)
@@ -236,8 +235,8 @@ class extracthere(Command):
         else:
             descr = "extracting files from: " + os.path.basename(
                 one_file.dirname)
-        obj = CommandLoader(args=['aunpack'] + au_flags
-                            + [f.path for f in copied_files], descr=descr, read=True)
+        obj = CommandLoader(args=['aunpack'] + au_flags \
+                + [f.path for f in copied_files], descr=descr, read=True)
 
         obj.signal_bind('after', refresh)
         self.fm.loader.add(obj)
