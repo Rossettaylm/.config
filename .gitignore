@@ -17,6 +17,8 @@ ranger/bookmarks
 !/README.md
 !/fanyi
 !/rofi
+!/compton.conf
+
 
 /nvim/plugged/*
 __pycache__/
