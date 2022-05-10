@@ -29,6 +29,8 @@ commit () {
         printf "\n>>>>>>>>>> push current changes <<<<<<<<<<\n"
         git push
         git status
+    else
+        printf "Nothing gonna be changed!\n"
     fi
 }
 
