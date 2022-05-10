@@ -22,7 +22,7 @@ commit () {
     git status
     echo "Do you want to save your changes? [y / n]"
     read local commitcmd
-    if [[ -z "$commitcmd" || $commitcmd = "y" ]]; then 
+    if [[ -n "$commitcmd" || $commitcmd = "y" ]]; then 
         git add . 
         git commit -a
     else
@@ -30,7 +30,7 @@ commit () {
     fi
     echo "Do you want to push your change? [y / n]"
     read local pushcmd
-    if [[ -z "$pushcmd" || $pushcmd = "y" ]]; then 
+    if [[ -n "$pushcmd" || $pushcmd = "y" ]]; then 
         git push
     else
         echo "PUSH: nothing gonna be changed."
