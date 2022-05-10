@@ -20,11 +20,15 @@ commit () {
     DIR=`dirname $(realpath $0)`
     echo "checking $DIR status"
     git status
-    printf "\n>>>>>>>>>>add / commit current changes<<<<<<<<<<\n"
-    git add . 
-    git commit -a
-    printf "\n>>>>>>>>>> push current changes <<<<<<<<<<\n"
-    git push
-    git status
+    printf "Commit and Push your changes? [ y / n ]\n"
+    read msg
+    if [ "${msg}" = "y" ]; then
+        printf "\n>>>>>>>>>>add / commit current changes<<<<<<<<<<\n"
+        git add . 
+        git commit -a
+        printf "\n>>>>>>>>>> push current changes <<<<<<<<<<\n"
+        git push
+        git status
+    fi
 }
 
