@@ -17,6 +17,7 @@ alias sra='sudo -E ranger_cd'
 alias vim='nvim'
 alias gg='git clone'
 alias gs='git config credential.helper store'
+alias up='sudo pacman -Syyu'
 
 
 # alacritty colorscheme
