@@ -17,12 +17,8 @@ alias sra='sudo -E ranger_cd'
 alias vim='nvim'
 alias gg='git clone'
 alias gs='git config credential.helper store'
-<<<<<<< HEAD
 alias up='sudo pacman -Syyu'
-
-=======
 alias clip='xclip -selection c'
->>>>>>> b89fa718bc4ed97ba81d8c0125b810ae7578bcd1
 
 # alacritty colorscheme
 # 准备工作: pip install alacritty-colorscheme

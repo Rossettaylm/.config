@@ -25,11 +25,8 @@ sra        [alias]              sudo -e ranger_cd
 vim        [alias]              nvim
 gg         [alias]              git clone
 gs         [alias]              git config credential.helper store
-<<<<<<< HEAD
-up         [alias]              sudo pacman -Syyu"
-=======
+up         [alias]              sudo pacman -Syyu
 clip       [alias]              xclip -selection c"
->>>>>>> b89fa718bc4ed97ba81d8c0125b810ae7578bcd1
 
 local cmd=$(echo $helptxt | eval "fzf ${FZF_DEFAULT_OPTS} --header='[utils:show]'" | awk '{print $1}')
 
