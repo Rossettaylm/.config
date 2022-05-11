@@ -19,7 +19,7 @@ update () {
 commit () {
     DIR=`dirname $(realpath $0)`
     echo "checking $DIR status"
-    git status
+    git status 
     printf "Commit and Push your changes? [ y / n ]\n"
     read msg
     if [ "${msg}" = "y" ]; then
