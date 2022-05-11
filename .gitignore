@@ -17,6 +17,10 @@ ranger/bookmarks
 !/README.md
 !/fanyi
 !/rofi
+rofi/launchers/ribbon/styles/colors.rasi
+!/compton.conf
+
+
 
 /nvim/plugged/*
 __pycache__/
