@@ -5,13 +5,15 @@
 !/nvim
 !/neofetch
 !/ranger
+!/clash
+clash/Country.mmdb
+clash/cache.db
 ranger/__pycache__/*
 ranger/plugins/__pycache__/*
 ranger/colorschemes/__pycache__/*
 ranger/folders.conf
 ranger/history
 ranger/bookmarks
-!/clash/config.yaml
 !/scripts
 !/.gitignore
 !/README.md
