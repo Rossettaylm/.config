@@ -1,400 +1,592 @@
 #---------------------------------------------------#
-## 上次更新于：2022-05-13 12:40:00
+## 上次更新于：2022-04-29 04:27:20
 #---------------------------------------------------#
 
 port: 7890
 socks-port: 7891
 redir-port: 7892
-allow-lan: false
+allow-lan: true
 mode: rule
 log-level: silent
-external-controller: '127.0.0.1:9090'
+external-controller: '0.0.0.0:9090'
 secret: ''
 proxies:
   -
     name: v1|亚洲03|MPTCP|★★☆
-    type: trojan
-    server: gswyzf0eazo4mo0gjd5uzi7os5te3p89gse0amnnjv.q9k.org
-    port: 50216
+    type: ss
+    server: k3.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyrlmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627775.sina.cn
   -
     name: v1|亚洲02|MPTCP|★★☆
-    type: trojan
-    server: jzvuo28ce9nfu7rp12falwpp4i1e2nhncqjurqxglz.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyj3mn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627975.sina.cn
   -
     name: v1|亚洲01|MPTCP|★★★
-    type: trojan
-    server: rmcc3fucfwjqzk8hxf0ke4g0frte8cmyj8eeue4jye.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyjrmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627875.sina.cn
   -
     name: v1|亚洲04|MPTCP|★★★
-    type: trojan
-    server: 44alc5ebfs0rewjx2xlnuszuazwumtw3473andrxu4.q9k.org
-    port: 50216
+    type: ss
+    server: k4.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrgmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7762.sina.cn
   -
     name: v1|亚洲05|MPTCP|★★★
-    type: trojan
-    server: o6ty2fegoht8nl6lodzavmppuzontu2icx7t8kaixe.q9k.org
-    port: 50216
+    type: ss
+    server: k5.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrsmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7064.sina.cn
   -
     name: v1|香港01|MPTCP|★★★
-    type: trojan
-    server: wehwvsunlssgj6spkmm7zpdmtcuanill3tnzjzczgf.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyjpmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627b7d.sina.cn
   -
     name: v1|香港02|MPTCP|★★★
-    type: trojan
-    server: jzvuo28ce9nfu7rp12falwpp4i1e2nhncqjurqxglz.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsytumn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627973.sina.cn
   -
     name: v1|香港03|MPTCP|★★★
-    type: trojan
-    server: gswyzf0eazo4mo0gjd5uzi7os5te3p89gse0amnnjv.q9k.org
-    port: 50216
+    type: ss
+    server: k3.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyzxmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7769.sina.cn
   -
     name: v1|香港04|MPTCP|★★★
-    type: trojan
-    server: hr8mroc8vypzm58aw8kcla9xuiwqkpxfqupviye6p3.q9k.org
-    port: 50216
+    type: ss
+    server: k4.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrfmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7669.sina.cn
   -
     name: v1|香港05|MPTCP|★★★
-    type: trojan
-    server: gsvjf1lsqbn1p3kusmccaw9iwx9rb3lvhtwjttdnmo.q9k.org
-    port: 50216
+    type: ss
+    server: k5.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrtmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7063.sina.cn
   -
     name: v1|新加坡01|MPTCP|★★☆
-    type: trojan
-    server: kyfemhkwiipuhsqqk8ganh4bqztbcsadfg1n32kxwv.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyrymn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7466.sina.cn
   -
     name: v1|新加坡02|MPTCP|★★☆
-    type: trojan
-    server: h7a5fjrdcgykikxlkomj682p03jblfwjvcu6pf7bil.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsy3smn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7561.sina.cn
   -
     name: v1|新加坡03|MPTCP|★★☆
-    type: trojan
-    server: ontkvg4cglm2upcqwe9v66kdkosbitwve71wcdqyp7.q9k.org
-    port: 50216
+    type: ss
+    server: k3.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsy3zmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7566.sina.cn
   -
     name: v1|新加坡13|MPTCP|★★☆
-    type: trojan
-    server: uo0nup15xavmoqlvm0d71g49zqrikdjsczfq7zvqwu.q9k.org
-    port: 50216
+    type: ss
+    server: k3.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyromn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627772.sina.cn
   -
     name: v1|新加坡04|MPTCP|★★★
-    type: trojan
-    server: 0rdryooeeundm2ntxlm9x5rawsmyhfjthzqblz2vbb.q9k.org
-    port: 50216
+    type: ss
+    server: k4.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszjymn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7564.sina.cn
   -
     name: v1|新加坡05|MPTCP|★★★
-    type: trojan
-    server: cwluzog4no4a6zdikut3s9fmrq65bgrnqqleim1cxo.q9k.org
-    port: 50216
+    type: ss
+    server: k5.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrqmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7062.sina.cn
   -
     name: v1|日本01|MPTCP|★★☆
-    type: trojan
-    server: al6k7ukr6p3lqzmp0ogzvuet5ornq4yytqzxacwscu.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyjtmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627877.sina.cn
   -
     name: v1|日本02|MPTCP|★★☆
-    type: trojan
-    server: nmrp4xuwqcirnktpwxrg6xnqzeb3cwtlt7n8ueqogm.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsy3vmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7562.sina.cn
   -
     name: v1|日本12|MPTCP|★★☆
-    type: trojan
-    server: odbfqnatgquwxe4os2zmz9sllfncwdmw8w1gbpx8u2.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsytqmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627977.sina.cn
   -
     name: v1|日本03|MPTCP|★★☆
-    type: trojan
-    server: uo0nup15xavmoqlvm0d71g49zqrikdjsczfq7zvqwu.q9k.org
-    port: 50216
+    type: ss
+    server: k3.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyrnmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627777.sina.cn
   -
     name: v1|日本04|MPTCP|★★☆
-    type: trojan
-    server: 8e98wfrdzsbsmpw6iowzgsxubernzrlqhghyjnplnc.q9k.org
-    port: 50216
+    type: ss
+    server: k4.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrdmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7667.sina.cn
   -
     name: v1|日本05|MPTCP|★★☆
-    type: trojan
-    server: s5ky0kx7rdhrecvjbzekpk98tczn6hovtuguhokis6.q9k.org
-    port: 50216
+    type: ss
+    server: k5.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrrmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7061.sina.cn
   -
     name: v1|美国01|MPTCP|★★★
-    type: trojan
-    server: f3kxlhemw6bsdmy0glhdcwnoehxi30fhi3mlvmmjyf.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszjfmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7d63.sina.cn
   -
     name: v1|美国02|MPTCP|★★★
-    type: trojan
-    server: ps05cfpbbizgxllmuhsvylf1ynvhfxclisgifpxamc.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyjumn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627872.sina.cn
   -
     name: v1|美国03|MPTCP|★★★
-    type: trojan
-    server: lgnq6w1qm5hhji7w2b0tvtoauqpzvnlewhart0zyg6.q9k.org
-    port: 50216
+    type: ss
+    server: k3.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszjemn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7d64.sina.cn
   -
     name: v1|美国04|MPTCP|★★★
-    type: trojan
-    server: nncmyx7ywne8uuvm91hxup3jef6bfhtsuyayymf3bq.q9k.org
-    port: 50216
+    type: ss
+    server: k4.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsztsmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7569.sina.cn
   -
     name: v1|美国05|MPTCP|★★★
-    type: trojan
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.q9k.org
-    port: 50216
+    type: ss
+    server: k5.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszromn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7060.sina.cn
   -
     name: v1|香港01|原生|★★★
-    type: trojan
-    server: wehwvsunlssgj6spkmm7zpdmtcuanill3tnzjzczgf.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyjzmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e62787d.sina.cn
   -
     name: v1|香港02|原生|★★★
-    type: trojan
-    server: odbfqnatgquwxe4os2zmz9sllfncwdmw8w1gbpx8u2.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyzwmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7060.sina.cn
   -
     name: v1|香港03|原生|★★★
-    type: trojan
-    server: uo0nup15xavmoqlvm0d71g49zqrikdjsczfq7zvqwu.q9k.org
-    port: 50216
+    type: ss
+    server: k3.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsy3ymn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7567.sina.cn
   -
     name: v1|香港04|原生|★★★
-    type: trojan
-    server: aqejap7lptu5t2ftsmgqz3hwxf9iew2wpeu5gnw2zd.q9k.org
-    port: 50216
+    type: ss
+    server: k4.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszjxmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7561.sina.cn
   -
     name: v1|香港05|原生|★★★
-    type: trojan
-    server: ra5cs8wwbuywplm8zk2ytn3mvqxqakdw1rqksltfk3.q9k.org
-    port: 50216
+    type: ss
+    server: k5.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrpmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7769.sina.cn
   -
     name: v1|台湾03|原生|★★☆
-    type: trojan
-    server: gb1okiknssiysimxvumug5gbximypnbte8cpmxyn2y.q9k.org
-    port: 50216
+    type: ss
+    server: k3.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyrjmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e62767d.sina.cn
   -
     name: v1|台湾02|原生|★★☆
-    type: trojan
-    server: nmrp4xuwqcirnktpwxrg6xnqzeb3cwtlt7n8ueqogm.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyzvmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7767.sina.cn
   -
     name: v1|台湾04|原生|★★☆
-    type: trojan
-    server: 44alc5ebfs0rewjx2xlnuszuazwumtw3473andrxu4.q9k.org
-    port: 50216
+    type: ss
+    server: k4.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsztqmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7567.sina.cn
   -
     name: v1|台湾05|原生|★★☆
-    type: trojan
-    server: s5ky0kx7rdhrecvjbzekpk98tczn6hovtuguhokis6.q9k.org
-    port: 50216
+    type: ss
+    server: k5.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrmmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7768.sina.cn
   -
     name: v1|新加坡01|原生|★★☆
-    type: trojan
-    server: gulw5k03uwdtkby4xigm8sv1el7owfnft1lv1i8ybi.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszlzmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7c68.sina.cn
   -
     name: v1|新加坡02|原生|★★☆
-    type: trojan
-    server: jzvuo28ce9nfu7rp12falwpp4i1e2nhncqjurqxglz.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszlymn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7c69.sina.cn
   -
     name: v1|新加坡04|原生|★★☆
-    type: trojan
-    server: hr8mroc8vypzm58aw8kcla9xuiwqkpxfqupviye6p3.q9k.org
-    port: 50216
+    type: ss
+    server: k4.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszjzmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7563.sina.cn
   -
     name: v1|新加坡05|原生|★★☆
-    type: trojan
-    server: r7caryy7slfzayzkgzhqb1tunbphmznxk3o6dqk0lh.q9k.org
-    port: 50216
+    type: ss
+    server: k5.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrnmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7767.sina.cn
   -
     name: v1|美国01|原生|★★★
-    type: trojan
-    server: jf2oyjohqfanziunauw5q2hurxhd2tll1rimhm1pdv.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszjnmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7461.sina.cn
   -
     name: v1|澳洲01|MPTCP|★☆☆
-    type: trojan
-    server: jf2oyjohqfanziunauw5q2hurxhd2tll1rimhm1pdv.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsyr3mn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7467.sina.cn
   -
     name: v1|澳洲02|MPTCP|★☆☆
-    type: trojan
-    server: ns9zzk0hto6eaajoti1pvqkwnq8x7qpllxtiut0k1x.q9k.org
-    port: 50216
+    type: ss
+    server: k2.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgsztwmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7663.sina.cn
   -
     name: v1|澳洲03|MPTCP|★☆☆
-    type: trojan
-    server: ahbnpaa0n4pmlf2pmmhltwen2w6ide6mobozemxoxv.q9k.org
-    port: 50216
+    type: ss
+    server: k3.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszrkmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7766.sina.cn
   -
     name: v1|澳洲04|MPTCP|★☆☆
-    type: trojan
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.q9k.org
-    port: 50216
+    type: ss
+    server: k4.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszzvmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7c61.sina.cn
   -
     name: v1|澳洲05|MPTCP|★☆☆
-    type: trojan
-    server: gsvjf1lsqbn1p3kusmccaw9iwx9rb3lvhtwjttdnmo.q9k.org
-    port: 50216
+    type: ss
+    server: k5.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszzumn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627c7c62.sina.cn
   -
     name: v1|印度01|MPTCP|★☆☆
-    type: trojan
-    server: al6k7ukr6p3lqzmp0ogzvuet5ornq4yytqzxacwscu.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszjjmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7d67.sina.cn
   -
     name: v1|俄罗斯01|MPTCP|★☆☆
-    type: trojan
-    server: wtbxuyyyj7tods2qg8ygodvpecyveebix8y7qpwacs.q9k.org
-    port: 50216
+    type: ss
+    server: k1.7hh7.xyz
+    port: 41321
+    cipher: aes-128-gcm
     password: 9da983791b69
-    sni: ymvyt6535heqgszjlmn2wembz.digekeji.com
-    udp: true
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: 62727a7661786d3c3e627f7d69.sina.cn
 proxy-groups:
   -
     name: 🐸速蛙云
