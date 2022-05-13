@@ -1,7 +1,11 @@
 #!/bin/bash
 
 CLASH_HOME=$HOME/.config/clash
-CLASH_URL="https://subscribe.s7p7.top/link/puJVhjHkYtDOM8cW?clash=2"
+# suwayun 
+# CLASH_URL="https://subscribe.s7p7.top/link/puJVhjHkYtDOM8cW?clash=2"
+# tntv2
+CLASH_URL="https://linkuserssnk.xxyjx.cc/link/QqnkZ7iTjyeo1fvM?clash=1"
+
 echo $$ > ${CLASH_HOME}/clash.pid
 
 printf "正在更新clash订阅地址(%s)...\n" ${CLASH_URL}
