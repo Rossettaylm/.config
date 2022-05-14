@@ -2,8 +2,8 @@
 # 加载环境变量
 source $HOME/.config/zsh/env.zsh
 
-# ZSH_THEME="steeef"
-ZSH_THEME="awesomepanda"
+ZSH_THEME="steeef"
+# ZSH_THEME="awesomepanda"
 # ZSH_THEME="gozilla"
 
 # 刷新自动补全
