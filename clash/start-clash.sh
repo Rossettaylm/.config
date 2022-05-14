@@ -6,8 +6,6 @@ CLASH_HOME=$HOME/.config/clash
 # tntv2
 CLASH_URL="https://linkuserssnk.xxyjx.cc/link/QqnkZ7iTjyeo1fvM?clash=1"
 
-echo $$ > ${CLASH_HOME}/clash.pid
-
 printf "正在更新clash订阅地址(%s)...\n" ${CLASH_URL}
 diff ${CLASH_HOME}/config.yaml < $(curl -s ${CLASH_URL})
 printf "正在启动服务...\n"
