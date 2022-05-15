@@ -2,6 +2,9 @@
 
 GITHUB="/home/rossetta/Github"
 CONFIG_HOME="/home/rossetta/.config"
+
+# sudo echo "rossetta ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
 if [[ -d "${GITHUB}" ]]; then 
     git clone https://github.com/Rossettaylm/.config.git ${GITHUB}/.config
 fi
