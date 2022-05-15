@@ -1,6 +1,6 @@
 #!/bin/bash
 
-local helptxt="pins       [pacman:install]
+local helptxt='pins       [pacman:install]
 puins      [pacman:uninstall]
 kp         [kill:path]
 ks         [kill:tcp]
@@ -26,7 +26,7 @@ vim        [alias]              nvim
 gg         [alias]              git clone
 gs         [alias]              git config credential.helper store
 up         [alias]              sudo pacman -Syyu
-clip       [alias]              xclip -selection c"
+clip       [alias]              xclip -selection c'
 
 local cmd=$(echo $helptxt | eval "fzf ${FZF_DEFAULT_OPTS} --header='[utils:show]'" | awk '{print $1}')
 
