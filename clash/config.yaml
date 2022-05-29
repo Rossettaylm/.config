@@ -1,7 +1,7 @@
 #!MANAGED-CONFIG https://tntv2.com/link/QqnkZ7iTjyeo1fvM?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2022-05-13 15:49:29
+## 上次更新于：2022-05-26 16:26:15
 #---------------------------------------------------#
 
 port: 7890
@@ -72,12 +72,38 @@ proxies:
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
     sni: vn.vzwzasc.cn
   -
+    name: '[Lv1·0.5x]台湾01|移动/联通|300Mbps|Vmess|直连'
+    type: vmess
+    server: sctw1.ddns-pop.cyou
+    port: 15501
+    uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /tnt-tw1
+      headers: { Host: sctw1.ddns-pop.cyou }
+  -
     name: '[Lv1·0.5x]台湾01|移动/联通|300Mbps|直连'
     type: trojan
     server: sctw1.ddns-pop.cyou
     port: 24567
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
     sni: ssxxazxsdw.vzwzasc.cn
+  -
+    name: '[Lv1·0.5x]台湾02|移动/联通|300Mbps|Vmess|直连'
+    type: vmess
+    server: sctw2.ddns-pop.cyou
+    port: 15502
+    uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /tnt-tw2
+      headers: { Host: sctw2.ddns-pop.cyou }
   -
     name: '[Lv1·0.5x]台湾02|移动/联通|300Mbps|直连'
     type: trojan
@@ -86,12 +112,38 @@ proxies:
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
     sni: dhabjsdopi.vzwzasc.cn
   -
+    name: '[Lv1·0.5x]台湾03|移动/联通|300Mbps|Vmess|直连'
+    type: vmess
+    server: sctw3.ddns-pop.cyou
+    port: 15503
+    uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /tnt-tw3
+      headers: { Host: sctw3.ddns-pop.cyou }
+  -
     name: '[Lv1·0.5x]台湾03|移动/联通|300Mbps|直连'
     type: trojan
     server: sctw3.ddns-pop.cyou
     port: 24567
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
     sni: ttgukkxhwwaxxa.vzwzasc.cn
+  -
+    name: '[Lv1·0.5x]台湾04|移动/联通|300Mbps|Vmess|直连'
+    type: vmess
+    server: sctw4.ddns-pop.cyou
+    port: 15504
+    uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /tnt-tw4
+      headers: { Host: sctw4.ddns-pop.cyou }
   -
     name: '[Lv1·0.5x]台湾04|移动/联通|300Mbps|直连'
     type: trojan
@@ -100,12 +152,38 @@ proxies:
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
     sni: jhjgwianxppaws.vzwzasc.cn
   -
+    name: '[Lv1·0.5x]台湾05|移动/联通|300Mbps|Vmess|直连'
+    type: vmess
+    server: sctw5.ddns-pop.cyou
+    port: 15505
+    uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /tnt-tw5
+      headers: { Host: sctw5.ddns-pop.cyou }
+  -
     name: '[Lv1·0.5x]台湾05|移动/联通|300Mbps|直连'
     type: trojan
     server: sctw5.ddns-pop.cyou
     port: 24567
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
     sni: ibosjhwidhasx.vzwzasc.cn
+  -
+    name: '[Lv1·0.5x]台湾06|移动/联通|300Mbps|Vmess|直连'
+    type: vmess
+    server: sctw6.ddns-pop.cyou
+    port: 15506
+    uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /tnt-tw6
+      headers: { Host: sctw6.ddns-pop.cyou }
   -
     name: '[Lv1·0.5x]台湾06|移动/联通|300Mbps|直连'
     type: trojan
@@ -217,197 +295,210 @@ proxies:
     server: lv2xxsssxxxsss.163yun.top
     port: 12341
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: jp.vzwzasc.cn
+    sni: wdaiuxxawdiuaxjp.vzwzasc.cn
   -
     name: '[Lv2·1.0x] 日本002|混合负载|1000Mbps共享'
     type: trojan
     server: lv2xxsssxxxsss.163yun.top
     port: 12342
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: jp.vzwzasc.cn
+    sni: sdwambhjnkl.vzwzasc.cn
   -
     name: '[Lv2·1.0x] 日本003|混合负载|1000Mbps共享'
     type: trojan
     server: lv2xxsssxxxsss.163yun.top
     port: 12343
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: jp.vzwzasc.cn
+    sni: uwayvbjlshiuxaw.vzwzasc.cn
   -
     name: '[Lv2·1.0x] 日本004|混合负载|1000Mbps共享'
     type: trojan
     server: lv2xxsssxxxsss.163yun.top
     port: 12344
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: jp.vzwzasc.cn
+    sni: iyvwbaniohxcsawa.vzwzasc.cn
   -
     name: '[Lv2·1.0x] 日本01|IP均衡优化|混合负载|600Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 33331
+    port: 33335
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本02|IP均衡优化|混合负载|600Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 33331
+    port: 33335
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本03|IP均衡优化|混合负载|600Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 33331
+    port: 33335
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本03|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 42231
+    port: 43381
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv2xxsssxxxsss.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本04|IP均衡优化|混合负载|600Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 33331
+    port: 33335
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本04|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 42231
+    port: 43381
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv2xxsssxxxsss.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本05|IP均衡优化|混合负载|600Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 33331
+    port: 33335
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本05|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 42231
+    port: 43381
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv2xxsssxxxsss.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本06|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 42231
+    port: 43381
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv2xxsssxxxsss.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本07|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 42231
+    port: 43381
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv2xxsssxxxsss.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本08|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 42231
+    port: 43381
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv2xxsssxxxsss.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本09|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 42231
+    port: 43381
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv2xxsssxxxsss.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 日本10|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv2xxsssxxxsss.163yun.top
-    port: 42231
+    port: 43381
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv2xxsssxxxsss.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv2·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享'
     type: vmess
@@ -630,28 +721,42 @@ proxies:
     server: lv3hhjjssts.163yun.top
     port: 12329
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: bj.nochat.cyou
+    sni: sugbjlkiuhxaw.vzwzasc.cn
   -
     name: '[Lv3·1.0x] 保加利亚|混合负载|800Mbps共享'
     type: trojan
     server: lv3hhjjssts.163yun.top
     port: 12327
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: bj.nochat.cyou
+    sni: bjkwdaxafxaw.vzwzasc.cn
   -
     name: '[Lv3·1.0x] 加拿大|懂得都懂|混合负载|100Mbps共享'
     type: trojan
     server: lv3hhjjssts.163yun.top
     port: 12339
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: jnd.nochat.cyou
+    sni: jndljuwbanlx.vzwzasc.cn
+  -
+    name: '[Lv3·1.0x] 土耳其|IP均衡负载|实验性|1000Mbps共享'
+    type: vmess
+    server: lv3hhjjssts.163yun.top
+    port: 33336
+    uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
+    alterId: 0
+    cipher: auto
+    udp: true
+    network: ws
+    ws-opts:
+      path: /tnt-tc
+      headers: { Host: ugbniwahx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 拉脱维亚|混合负载|100Mbps共享'
     type: trojan
     server: lv3hhjjssts.163yun.top
     port: 12331
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: bj.nochat.cyou
+    sni: sdawhbkjnkl.vzwzasc.cn
   -
     name: '[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享'
     type: vmess
@@ -763,204 +868,210 @@ proxies:
     server: lv3hhjjssts.163yun.top
     port: 12345
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: jp.vzwzasc.cn
+    sni: hybioiuabh6jx.vzwzasc.cn
   -
     name: '[Lv3·1.0x] 日本002|混合负载|1000Mbps共享'
     type: trojan
     server: lv3hhjjssts.163yun.top
     port: 12346
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: jp.vzwzasc.cn
+    sni: oiugbalxawdfas.vzwzasc.cn
   -
     name: '[Lv3·1.0x] 日本003|混合负载|1000Mbps共享'
     type: trojan
     server: lv3hhjjssts.163yun.top
     port: 12347
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: jp.vzwzasc.cn
+    sni: ogjoihxcawfx.vzwzasc.cn
   -
     name: '[Lv3·1.0x] 日本004|混合负载|1000Mbps共享'
     type: trojan
     server: lv3hhjjssts.163yun.top
     port: 12348
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: jp.vzwzasc.cn
+    sni: ugaoijxawdfx.vzwzasc.cn
   -
     name: '[Lv3·1.0x] 日本01|IP均衡优化|混合负载|500Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 33332
+    port: 33336
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本02|IP均衡优化|混合负载|500Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 33332
+    port: 33336
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本03|IP均衡优化|混合负载|500Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 33332
+    port: 33336
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本03|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 42233
+    port: 43382
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv3hhjjssts.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本04|IP均衡优化|混合负载|500Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 33332
+    port: 33336
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本04|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 42233
+    port: 43382
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv3hhjjssts.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本05|IP均衡优化|混合负载|500Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 33332
+    port: 33336
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-awsrb1
-      headers: { Host: baidu.com }
+      headers: { Host: jpshdwanlx.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本05|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 42233
+    port: 43382
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv3hhjjssts.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本06|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 42233
+    port: 43382
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv3hhjjssts.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本07|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 42233
+    port: 43382
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv3hhjjssts.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本08|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 42233
+    port: 43382
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv3hhjjssts.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本09|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 42233
+    port: 43382
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv3hhjjssts.163yun.top }
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 日本10|大阪|混合负载|800Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
-    port: 42233
+    port: 43382
     uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
+    alterId: 0
     cipher: auto
     udp: true
     network: ws
     ws-opts:
       path: /tnt-dbfw
-      headers: { Host: lv3hhjjssts.163yun.top }
-  -
-    name: '[Lv3·1.0x] 维也纳|混合负载|800Mbps共享'
-    type: trojan
-    server: lv3hhjjssts.163yun.top
-    port: 12328
-    password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: bj.nochat.cyou
+      headers: { Host: jpwbasdw.vzwzasc.cn }
+    tls: true
   -
     name: '[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享'
     type: vmess
@@ -1023,7 +1134,7 @@ proxies:
     server: lv3hhjjssts.163yun.top
     port: 12330
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: bj.nochat.cyou
+    sni: sdawsjiogubjjoguhvj.vzwzasc.cn
   -
     name: '[Lv3·1.0x] 韩国01|IP均衡优化|混合负载|800Mbps共享'
     type: vmess
@@ -1190,7 +1301,7 @@ proxies:
     server: lv3hhjjssts.163yun.top
     port: 12332
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
-    sni: lm.nochat.cyou
+    sni: lmwiahnsdx.vzwzasc.cn
   -
     name: '[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享'
     type: vmess
@@ -1206,7 +1317,7 @@ proxies:
       headers: { Host: hksdwasd.vzwzasc.cn }
     tls: true
   -
-    name: '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|100Mbps共享'
+    name: '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|1000Mbps共享'
     type: vmess
     server: lv3hhjjssts.163yun.top
     port: 33336
@@ -1226,19 +1337,6 @@ proxies:
     port: 12338
     password: c09a78c3-9a2f-31be-84e5-afbbced87985
     sni: dawuhbiuxbuw.vzwzasc.cn
-  -
-    name: '[Lv3·3.0x] 土耳其|中继|浙江丽水|实验性||100Mbps共享'
-    type: vmess
-    server: lv3hhjjssts.163yun.top
-    port: 33332
-    uuid: c09a78c3-9a2f-31be-84e5-afbbced87985
-    alterId: 1
-    cipher: auto
-    udp: true
-    network: ws
-    ws-opts:
-      path: /tnt-tc
-      headers: { Host: baidu.com }
 proxy-groups:
   -
     name: 🔰国外流量
@@ -1250,11 +1348,17 @@ proxy-groups:
       - '[Lv1·0.5x] 越南02|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南03|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连'
+      - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|直连'
       - '[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连'
       - '[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连'
@@ -1303,6 +1407,7 @@ proxy-groups:
       - '[Lv3·1.0x] 以色列|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 保加利亚|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 加拿大|懂得都懂|混合负载|100Mbps共享'
+      - '[Lv3·1.0x] 土耳其|IP均衡负载|实验性|1000Mbps共享'
       - '[Lv3·1.0x] 拉脱维亚|混合负载|100Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁'
@@ -1331,7 +1436,6 @@ proxy-groups:
       - '[Lv3·1.0x] 日本08|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本09|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本10|大阪|混合负载|800Mbps共享'
-      - '[Lv3·1.0x] 维也纳|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享'
@@ -1355,9 +1459,8 @@ proxy-groups:
       - '[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享'
       - '[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享'
       - '[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享'
-      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|100Mbps共享'
+      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|1000Mbps共享'
       - '[Lv3·2.0x] 阿根廷|低保区|混合负载|100Mbps共享'
-      - '[Lv3·3.0x] 土耳其|中继|浙江丽水|实验性||100Mbps共享'
       - 🚀直接连接
   -
     name: ⚓️其他流量
@@ -1376,11 +1479,17 @@ proxy-groups:
       - '[Lv1·0.5x] 越南02|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南03|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连'
+      - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|直连'
       - '[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连'
       - '[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连'
@@ -1429,6 +1538,7 @@ proxy-groups:
       - '[Lv3·1.0x] 以色列|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 保加利亚|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 加拿大|懂得都懂|混合负载|100Mbps共享'
+      - '[Lv3·1.0x] 土耳其|IP均衡负载|实验性|1000Mbps共享'
       - '[Lv3·1.0x] 拉脱维亚|混合负载|100Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁'
@@ -1457,7 +1567,6 @@ proxy-groups:
       - '[Lv3·1.0x] 日本08|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本09|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本10|大阪|混合负载|800Mbps共享'
-      - '[Lv3·1.0x] 维也纳|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享'
@@ -1481,9 +1590,8 @@ proxy-groups:
       - '[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享'
       - '[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享'
       - '[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享'
-      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|100Mbps共享'
+      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|1000Mbps共享'
       - '[Lv3·2.0x] 阿根廷|低保区|混合负载|100Mbps共享'
-      - '[Lv3·3.0x] 土耳其|中继|浙江丽水|实验性||100Mbps共享'
   -
     name: 🎬Youtube
     type: select
@@ -1495,11 +1603,17 @@ proxy-groups:
       - '[Lv1·0.5x] 越南02|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南03|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连'
+      - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|直连'
       - '[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连'
       - '[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连'
@@ -1548,6 +1662,7 @@ proxy-groups:
       - '[Lv3·1.0x] 以色列|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 保加利亚|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 加拿大|懂得都懂|混合负载|100Mbps共享'
+      - '[Lv3·1.0x] 土耳其|IP均衡负载|实验性|1000Mbps共享'
       - '[Lv3·1.0x] 拉脱维亚|混合负载|100Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁'
@@ -1576,7 +1691,6 @@ proxy-groups:
       - '[Lv3·1.0x] 日本08|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本09|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本10|大阪|混合负载|800Mbps共享'
-      - '[Lv3·1.0x] 维也纳|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享'
@@ -1600,9 +1714,8 @@ proxy-groups:
       - '[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享'
       - '[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享'
       - '[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享'
-      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|100Mbps共享'
+      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|1000Mbps共享'
       - '[Lv3·2.0x] 阿根廷|低保区|混合负载|100Mbps共享'
-      - '[Lv3·3.0x] 土耳其|中继|浙江丽水|实验性||100Mbps共享'
   -
     name: 🎬Netflix
     type: select
@@ -1614,11 +1727,17 @@ proxy-groups:
       - '[Lv1·0.5x] 越南02|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南03|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连'
+      - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|直连'
       - '[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连'
       - '[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连'
@@ -1667,6 +1786,7 @@ proxy-groups:
       - '[Lv3·1.0x] 以色列|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 保加利亚|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 加拿大|懂得都懂|混合负载|100Mbps共享'
+      - '[Lv3·1.0x] 土耳其|IP均衡负载|实验性|1000Mbps共享'
       - '[Lv3·1.0x] 拉脱维亚|混合负载|100Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁'
@@ -1695,7 +1815,6 @@ proxy-groups:
       - '[Lv3·1.0x] 日本08|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本09|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本10|大阪|混合负载|800Mbps共享'
-      - '[Lv3·1.0x] 维也纳|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享'
@@ -1719,9 +1838,8 @@ proxy-groups:
       - '[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享'
       - '[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享'
       - '[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享'
-      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|100Mbps共享'
+      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|1000Mbps共享'
       - '[Lv3·2.0x] 阿根廷|低保区|混合负载|100Mbps共享'
-      - '[Lv3·3.0x] 土耳其|中继|浙江丽水|实验性||100Mbps共享'
   -
     name: 🎬哔哩哔哩
     type: select
@@ -1733,11 +1851,17 @@ proxy-groups:
       - '[Lv1·0.5x] 越南02|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南03|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连'
+      - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|直连'
       - '[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连'
       - '[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连'
@@ -1786,6 +1910,7 @@ proxy-groups:
       - '[Lv3·1.0x] 以色列|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 保加利亚|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 加拿大|懂得都懂|混合负载|100Mbps共享'
+      - '[Lv3·1.0x] 土耳其|IP均衡负载|实验性|1000Mbps共享'
       - '[Lv3·1.0x] 拉脱维亚|混合负载|100Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁'
@@ -1814,7 +1939,6 @@ proxy-groups:
       - '[Lv3·1.0x] 日本08|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本09|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本10|大阪|混合负载|800Mbps共享'
-      - '[Lv3·1.0x] 维也纳|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享'
@@ -1838,9 +1962,8 @@ proxy-groups:
       - '[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享'
       - '[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享'
       - '[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享'
-      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|100Mbps共享'
+      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|1000Mbps共享'
       - '[Lv3·2.0x] 阿根廷|低保区|混合负载|100Mbps共享'
-      - '[Lv3·3.0x] 土耳其|中继|浙江丽水|实验性||100Mbps共享'
   -
     name: 🎬国外媒体
     type: select
@@ -1852,11 +1975,17 @@ proxy-groups:
       - '[Lv1·0.5x] 越南02|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南03|移动/联通/电信|100Mbps|直连'
       - '[Lv1·0.5x] 越南04|移动/联通/电信|100Mbps|直连'
+      - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾01|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾02|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾03|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾04|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾05|移动/联通|300Mbps|直连'
+      - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|Vmess|直连'
       - '[Lv1·0.5x]台湾06|移动/联通|300Mbps|直连'
       - '[Lv1·0.5x]美国01|移动/联通/电信|300Mbps|直连'
       - '[Lv1·0.5x]美国02|移动/联通/电信|300Mbps|直连'
@@ -1905,6 +2034,7 @@ proxy-groups:
       - '[Lv3·1.0x] 以色列|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 保加利亚|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 加拿大|懂得都懂|混合负载|100Mbps共享'
+      - '[Lv3·1.0x] 土耳其|IP均衡负载|实验性|1000Mbps共享'
       - '[Lv3·1.0x] 拉脱维亚|混合负载|100Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|CTN加速|500Mbps共享'
       - '[Lv3·1.0x] 新加坡01|IP均衡优化|混合负载|奈飞解锁'
@@ -1933,7 +2063,6 @@ proxy-groups:
       - '[Lv3·1.0x] 日本08|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本09|大阪|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 日本10|大阪|混合负载|800Mbps共享'
-      - '[Lv3·1.0x] 维也纳|混合负载|800Mbps共享'
       - '[Lv3·1.0x] 美国原生01|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生02|IP均衡优化|混合负载|500Mbps共享'
       - '[Lv3·1.0x] 美国原生03|IP均衡优化|混合负载|500Mbps共享'
@@ -1957,9 +2086,8 @@ proxy-groups:
       - '[Lv3·1.5x] 台湾03|IP均衡优化|CTN加速|600Mbps共享'
       - '[Lv3·1.5x] 罗马尼亚|SPAM/DCIM专用|混合负载|1000Mbps共享'
       - '[Lv3·1.5x] 香港001|IP均衡优化|混合负载|1000Mbps共享'
-      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|100Mbps共享'
+      - '[Lv3·1.5x] 香港002|IP均衡优化|混合负载|1000Mbps共享'
       - '[Lv3·2.0x] 阿根廷|低保区|混合负载|100Mbps共享'
-      - '[Lv3·3.0x] 土耳其|中继|浙江丽水|实验性||100Mbps共享'
   -
     name: 🍎苹果服务
     type: select
