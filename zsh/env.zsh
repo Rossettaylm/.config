@@ -3,14 +3,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 #
-export CMAKE_HOME="/usr/local/cmake-3.22.4-linux-x86_64"
-export GDB_HOME="/usr/local/gdb-11.1"
 export TOMCAT_HOME="/usr/share/tomcat8"
 export GITHUB_ACCOUNT_PREFIX="https://github.com/Rossettaylm"
 export SCRIPTS_HOME="$HOME/.config/scripts"
 
-export PATH=$PATH:$CMAKE_HOME/bin
-export PATH=$PATH:$GDB_HOME/bin
 export PATH=$PATH:$SCRIPTS_HOME
 
 # Path to your oh-my-zsh installation.
