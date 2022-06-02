@@ -26,13 +26,11 @@ printf "(3) CYKNetwork\n"
 
 get_clash_url
 
-printf "选择配置文件保存位置(config.yaml [default]):\n:"
+printf "输入配置文件名称(config.yaml):\n:"
 
-read LOC
-if [[ -z ${LOC} ]];then
-    FILENAME="config.yaml"
-else
-    FILENAME=$LOC
+read CLASH_CONFIG
+if [[ -z ${CLASH_CONFIG} ]];then
+    CLASH_CONFIG="config.yaml"
 fi
 
-curl -L -o ${CLASH_HOME}/${FILENAME} ${CLASH_URL}
+curl -L -o ${CLASH_HOME}/${CLASH_CONFIG} ${CLASH_URL}
