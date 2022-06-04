@@ -26,7 +26,9 @@ vim        [alias]              nvim
 gg         [alias]              git clone
 gs         [alias]              git config credential.helper store
 up         [alias]              sudo pacman -Syyu
-clip       [alias]              xclip -selection c'
+clip       [alias]              xclip -selection c
+px         [alias]              proxychains'
+
 
 local cmd=$(echo $helptxt | eval "fzf ${FZF_DEFAULT_OPTS} --header='[utils:show]'" | awk '{print $1}')
 

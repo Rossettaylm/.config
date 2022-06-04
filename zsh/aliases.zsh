@@ -19,6 +19,7 @@ alias gg='git clone'
 alias gs='git config credential.helper store'
 alias up='sudo pacman -Syyu'
 alias clip='xclip -selection c'
+alias px='proxychains'
 
 # alacritty colorscheme
 # 准备工作: pip install alacritty-colorscheme
