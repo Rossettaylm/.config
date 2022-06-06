@@ -19,7 +19,6 @@ get_clash_url() {
         4) CLASH_URL=$CLASH_URL_SWY2;;
         *) CLASH_URL=$CLASH_URL_SWY;;
     esac
-
 }
 
 printf "选择要更新的clash订阅地址:\n"
