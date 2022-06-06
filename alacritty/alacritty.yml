@@ -22,7 +22,7 @@ window:
   # If both are `0`, this setting is ignored.
   dimensions:
     columns: 95
-    lines: 30
+    lines: 25
 
   opacity: 0.8
 

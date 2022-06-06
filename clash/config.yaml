@@ -1,6 +1,5 @@
 #---------------------------------------------------#
-## 更新时间：2022-06-02 12:37:07
-## 链接地址：
+## 上次更新于：2022-06-06 10:54:04
 #---------------------------------------------------#
 
 port: 7890
@@ -11,2239 +10,2331 @@ mode: rule
 log-level: silent
 external-controller: '127.0.0.1:9090'
 secret: ''
-
-# 设置日志输出级别 (默认级别：silent，即不输出任何内容，以避免因日志内容过大而导致程序内存溢出）。
-# 5 个级别：silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
-
-# 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
-# 参数应填写配置目录的相对路径或绝对路径。
-# external-ui: folder
-
-dns:
-  enable: true
-  ipv6: false
-  listen: 127.0.0.1:5450
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.19.0.1/16
-  default-nameserver:
-    - 119.29.29.29
-    - 119.28.28.28
-    - 1.0.0.1
-    - 208.67.222.222
-    - 1.2.4.8
-  nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://1.1.1.1/dns-query
-    - tls://dns.adguard.com:853
-  fallback:
-    - tls://223.5.5.5:853
-    - https://223.5.5.5/dns-query
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-
-  
 proxies:
-  - {"name":"🇼🇸 IPLC专线｜台湾Netflix专线-1 [2.0][NF][Disney+]","type":"ssr","server":"iplc-nf-1.cmy-dns.com","port":765,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"IPLC专线｜新加坡Netflix专线-1 [2.0][NF]","type":"ssr","server":"iplc-nf-1.cmy-dns.com","port":763,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇯🇵 IPLC专线｜日本Netflix专线-1 [2.0][NF]","type":"ssr","server":"iplc-nf-1.cmy-dns.com","port":762,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇼🇸 IPLC专线｜沪台 [2.0][原生][Disney+]","type":"ssr","server":"iplc-hu.cmy-dns.com","port":767,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇸🇬 IPLC专线｜沪新 [2.0][UDP]","type":"ssr","server":"iplc-hu.cmy-dns.com","port":764,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇯🇵 IPLC专线｜沪日 [2.0][原生]","type":"ssr","server":"iplc-hu.cmy-dns.com","port":769,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇭🇰 IPLC专线｜沪港 [2.0][原生][NF]","type":"ssr","server":"iplc-hu.cmy-dns.com","port":768,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇺🇲 IPLC专线｜沪美 [2.0][NF][原生]","type":"ssr","server":"iplc-hu.cmy-dns.com","port":766,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇼🇸 IPLC专线｜浙台 [2.0][原生][Disney+]","type":"ssr","server":"iplc-zhe.cmy-dns.com","port":767,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇸🇬 IPLC专线｜浙新 [2.0][UDP]","type":"ssr","server":"iplc-zhe.cmy-dns.com","port":764,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇯🇵 IPLC专线｜浙日 [2.0][原生]","type":"ssr","server":"iplc-zhe.cmy-dns.com","port":769,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇭🇰 IPLC专线｜浙港 [2.0][原生][Disney+]","type":"ssr","server":"iplc-zhe.cmy-dns.com","port":768,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇺🇲 IPLC专线｜浙美 [2.0][NF][原生]","type":"ssr","server":"iplc-zhe.cmy-dns.com","port":766,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇼🇸 IPLC专线｜深台 [2.0][原生][Disney+]","type":"ssr","server":"iplc-shen.cmy-dns.com","port":767,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇸🇬 IPLC专线｜深新 [2.0][UDP]","type":"ssr","server":"iplc-shen.cmy-dns.com","port":764,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇯🇵 IPLC专线｜深日 [2.0][原生]","type":"ssr","server":"iplc-shen.cmy-dns.com","port":769,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇭🇰 IPLC专线｜深港 [2.0][原生][Disney+]","type":"ssr","server":"iplc-shen.cmy-dns.com","port":768,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇺🇲 IPLC专线｜深美 [2.0][NF][原生]","type":"ssr","server":"iplc-shen.cmy-dns.com","port":766,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇼🇸 IPLC专线｜湘台 [2.0][原生][Disney+]","type":"ssr","server":"iplc-xiang.cmy-dns.com","port":767,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇸🇬 IPLC专线｜湘新 [2.0][UDP]","type":"ssr","server":"iplc-xiang.cmy-dns.com","port":764,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇯🇵 IPLC专线｜湘日 [2.0][原生]","type":"ssr","server":"iplc-xiang.cmy-dns.com","port":769,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇭🇰 IPLC专线｜湘港 [2.0][原生][Disney+]","type":"ssr","server":"iplc-xiang.cmy-dns.com","port":768,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇺🇲 IPLC专线｜湘美 [2.0][NF]","type":"ssr","server":"iplc-xiang.cmy-dns.com","port":766,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇼🇸 IPLC专线｜苏台 [2.0][原生][Disney+]","type":"ssr","server":"iplc-su.cmy-dns.com","port":767,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇸🇬 IPLC专线｜苏新 [2.0][UDP]","type":"ssr","server":"iplc-su.cmy-dns.com","port":764,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇯🇵 IPLC专线｜苏日 [2.0][原生]","type":"ssr","server":"iplc-su.cmy-dns.com","port":769,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇭🇰 IPLC专线｜苏港 [2.0][原生][Disney+]","type":"ssr","server":"iplc-su.cmy-dns.com","port":768,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇺🇲 IPLC专线｜苏美 [2.0][NF][原生]","type":"ssr","server":"iplc-su.cmy-dns.com","port":766,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇼🇸 IPLC专线｜闽台 [2.0][原生][Disney+]","type":"ssr","server":"iplc-min.cmy-dns.com","port":767,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇸🇬 IPLC专线｜闽新 [2.0][UDP]","type":"ssr","server":"iplc-min.cmy-dns.com","port":764,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇯🇵 IPLC专线｜闽日 [2.0][原生]","type":"ssr","server":"iplc-min.cmy-dns.com","port":769,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇭🇰 IPLC专线｜闽港 [2.0][原生][Disney+]","type":"ssr","server":"iplc-min.cmy-dns.com","port":768,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇺🇲 IPLC专线｜闽美 [2.0][原生][Disney+][NF]","type":"ssr","server":"iplc-min.cmy-dns.com","port":766,"cipher":"rc4-md5","password":"caomeijump.com","protocol":"auth_aes128_md5","protocolparam":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","protocol-param":"160564:3ad41c7b-b772-3f96-9986-66d1a2b79820","obfs":"http_simple","obfsparam":"ajax.microsoft.com","obfs-param":"ajax.microsoft.com","udp":true}
-  - {"name":"🇼🇸 Trojan优化｜台湾-1 [1.0][原生]","type":"trojan","server":"kaizen-tw-1.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇼🇸 Trojan优化｜台湾-2 [1.0][原生]","type":"trojan","server":"kaizen-tw-2.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇼🇸 Trojan优化｜台湾-3 [1.0][原生]","type":"trojan","server":"kaizen-tw-3.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇼🇸 Trojan优化｜台湾-4 [1.0][原生]","type":"trojan","server":"kaizen-tw-4.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇼🇸 Trojan优化｜台湾-5 [2.0][原生]","type":"trojan","server":"kaizen-tw-5.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇼🇸 Trojan优化｜台湾-6 [1.0][原生]","type":"trojan","server":"kaizen-tw-6.paolu.co","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇼🇸 Trojan优化｜台湾-7 [1.0][原生]","type":"trojan","server":"kaizen-tw-7.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-01 [1.0]","type":"trojan","server":"kaizen-jp-1.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-02 [1.0]","type":"trojan","server":"kaizen-jp-2.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-03 [1.0]","type":"trojan","server":"kaizen-jp-3.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-04 [1.0]","type":"trojan","server":"kaizen-jp-4.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-05 [1.0]","type":"trojan","server":"kaizen-jp-5.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-06 [1.0]","type":"trojan","server":"kaizen-jp-6.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-07 [1.0]","type":"trojan","server":"kaizen-jp-7.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-08 [1.0]","type":"trojan","server":"kaizen-jp-8.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-09 [1.0]","type":"trojan","server":"kaizen-jp-9.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-10 [1.0]","type":"trojan","server":"kaizen-jp-10.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-11 [1.0]","type":"trojan","server":"kaizen-jp-11.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-12 [1.0]","type":"trojan","server":"kaizen-jp-12.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇯🇵 Trojan优化｜日本-13 [1.0][原生]","type":"trojan","server":"kaizen-jp-13.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-01 [1.0][原生]","type":"trojan","server":"kaizen-us-01.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-02 [1.0][原生]","type":"trojan","server":"kaizen-us-02.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-03 [1.0]","type":"trojan","server":"kaizen-us-03.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-04 [2.5]","type":"trojan","server":"kaizen-us-4.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-05 [2.5]","type":"trojan","server":"kaizen-us-5.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-06 [2.5]","type":"trojan","server":"kaizen-us-6.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-11 [2.5]","type":"trojan","server":"kaizen-us-11.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-12 [2.5]","type":"trojan","server":"kaizen-us-12.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-13 [2.5]","type":"trojan","server":"kaizen-us-13.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-14 [2.5]","type":"trojan","server":"kaizen-us-14.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-15 [2.5]","type":"trojan","server":"kaizen-us-15.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-16 [2.5]","type":"trojan","server":"kaizen-us-16.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-17 [2.5]","type":"trojan","server":"kaizen-us-17.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-18 [2.5]","type":"trojan","server":"kaizen-us-18.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-19 [2.5]","type":"trojan","server":"kaizen-us-19.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan优化｜美国-20 [2.5]","type":"trojan","server":"kaizen-us-20.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇰🇷 Trojan优化｜韩国-1 [1.5][原生]","type":"trojan","server":"kaizen-kr-1.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇰🇷 Trojan优化｜韩国-2 [1.5][原生]","type":"trojan","server":"kaizen-kr-2.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-01 [1.0][原生]","type":"trojan","server":"kaizen-hk-1.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-02 [1.0][原生]","type":"trojan","server":"kaizen-hk-2.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-03 [1.0][原生]","type":"trojan","server":"kaizen-hk-3.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-04 [1.0][原生]","type":"trojan","server":"kaizen-hk-4.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-05 [1.0]","type":"trojan","server":"kaizen-hk-5.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-06 [1.0]","type":"trojan","server":"kaizen-hk-6.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-07 [1.0]","type":"trojan","server":"kaizen-hk-7.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-08 [1.0]","type":"trojan","server":"kaizen-hk-8.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-09 [1.0]","type":"trojan","server":"kaizen-hk-9.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇭🇰 Trojan优化｜香港-10 [1.0]","type":"trojan","server":"kaizen-hk-10.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇷🇺 Trojan特殊｜俄罗斯-A [0.5]","type":"trojan","server":"kaizen-ru-1.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇮🇳 Trojan特殊｜印度-A [2.0]","type":"trojan","server":"zhilian-in-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇮🇳 Trojan特殊｜印度尼西亚-A [1.0][原生]","type":"trojan","server":"zhilian-id-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇹🇷 Trojan特殊｜土耳其-A [无限流量]","type":"trojan","server":"l2-tr-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇧🇷 Trojan特殊｜巴西-A [无限流量]","type":"trojan","server":"zhilian-br-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇹🇭 Trojan特殊｜泰国-A [1.0]","type":"trojan","server":"zhilian-th-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇦🇺 Trojan特殊｜澳大利亚-A [1.5]","type":"trojan","server":"zhilian-au-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇬🇧 Trojan特殊｜英国-A [1.5]","type":"trojan","server":"l2-uk-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇻🇳 Trojan特殊｜越南-A [1.0]","type":"trojan","server":"l2-vn-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇦🇷 Trojan特殊｜阿根廷-A [2.0]","type":"trojan","server":"zhilian-ar-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇰🇷 Trojan特殊｜韩国-1 [1.5][原生]","type":"trojan","server":"special-kr-1.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇷🇺 Trojan直连｜俄罗斯-A [无限流量]","type":"trojan","server":"zhilian-ru-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇷🇺 Trojan直连｜俄罗斯-B [无限流量]","type":"trojan","server":"zhilian-ru-b.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇷🇺 Trojan直连｜俄罗斯-C [无限流量]","type":"trojan","server":"zhilian-ru-c.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇷🇺 Trojan直连｜俄罗斯-E [0.5]","type":"trojan","server":"kaizen-ru-2.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇩🇪 Trojan直连｜德国-A [无限流量]","type":"trojan","server":"zhilian-de-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan直连｜美国-A [2.5]","type":"trojan","server":"zhilian-us-a.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan直连｜美国-E [2.5]","type":"trojan","server":"l2-us-e.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan直连｜美国-H [2.5]","type":"trojan","server":"l2-us-h.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan直连｜美国-I [2.5]","type":"trojan","server":"zhilian-us-i.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan直连｜美国-J [2.5]","type":"trojan","server":"zhilian-us-j.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-  - {"name":"🇺🇲 Trojan直连｜美国-K [2.5]","type":"trojan","server":"zhilian-us-k.cmy-dns.com","port":443,"password":"3ad41c7b-b772-3f96-9986-66d1a2b79820cmynw","udp":true,"sni":"paydiu.com"}
-
+  -
+    name: v2|香港01|MPTCP|★★★
+    type: ss
+    server: 3urbvz0srnta639sdy2s8jimfnpgegqmf6p45gnq.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyzamn2wm6l7.sina.cn
+  -
+    name: v2|香港02|MPTCP|★★★
+    type: ss
+    server: ovnbyauvcoa9phzkhoqgazvapigiceswux92afcu.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsy3wmn2wm6l7.sina.cn
+  -
+    name: v2|香港03|MPTCP|★★★
+    type: ss
+    server: 9s9owuhre6lub4j58ouvhgqwrtxzchctq6z6ayrt.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyrqmn2wm6l7.sina.cn
+  -
+    name: v2|香港04|MPTCP|★★★
+    type: ss
+    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszremn2wm6l7.sina.cn
+  -
+    name: v2|香港05|MPTCP|★★★
+    type: ss
+    server: vdp9o6qc5s8tgqqp7jdsrrtaqhx8emesjpmkre8w.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsz3xmn2wm6l7.sina.cn
+  -
+    name: v2|香港06|MPTCP|★★★
+    type: ss
+    server: ol77aajx6oc0ijvwhof6atddsqvenlcxurzfainv7l.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyjqmn2wm6l7.sina.cn
+  -
+    name: v2|香港07|MPTCP|★★☆
+    type: ss
+    server: lqpfpnrqlmonylhi3n2rujzpig3ls3vmmcqrpuuxts.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsy3xmn2wm6l7.sina.cn
+  -
+    name: v2|香港08|MPTCP|★★☆
+    type: ss
+    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyzdmn2wm6l7.sina.cn
+  -
+    name: v2|香港09|MPTCP|★★★
+    type: ss
+    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszrjmn2wm6l7.sina.cn
+  -
+    name: v2|香港10|MPTCP|★★★
+    type: ss
+    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsz3wmn2wm6l7.sina.cn
+  -
+    name: v2|香港11|MPTCP|★★☆
+    type: ss
+    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsytrmn2wm6l7.sina.cn
+  -
+    name: v2|香港12|MPTCP|★★★
+    type: ss
+    server: 7uplflid9v1yzrkztonw4mfkk8b3stjl0q2icrex.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsytwmn2wm6l7.sina.cn
+  -
+    name: v2|香港13|MPTCP|★★☆
+    type: ss
+    server: kixmlgnfi4iaw2hhqogh4jcp0i6cplazhelpucn7.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyrkmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡01|MPTCP|★★★
+    type: ss
+    server: 7uplflid9v1yzrkztonw4mfkk8b3stjl0q2icrex.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyjvmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡02|MPTCP|★★★
+    type: ss
+    server: kixmlgnfi4iaw2hhqogh4jcp0i6cplazhelpucn7.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsytsmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡03|MPTCP|★★★
+    type: ss
+    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyrrmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡04|MPTCP|★★★
+    type: ss
+    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsztrmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡05|MPTCP|★★★
+    type: ss
+    server: ol77aajx6oc0ijvwhof6atddsqvenlcxurzfainv7l.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsz3umn2wm6l7.sina.cn
+  -
+    name: v2|新加坡06|MPTCP|★★★
+    type: ss
+    server: pcf6n56m0fyjxn9mihl64jj8ltlijvkpl4bgdt48.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyrpmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡07|MPTCP|★★★
+    type: ss
+    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jomn2wm6l7.sina.cn
+  -
+    name: v2|日本01|MPTCP|★★☆
+    type: ss
+    server: fqwcrcbg6fucoec2oigyzmiiy3wumvrqjzugvawg.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyjsmn2wm6l7.sina.cn
+  -
+    name: v2|日本02|MPTCP|★★☆
+    type: ss
+    server: sgyd4ixfsqyu757djgdg8da8h0gwc6hg62elztqk.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyttmn2wm6l7.sina.cn
+  -
+    name: v2|日本03|MPTCP|★★☆
+    type: ss
+    server: ihnhivs2f3qobwei85x9niz30oolvnzqzw59kwi0.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyrmmn2wm6l7.sina.cn
+  -
+    name: v2|日本04|MPTCP|★★☆
+    type: ss
+    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszrcmn2wm6l7.sina.cn
+  -
+    name: v2|日本05|MPTCP|★★☆
+    type: ss
+    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsz3vmn2wm6l7.sina.cn
+  -
+    name: v2|日本06|MPTCP|★★☆
+    type: ss
+    server: fd8pixvqhlvsxp6j21grlidzt3xjixsj6axpuikjfs.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsy3umn2wm6l7.sina.cn
+  -
+    name: v2|美国01|MPTCP|★★★
+    type: ss
+    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszjhmn2wm6l7.sina.cn
+  -
+    name: v2|美国02|MPTCP|★★★
+    type: ss
+    server: sgyd4ixfsqyu757djgdg8da8h0gwc6hg62elztqk.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyjxmn2wm6l7.sina.cn
+  -
+    name: v2|美国03|MPTCP|★★★
+    type: ss
+    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszjgmn2wm6l7.sina.cn
+  -
+    name: v2|美国04|MPTCP|★★★
+    type: ss
+    server: 2osgtus9dhg3sc6hfs3pldqng2glcc9k1k9ykjzt.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsztumn2wm6l7.sina.cn
+  -
+    name: v2|美国05|MPTCP|★★★
+    type: ss
+    server: mbhwkatmlxx5srwgh6axzpz4wnk27ppu5gyllnvv.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsz3smn2wm6l7.sina.cn
+  -
+    name: v2|美国06|MPTCP|★★★
+    type: ss
+    server: k35i2qapope3jwe8whblqemjigfrvewrsv4ve52m.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jqmn2wm6l7.sina.cn
+  -
+    name: v2|香港01|原生|★★★
+    type: ss
+    server: 9s9owuhre6lub4j58ouvhgqwrtxzchctq6z6ayrt.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyjomn2wm6l7.sina.cn
+  -
+    name: v2|香港02|原生|★★★
+    type: ss
+    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyjymn2wm6l7.sina.cn
+  -
+    name: v2|香港03|原生|★★★
+    type: ss
+    server: vdp9o6qc5s8tgqqp7jdsrrtaqhx8emesjpmkre8w.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyrimn2wm6l7.sina.cn
+  -
+    name: v2|香港04|原生|★★★
+    type: ss
+    server: vdp9o6qc5s8tgqqp7jdsrrtaqhx8emesjpmkre8w.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszjwmn2wm6l7.sina.cn
+  -
+    name: v2|香港05|原生|★★★
+    type: ss
+    server: ifz4apw8gqjso0tgdtjctvkyhmfs5ppazrixdffc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsz3tmn2wm6l7.sina.cn
+  -
+    name: v2|香港06|原生|★★★
+    type: ss
+    server: sgyd4ixfsqyu757djgdg8da8h0gwc6hg62elztqk.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsytxmn2wm6l7.sina.cn
+  -
+    name: v2|香港01|myTVSUPER|限速
+    type: ss
+    server: ovnbyauvcoa9phzkhoqgazvapigiceswux92afcu.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszz3mn2wm6l7.sina.cn
+  -
+    name: v2|香港01|YouTubePre|限速
+    type: ss
+    server: 3z1g1ees3rlmirzl172pq2zuwllkntunrzrcrskebw.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2drmn2wm6l7.sina.cn
+  -
+    name: v2|香港02|防送中|限速
+    type: ss
+    server: mbhwkatmlxx5srwgh6axzpz4wnk27ppu5gyllnvv.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jpmn2wm6l7.sina.cn
+  -
+    name: v2|台湾01|YouTubePre|限速
+    type: ss
+    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2b3mn2wm6l7.sina.cn
+  -
+    name: v2|美国01|YouTubePre|限速
+    type: ss
+    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2lumn2wm6l7.sina.cn
+  -
+    name: v2|美国02|谷歌商店|限速
+    type: ss
+    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jmmn2wm6l7.sina.cn
+  -
+    name: v2|台湾01|原生|★★☆
+    type: ss
+    server: enzr581yy9g9duqnzokmb19odcqki4juasht093i.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyzcmn2wm6l7.sina.cn
+  -
+    name: v2|台湾02|原生|★★☆
+    type: ss
+    server: ihnhivs2f3qobwei85x9niz30oolvnzqzw59kwi0.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsyzumn2wm6l7.sina.cn
+  -
+    name: v2|台湾03|原生|★★☆
+    type: ss
+    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszttmn2wm6l7.sina.cn
+  -
+    name: v2|台湾04|原生|★★☆
+    type: ss
+    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzgmn2wm6l7.sina.cn
+  -
+    name: v2|台湾05|原生|★★☆
+    type: ss
+    server: 9s9owuhre6lub4j58ouvhgqwrtxzchctq6z6ayrt.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsz3qmn2wm6l7.sina.cn
+  -
+    name: v2|台湾06|原生|★★☆
+    type: ss
+    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jvmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡01|原生|★★☆
+    type: ss
+    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszlxmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡02|原生|★★☆
+    type: ss
+    server: kixmlgnfi4iaw2hhqogh4jcp0i6cplazhelpucn7.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszlwmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡03|原生|★★☆
+    type: ss
+    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszj3mn2wm6l7.sina.cn
+  -
+    name: v2|新加坡04|原生|★★☆
+    type: ss
+    server: 7p5bbihbyvizwl8qs7pd7jclkrkzgm5q95abo8su.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzxmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡05|原生|★★☆
+    type: ss
+    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsz3rmn2wm6l7.sina.cn
+  -
+    name: v2|新加坡06|原生|★★☆
+    type: ss
+    server: r6axbnbbu1xshrqpz6g9h96ekwisfdjibwiytstt.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jrmn2wm6l7.sina.cn
+  -
+    name: v2|日本01|原生|★★☆
+    type: ss
+    server: fqwcrcbg6fucoec2oigyzmiiy3wumvrqjzugvawg.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzzmn2wm6l7.sina.cn
+  -
+    name: v2|日本02|原生|★★☆
+    type: ss
+    server: jlky9xlmfq3kfbhhkod5coq8tzpdpeeqmdeqtckv.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzfmn2wm6l7.sina.cn
+  -
+    name: v2|日本03|原生|★★☆
+    type: ss
+    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzcmn2wm6l7.sina.cn
+  -
+    name: v2|日本04|原生|★★☆
+    type: ss
+    server: 8lusgkosx0nrhdow8si0ffipac19nnpiavao6eml.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzemn2wm6l7.sina.cn
+  -
+    name: v2|日本05|原生|★★☆
+    type: ss
+    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzhmn2wm6l7.sina.cn
+  -
+    name: v2|日本01|特供原生|限速
+    type: ss
+    server: 3urbvz0srnta639sdy2s8jimfnpgegqmf6p45gnq.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzymn2wm6l7.sina.cn
+  -
+    name: v2|美国01|原生|★★☆
+    type: ss
+    server: pcf6n56m0fyjxn9mihl64jj8ltlijvkpl4bgdt48.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszjmmn2wm6l7.sina.cn
+  -
+    name: v2|美国02|原生|★★☆
+    type: ss
+    server: mbhwkatmlxx5srwgh6axzpz4wnk27ppu5gyllnvv.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszjpmn2wm6l7.sina.cn
+  -
+    name: v2|美国03|原生|★★☆
+    type: ss
+    server: ihnhivs2f3qobwei85x9niz30oolvnzqzw59kwi0.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsztvmn2wm6l7.sina.cn
+  -
+    name: v2|美国04|原生|★★☆
+    type: ss
+    server: fd8pixvqhlvsxp6j21grlidzt3xjixsj6axpuikjfs.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzwmn2wm6l7.sina.cn
+  -
+    name: v2|美国05|原生|★★☆
+    type: ss
+    server: xpiras0lekntwos2m6sauxwpfi9reishxvvg2p8b.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszr3mn2wm6l7.sina.cn
+  -
+    name: v2|美国06|原生|★★☆
+    type: ss
+    server: 3z1g1ees3rlmirzl172pq2zuwllkntunrzrcrskebw.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jtmn2wm6l7.sina.cn
+  -
+    name: v2|美国01|hulu|限速
+    type: ss
+    server: k35i2qapope3jwe8whblqemjigfrvewrsv4ve52m.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2btmn2wm6l7.sina.cn
+  -
+    name: v2|英国01|原生|★★☆
+    type: ss
+    server: pcf6n56m0fyjxn9mihl64jj8ltlijvkpl4bgdt48.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2bsmn2wm6l7.sina.cn
+  -
+    name: v2|英国02|原生|★★☆
+    type: ss
+    server: ovnbyauvcoa9phzkhoqgazvapigiceswux92afcu.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2bvmn2wm6l7.sina.cn
+  -
+    name: v2|英国03|原生|★★☆
+    type: ss
+    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2bumn2wm6l7.sina.cn
+  -
+    name: v2|英国04|原生|★★☆
+    type: ss
+    server: 926x2v04nekuaeyu0ngjuurl6qeigebf7onbpz3b.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2bxmn2wm6l7.sina.cn
+  -
+    name: v2|英国05|原生|★★☆
+    type: ss
+    server: 3urbvz0srnta639sdy2s8jimfnpgegqmf6p45gnq.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2bwmn2wm6l7.sina.cn
+  -
+    name: v2|英国06|原生|★★☆
+    type: ss
+    server: 7p5bbihbyvizwl8qs7pd7jclkrkzgm5q95abo8su.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jsmn2wm6l7.sina.cn
+  -
+    name: v2|澳洲01|MPTCP|★☆☆
+    type: ss
+    server: 3urbvz0srnta639sdy2s8jimfnpgegqmf6p45gnq.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsy3rmn2wm6l7.sina.cn
+  -
+    name: v2|澳洲02|MPTCP|★☆☆
+    type: ss
+    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsztzmn2wm6l7.sina.cn
+  -
+    name: v2|澳洲03|MPTCP|★☆☆
+    type: ss
+    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszrzmn2wm6l7.sina.cn
+  -
+    name: v2|澳洲04|MPTCP|★☆☆
+    type: ss
+    server: 3z1g1ees3rlmirzl172pq2zuwllkntunrzrcrskebw.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszztmn2wm6l7.sina.cn
+  -
+    name: v2|澳洲05|MPTCP|★☆☆
+    type: ss
+    server: zjypnpl1nq8xv8xzied4hnibarkzm8w3iosq0vce.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzsmn2wm6l7.sina.cn
+  -
+    name: v2|韩国01|MPTCP|★☆☆
+    type: ss
+    server: 0r9dtk2cfiv9dicy1quj9cz14ackgdpbopxveqyu.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsy3qmn2wm6l7.sina.cn
+  -
+    name: v2|韩国02|MPTCP|★☆☆
+    type: ss
+    server: fqwcrcbg6fucoec2oigyzmiiy3wumvrqjzugvawg.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszrhmn2wm6l7.sina.cn
+  -
+    name: v2|韩国03|MPTCP|★☆☆
+    type: ss
+    server: ol77aajx6oc0ijvwhof6atddsqvenlcxurzfainv7l.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszrwmn2wm6l7.sina.cn
+  -
+    name: v2|韩国04|MPTCP|★☆☆
+    type: ss
+    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzjmn2wm6l7.sina.cn
+  -
+    name: v2|韩国05|MPTCP|★☆☆
+    type: ss
+    server: 2osgtus9dhg3sc6hfs3pldqng2glcc9k1k9ykjzt.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszzimn2wm6l7.sina.cn
+  -
+    name: v2|阿根廷01|特供原生|限速
+    type: ss
+    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2bymn2wm6l7.sina.cn
+  -
+    name: v2|巴西01|特供原生|限速
+    type: ss
+    server: 8lusgkosx0nrhdow8si0ffipac19nnpiavao6eml.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2lvmn2wm6l7.sina.cn
+  -
+    name: v2|智利01|特供原生|限速
+    type: ss
+    server: bvjtmi3cvopxlpboqfdajrgwr0moatrgdony6fdc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsmlsmn2wm6l7.sina.cn
+  -
+    name: v2|阿联酋01|特供原生|限速
+    type: ss
+    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsmlqmn2wm6l7.sina.cn
+  -
+    name: v2|马来西亚01|特供原生|限速
+    type: ss
+    server: pcf6n56m0fyjxn9mihl64jj8ltlijvkpl4bgdt48.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2lqmn2wm6l7.sina.cn
+  -
+    name: v2|泰国01|特供原生|限速
+    type: ss
+    server: ifz4apw8gqjso0tgdtjctvkyhmfs5ppazrixdffc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2ltmn2wm6l7.sina.cn
+  -
+    name: v2|菲律宾01|特供原生|限速
+    type: ss
+    server: 0r9dtk2cfiv9dicy1quj9cz14ackgdpbopxveqyu.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2lsmn2wm6l7.sina.cn
+  -
+    name: v2|越南01|特供原生|限速
+    type: ss
+    server: 8lusgkosx0nrhdow8si0ffipac19nnpiavao6eml.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2lwmn2wm6l7.sina.cn
+  -
+    name: v2|印尼01|特供原生|限速
+    type: ss
+    server: ncxlzzryzjmpbqrghv2yzsigt1xnsadiwyiiaf2x.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jzmn2wm6l7.sina.cn
+  -
+    name: v2|以色列01|特供原生|限速
+    type: ss
+    server: 0r9dtk2cfiv9dicy1quj9cz14ackgdpbopxveqyu.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsmlwmn2wm6l7.sina.cn
+  -
+    name: v2|南非01|特供原生|限速
+    type: ss
+    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jamn2wm6l7.sina.cn
+  -
+    name: v2|尼日利亚01|特供原生|限速
+    type: ss
+    server: jlky9xlmfq3kfbhhkod5coq8tzpdpeeqmdeqtckv.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jimn2wm6l7.sina.cn
+  -
+    name: v2|加拿大01|特供原生|限速
+    type: ss
+    server: 97fmhnugpxtpcrbnronlivxbcsqbfvxasgnvhamo.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jdmn2wm6l7.sina.cn
+  -
+    name: v2|墨西哥01|特供原生|限速
+    type: ss
+    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jfmn2wm6l7.sina.cn
+  -
+    name: v2|巴基斯坦01|特供原生|限速
+    type: ss
+    server: enzr581yy9g9duqnzokmb19odcqki4juasht093i.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jjmn2wm6l7.sina.cn
+  -
+    name: v2|法国01|特供原生|限速
+    type: ss
+    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2lzmn2wm6l7.sina.cn
+  -
+    name: v2|意大利01|特供原生|限速
+    type: ss
+    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2lymn2wm6l7.sina.cn
+  -
+    name: v2|冰岛01|特供原生|限速
+    type: ss
+    server: u0vawdyjcapbx2qokpfrfitjy42cnryjkzjra3cj.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2lxmn2wm6l7.sina.cn
+  -
+    name: v2|荷兰01|特供原生|限速
+    type: ss
+    server: jlgptnkkjvki3jjdh8jlb3fg1dqbsupki0hag05z.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jcmn2wm6l7.sina.cn
+  -
+    name: v2|西班牙01|特供原生|限速
+    type: ss
+    server: r6axbnbbu1xshrqpz6g9h96ekwisfdjibwiytstt.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jlmn2wm6l7.sina.cn
+  -
+    name: v2|葡萄牙01|特供原生|限速
+    type: ss
+    server: 5rnspl5wtguaxa1xq6kjrg0klzerajkkowfntyeb.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsmlumn2wm6l7.sina.cn
+  -
+    name: v2|瑞典01|特供原生|限速
+    type: ss
+    server: szhilgxlekvcrc1xnk5f6h77zhpepimr7v3ycztp.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jnmn2wm6l7.sina.cn
+  -
+    name: v2|德国01|特供原生|限速
+    type: ss
+    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jxmn2wm6l7.sina.cn
+  -
+    name: v2|爱尔兰01|特供原生|限速
+    type: ss
+    server: lqpfpnrqlmonylhi3n2rujzpig3ls3vmmcqrpuuxts.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jwmn2wm6l7.sina.cn
+  -
+    name: v2|俄罗斯01|特供原生|限速
+    type: ss
+    server: kcsv278o2soma8jshvyebm4fcfjsnvjg44gghiiu.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszjkmn2wm6l7.sina.cn
+  -
+    name: v2|俄罗斯02|特供原生|限速
+    type: ss
+    server: 97fmhnugpxtpcrbnronlivxbcsqbfvxasgnvhamo.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszrlmn2wm6l7.sina.cn
+  -
+    name: v2|俄罗斯03|特供原生|限速
+    type: ss
+    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszrvmn2wm6l7.sina.cn
+  -
+    name: v2|立陶宛01|特供原生|限速
+    type: ss
+    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jymn2wm6l7.sina.cn
+  -
+    name: v2|匈牙利01|特供原生|限速
+    type: ss
+    server: ifz4apw8gqjso0tgdtjctvkyhmfs5ppazrixdffc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2j3mn2wm6l7.sina.cn
+  -
+    name: v2|比利时01|特供原生|限速
+    type: ss
+    server: ratpjecijh9nh3al4z64ee9yn4vdqfsukejiqulr.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsmlrmn2wm6l7.sina.cn
+  -
+    name: v2|乌克兰01|特供原生|限速
+    type: ss
+    server: 97fmhnugpxtpcrbnronlivxbcsqbfvxasgnvhamo.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsmltmn2wm6l7.sina.cn
+  -
+    name: v2|罗马尼亚01|特供原生|限速
+    type: ss
+    server: 0r9dtk2cfiv9dicy1quj9cz14ackgdpbopxveqyu.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsmlvmn2wm6l7.sina.cn
+  -
+    name: v2|瑞士01|特供原生|限速
+    type: ss
+    server: kcsv278o2soma8jshvyebm4fcfjsnvjg44gghiiu.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jkmn2wm6l7.sina.cn
+  -
+    name: v2|奥地利01|特供原生|限速
+    type: ss
+    server: bvjtmi3cvopxlpboqfdajrgwr0moatrgdony6fdc.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgsmlxmn2wm6l7.sina.cn
+  -
+    name: v2|土耳其01|特供原生|限速
+    type: ss
+    server: 7uplflid9v1yzrkztonw4mfkk8b3stjl0q2icrex.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2lrmn2wm6l7.sina.cn
+  -
+    name: v2|土耳其02|特供原生|限速
+    type: ss
+    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgs2jumn2wm6l7.sina.cn
+  -
+    name: v2|印度01|MPTCP|★☆☆
+    type: ss
+    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszjimn2wm6l7.sina.cn
+  -
+    name: v2|印度02|MPTCP|★☆☆
+    type: ss
+    server: 7uplflid9v1yzrkztonw4mfkk8b3stjl0q2icrex.k1h8.top
+    port: 54721
+    cipher: aes-128-gcm
+    password: 14766e02e778
+    udp: false
+    plugin: obfs
+    plugin-opts:
+      mode: http
+      host: uhb4t4il5budgszramn2wm6l7.sina.cn
 proxy-groups:
--
-  name: 🔰国外流量
-  type: select
-  proxies:
-    - '🇼🇸 IPLC专线｜台湾Netflix专线-1 [2.0][NF][Disney+]'
-    - 'IPLC专线｜新加坡Netflix专线-1 [2.0][NF]'
-    - '🇯🇵 IPLC专线｜日本Netflix专线-1 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜沪台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜沪新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜沪日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜沪港 [2.0][原生][NF]'
-    - '🇺🇲 IPLC专线｜沪美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜浙台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜浙新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜浙日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜浙港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜浙美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜深台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜深新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜深日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜深港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜深美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜湘台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜湘新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜湘日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜湘港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜湘美 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜苏台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜苏新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜苏日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜苏港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜苏美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜闽台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜闽新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜闽日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜闽港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜闽美 [2.0][原生][Disney+][NF]'
-    - '🇼🇸 Trojan优化｜台湾-1 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-2 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-3 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-4 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-5 [2.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-6 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-7 [1.0][原生]'
-    - '🇯🇵 Trojan优化｜日本-01 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-02 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-03 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-04 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-05 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-06 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-07 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-08 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-09 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-10 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-11 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-12 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-13 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-01 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-02 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-03 [1.0]'
-    - '🇺🇲 Trojan优化｜美国-04 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-05 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-06 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-11 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-12 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-13 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-14 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-15 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-16 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-17 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-18 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-19 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-20 [2.5]'
-    - '🇰🇷 Trojan优化｜韩国-1 [1.5][原生]'
-    - '🇰🇷 Trojan优化｜韩国-2 [1.5][原生]'
-    - '🇭🇰 Trojan优化｜香港-01 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-02 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-03 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-04 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-05 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-06 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-07 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-08 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-09 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-10 [1.0]'
-    - '🇷🇺 Trojan特殊｜俄罗斯-A [0.5]'
-    - '🇮🇳 Trojan特殊｜印度-A [2.0]'
-    - '🇮🇳 Trojan特殊｜印度尼西亚-A [1.0][原生]'
-    - '🇹🇷 Trojan特殊｜土耳其-A [无限流量]'
-    - '🇧🇷 Trojan特殊｜巴西-A [无限流量]'
-    - '🇹🇭 Trojan特殊｜泰国-A [1.0]'
-    - '🇦🇺 Trojan特殊｜澳大利亚-A [1.5]'
-    - '🇬🇧 Trojan特殊｜英国-A [1.5]'
-    - '🇻🇳 Trojan特殊｜越南-A [1.0]'
-    - '🇦🇷 Trojan特殊｜阿根廷-A [2.0]'
-    - '🇰🇷 Trojan特殊｜韩国-1 [1.5][原生]'
-    - '🇷🇺 Trojan直连｜俄罗斯-A [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-B [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-C [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-E [0.5]'
-    - '🇩🇪 Trojan直连｜德国-A [无限流量]'
-    - '🇺🇲 Trojan直连｜美国-A [2.5]'
-    - '🇺🇲 Trojan直连｜美国-E [2.5]'
-    - '🇺🇲 Trojan直连｜美国-H [2.5]'
-    - '🇺🇲 Trojan直连｜美国-I [2.5]'
-    - '🇺🇲 Trojan直连｜美国-J [2.5]'
-    - '🇺🇲 Trojan直连｜美国-K [2.5]'
-    - 🚀直接连接
--
-  name: 📲Telegram
-  type: select
-  proxies:
-    - 🔰国外流量
-    - '🇼🇸 IPLC专线｜台湾Netflix专线-1 [2.0][NF][Disney+]'
-    - 'IPLC专线｜新加坡Netflix专线-1 [2.0][NF]'
-    - '🇯🇵 IPLC专线｜日本Netflix专线-1 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜沪台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜沪新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜沪日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜沪港 [2.0][原生][NF]'
-    - '🇺🇲 IPLC专线｜沪美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜浙台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜浙新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜浙日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜浙港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜浙美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜深台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜深新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜深日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜深港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜深美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜湘台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜湘新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜湘日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜湘港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜湘美 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜苏台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜苏新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜苏日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜苏港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜苏美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜闽台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜闽新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜闽日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜闽港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜闽美 [2.0][原生][Disney+][NF]'
-    - '🇼🇸 Trojan优化｜台湾-1 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-2 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-3 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-4 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-5 [2.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-6 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-7 [1.0][原生]'
-    - '🇯🇵 Trojan优化｜日本-01 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-02 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-03 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-04 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-05 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-06 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-07 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-08 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-09 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-10 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-11 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-12 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-13 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-01 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-02 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-03 [1.0]'
-    - '🇺🇲 Trojan优化｜美国-04 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-05 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-06 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-11 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-12 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-13 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-14 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-15 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-16 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-17 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-18 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-19 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-20 [2.5]'
-    - '🇰🇷 Trojan优化｜韩国-1 [1.5][原生]'
-    - '🇰🇷 Trojan优化｜韩国-2 [1.5][原生]'
-    - '🇭🇰 Trojan优化｜香港-01 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-02 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-03 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-04 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-05 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-06 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-07 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-08 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-09 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-10 [1.0]'
-    - '🇷🇺 Trojan特殊｜俄罗斯-A [0.5]'
-    - '🇮🇳 Trojan特殊｜印度-A [2.0]'
-    - '🇮🇳 Trojan特殊｜印度尼西亚-A [1.0][原生]'
-    - '🇹🇷 Trojan特殊｜土耳其-A [无限流量]'
-    - '🇧🇷 Trojan特殊｜巴西-A [无限流量]'
-    - '🇹🇭 Trojan特殊｜泰国-A [1.0]'
-    - '🇦🇺 Trojan特殊｜澳大利亚-A [1.5]'
-    - '🇬🇧 Trojan特殊｜英国-A [1.5]'
-    - '🇻🇳 Trojan特殊｜越南-A [1.0]'
-    - '🇦🇷 Trojan特殊｜阿根廷-A [2.0]'
-    - '🇰🇷 Trojan特殊｜韩国-1 [1.5][原生]'
-    - '🇷🇺 Trojan直连｜俄罗斯-A [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-B [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-C [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-E [0.5]'
-    - '🇩🇪 Trojan直连｜德国-A [无限流量]'
-    - '🇺🇲 Trojan直连｜美国-A [2.5]'
-    - '🇺🇲 Trojan直连｜美国-E [2.5]'
-    - '🇺🇲 Trojan直连｜美国-H [2.5]'
-    - '🇺🇲 Trojan直连｜美国-I [2.5]'
-    - '🇺🇲 Trojan直连｜美国-J [2.5]'
-    - '🇺🇲 Trojan直连｜美国-K [2.5]'
--
-  name: 📹谷歌油管
-  type: select
-  proxies:
-    - 🔰国外流量
-    - '🇼🇸 IPLC专线｜台湾Netflix专线-1 [2.0][NF][Disney+]'
-    - 'IPLC专线｜新加坡Netflix专线-1 [2.0][NF]'
-    - '🇯🇵 IPLC专线｜日本Netflix专线-1 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜沪台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜沪新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜沪日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜沪港 [2.0][原生][NF]'
-    - '🇺🇲 IPLC专线｜沪美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜浙台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜浙新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜浙日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜浙港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜浙美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜深台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜深新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜深日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜深港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜深美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜湘台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜湘新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜湘日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜湘港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜湘美 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜苏台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜苏新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜苏日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜苏港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜苏美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜闽台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜闽新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜闽日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜闽港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜闽美 [2.0][原生][Disney+][NF]'
-    - '🇼🇸 Trojan优化｜台湾-1 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-2 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-3 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-4 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-5 [2.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-6 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-7 [1.0][原生]'
-    - '🇯🇵 Trojan优化｜日本-01 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-02 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-03 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-04 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-05 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-06 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-07 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-08 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-09 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-10 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-11 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-12 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-13 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-01 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-02 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-03 [1.0]'
-    - '🇺🇲 Trojan优化｜美国-04 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-05 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-06 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-11 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-12 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-13 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-14 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-15 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-16 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-17 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-18 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-19 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-20 [2.5]'
-    - '🇰🇷 Trojan优化｜韩国-1 [1.5][原生]'
-    - '🇰🇷 Trojan优化｜韩国-2 [1.5][原生]'
-    - '🇭🇰 Trojan优化｜香港-01 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-02 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-03 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-04 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-05 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-06 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-07 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-08 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-09 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-10 [1.0]'
-    - '🇷🇺 Trojan特殊｜俄罗斯-A [0.5]'
-    - '🇮🇳 Trojan特殊｜印度-A [2.0]'
-    - '🇮🇳 Trojan特殊｜印度尼西亚-A [1.0][原生]'
-    - '🇹🇷 Trojan特殊｜土耳其-A [无限流量]'
-    - '🇧🇷 Trojan特殊｜巴西-A [无限流量]'
-    - '🇹🇭 Trojan特殊｜泰国-A [1.0]'
-    - '🇦🇺 Trojan特殊｜澳大利亚-A [1.5]'
-    - '🇬🇧 Trojan特殊｜英国-A [1.5]'
-    - '🇻🇳 Trojan特殊｜越南-A [1.0]'
-    - '🇦🇷 Trojan特殊｜阿根廷-A [2.0]'
-    - '🇰🇷 Trojan特殊｜韩国-1 [1.5][原生]'
-    - '🇷🇺 Trojan直连｜俄罗斯-A [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-B [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-C [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-E [0.5]'
-    - '🇩🇪 Trojan直连｜德国-A [无限流量]'
-    - '🇺🇲 Trojan直连｜美国-A [2.5]'
-    - '🇺🇲 Trojan直连｜美国-E [2.5]'
-    - '🇺🇲 Trojan直连｜美国-H [2.5]'
-    - '🇺🇲 Trojan直连｜美国-I [2.5]'
-    - '🇺🇲 Trojan直连｜美国-J [2.5]'
-    - '🇺🇲 Trojan直连｜美国-K [2.5]'
--
-  name: 🎥NETFLIX
-  type: select
-  proxies:
-    - 🔰国外流量
-    - '🇼🇸 IPLC专线｜台湾Netflix专线-1 [2.0][NF][Disney+]'
-    - 'IPLC专线｜新加坡Netflix专线-1 [2.0][NF]'
-    - '🇯🇵 IPLC专线｜日本Netflix专线-1 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜沪台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜沪新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜沪日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜沪港 [2.0][原生][NF]'
-    - '🇺🇲 IPLC专线｜沪美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜浙台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜浙新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜浙日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜浙港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜浙美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜深台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜深新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜深日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜深港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜深美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜湘台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜湘新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜湘日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜湘港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜湘美 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜苏台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜苏新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜苏日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜苏港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜苏美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜闽台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜闽新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜闽日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜闽港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜闽美 [2.0][原生][Disney+][NF]'
-    - '🇼🇸 Trojan优化｜台湾-1 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-2 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-3 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-4 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-5 [2.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-6 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-7 [1.0][原生]'
-    - '🇯🇵 Trojan优化｜日本-01 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-02 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-03 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-04 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-05 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-06 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-07 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-08 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-09 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-10 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-11 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-12 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-13 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-01 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-02 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-03 [1.0]'
-    - '🇺🇲 Trojan优化｜美国-04 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-05 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-06 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-11 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-12 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-13 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-14 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-15 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-16 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-17 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-18 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-19 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-20 [2.5]'
-    - '🇰🇷 Trojan优化｜韩国-1 [1.5][原生]'
-    - '🇰🇷 Trojan优化｜韩国-2 [1.5][原生]'
-    - '🇭🇰 Trojan优化｜香港-01 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-02 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-03 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-04 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-05 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-06 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-07 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-08 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-09 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-10 [1.0]'
-    - '🇷🇺 Trojan特殊｜俄罗斯-A [0.5]'
-    - '🇮🇳 Trojan特殊｜印度-A [2.0]'
-    - '🇮🇳 Trojan特殊｜印度尼西亚-A [1.0][原生]'
-    - '🇹🇷 Trojan特殊｜土耳其-A [无限流量]'
-    - '🇧🇷 Trojan特殊｜巴西-A [无限流量]'
-    - '🇹🇭 Trojan特殊｜泰国-A [1.0]'
-    - '🇦🇺 Trojan特殊｜澳大利亚-A [1.5]'
-    - '🇬🇧 Trojan特殊｜英国-A [1.5]'
-    - '🇻🇳 Trojan特殊｜越南-A [1.0]'
-    - '🇦🇷 Trojan特殊｜阿根廷-A [2.0]'
-    - '🇰🇷 Trojan特殊｜韩国-1 [1.5][原生]'
-    - '🇷🇺 Trojan直连｜俄罗斯-A [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-B [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-C [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-E [0.5]'
-    - '🇩🇪 Trojan直连｜德国-A [无限流量]'
-    - '🇺🇲 Trojan直连｜美国-A [2.5]'
-    - '🇺🇲 Trojan直连｜美国-E [2.5]'
-    - '🇺🇲 Trojan直连｜美国-H [2.5]'
-    - '🇺🇲 Trojan直连｜美国-I [2.5]'
-    - '🇺🇲 Trojan直连｜美国-J [2.5]'
-    - '🇺🇲 Trojan直连｜美国-K [2.5]'
--
-  name: 🌍国外媒体
-  type: select
-  proxies:
-    - 🔰国外流量
-    - '🇼🇸 IPLC专线｜台湾Netflix专线-1 [2.0][NF][Disney+]'
-    - 'IPLC专线｜新加坡Netflix专线-1 [2.0][NF]'
-    - '🇯🇵 IPLC专线｜日本Netflix专线-1 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜沪台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜沪新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜沪日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜沪港 [2.0][原生][NF]'
-    - '🇺🇲 IPLC专线｜沪美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜浙台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜浙新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜浙日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜浙港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜浙美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜深台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜深新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜深日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜深港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜深美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜湘台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜湘新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜湘日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜湘港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜湘美 [2.0][NF]'
-    - '🇼🇸 IPLC专线｜苏台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜苏新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜苏日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜苏港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜苏美 [2.0][NF][原生]'
-    - '🇼🇸 IPLC专线｜闽台 [2.0][原生][Disney+]'
-    - '🇸🇬 IPLC专线｜闽新 [2.0][UDP]'
-    - '🇯🇵 IPLC专线｜闽日 [2.0][原生]'
-    - '🇭🇰 IPLC专线｜闽港 [2.0][原生][Disney+]'
-    - '🇺🇲 IPLC专线｜闽美 [2.0][原生][Disney+][NF]'
-    - '🇼🇸 Trojan优化｜台湾-1 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-2 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-3 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-4 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-5 [2.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-6 [1.0][原生]'
-    - '🇼🇸 Trojan优化｜台湾-7 [1.0][原生]'
-    - '🇯🇵 Trojan优化｜日本-01 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-02 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-03 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-04 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-05 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-06 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-07 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-08 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-09 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-10 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-11 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-12 [1.0]'
-    - '🇯🇵 Trojan优化｜日本-13 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-01 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-02 [1.0][原生]'
-    - '🇺🇲 Trojan优化｜美国-03 [1.0]'
-    - '🇺🇲 Trojan优化｜美国-04 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-05 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-06 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-11 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-12 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-13 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-14 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-15 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-16 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-17 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-18 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-19 [2.5]'
-    - '🇺🇲 Trojan优化｜美国-20 [2.5]'
-    - '🇰🇷 Trojan优化｜韩国-1 [1.5][原生]'
-    - '🇰🇷 Trojan优化｜韩国-2 [1.5][原生]'
-    - '🇭🇰 Trojan优化｜香港-01 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-02 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-03 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-04 [1.0][原生]'
-    - '🇭🇰 Trojan优化｜香港-05 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-06 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-07 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-08 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-09 [1.0]'
-    - '🇭🇰 Trojan优化｜香港-10 [1.0]'
-    - '🇷🇺 Trojan特殊｜俄罗斯-A [0.5]'
-    - '🇮🇳 Trojan特殊｜印度-A [2.0]'
-    - '🇮🇳 Trojan特殊｜印度尼西亚-A [1.0][原生]'
-    - '🇹🇷 Trojan特殊｜土耳其-A [无限流量]'
-    - '🇧🇷 Trojan特殊｜巴西-A [无限流量]'
-    - '🇹🇭 Trojan特殊｜泰国-A [1.0]'
-    - '🇦🇺 Trojan特殊｜澳大利亚-A [1.5]'
-    - '🇬🇧 Trojan特殊｜英国-A [1.5]'
-    - '🇻🇳 Trojan特殊｜越南-A [1.0]'
-    - '🇦🇷 Trojan特殊｜阿根廷-A [2.0]'
-    - '🇰🇷 Trojan特殊｜韩国-1 [1.5][原生]'
-    - '🇷🇺 Trojan直连｜俄罗斯-A [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-B [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-C [无限流量]'
-    - '🇷🇺 Trojan直连｜俄罗斯-E [0.5]'
-    - '🇩🇪 Trojan直连｜德国-A [无限流量]'
-    - '🇺🇲 Trojan直连｜美国-A [2.5]'
-    - '🇺🇲 Trojan直连｜美国-E [2.5]'
-    - '🇺🇲 Trojan直连｜美国-H [2.5]'
-    - '🇺🇲 Trojan直连｜美国-I [2.5]'
-    - '🇺🇲 Trojan直连｜美国-J [2.5]'
-    - '🇺🇲 Trojan直连｜美国-K [2.5]'
--
-  name: 🇨🇳国内媒体
-  type: select
-  proxies:
-    - 🚀直接连接
-    - 🔰国外流量
--
-  name: 🍎苹果服务
-  type: select
-  proxies:
-    - 🚀直接连接
-    - 🔰国外流量
--
-  name: 🅱️哔哩哔哩
-  type: select
-  proxies:
-    - 🚀直接连接
-    - 🔰国外流量
--
-  name: ℹ️爱奇艺
-  type: select
-  proxies:
-    - 🚀直接连接
-    - 🔰国外流量
--
-  name: 🐟漏网之鱼
-  type: select
-  proxies:
-    - 🔰国外流量
-    - 🚀直接连接
--
-  name: 🚀直接连接
-  type: select
-  proxies:
-    - DIRECT
+  -
+    name: 🐸速蛙云
+    type: select
+    proxies:
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|香港06|MPTCP|★★★
+      - v2|香港07|MPTCP|★★☆
+      - v2|香港08|MPTCP|★★☆
+      - v2|香港09|MPTCP|★★★
+      - v2|香港10|MPTCP|★★★
+      - v2|香港11|MPTCP|★★☆
+      - v2|香港12|MPTCP|★★★
+      - v2|香港13|MPTCP|★★☆
+      - v2|新加坡01|MPTCP|★★★
+      - v2|新加坡02|MPTCP|★★★
+      - v2|新加坡03|MPTCP|★★★
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|新加坡06|MPTCP|★★★
+      - v2|新加坡07|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|日本06|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|美国06|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港06|原生|★★★
+      - v2|香港01|myTVSUPER|限速
+      - v2|香港01|YouTubePre|限速
+      - v2|香港02|防送中|限速
+      - v2|台湾01|YouTubePre|限速
+      - v2|美国01|YouTubePre|限速
+      - v2|美国02|谷歌商店|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|台湾06|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|新加坡06|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本01|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|美国06|原生|★★☆
+      - v2|美国01|hulu|限速
+      - v2|英国01|原生|★★☆
+      - v2|英国02|原生|★★☆
+      - v2|英国03|原生|★★☆
+      - v2|英国04|原生|★★☆
+      - v2|英国05|原生|★★☆
+      - v2|英国06|原生|★★☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|阿根廷01|特供原生|限速
+      - v2|巴西01|特供原生|限速
+      - v2|智利01|特供原生|限速
+      - v2|阿联酋01|特供原生|限速
+      - v2|马来西亚01|特供原生|限速
+      - v2|泰国01|特供原生|限速
+      - v2|菲律宾01|特供原生|限速
+      - v2|越南01|特供原生|限速
+      - v2|印尼01|特供原生|限速
+      - v2|以色列01|特供原生|限速
+      - v2|南非01|特供原生|限速
+      - v2|尼日利亚01|特供原生|限速
+      - v2|加拿大01|特供原生|限速
+      - v2|墨西哥01|特供原生|限速
+      - v2|巴基斯坦01|特供原生|限速
+      - v2|法国01|特供原生|限速
+      - v2|意大利01|特供原生|限速
+      - v2|冰岛01|特供原生|限速
+      - v2|荷兰01|特供原生|限速
+      - v2|西班牙01|特供原生|限速
+      - v2|葡萄牙01|特供原生|限速
+      - v2|瑞典01|特供原生|限速
+      - v2|德国01|特供原生|限速
+      - v2|爱尔兰01|特供原生|限速
+      - v2|俄罗斯01|特供原生|限速
+      - v2|俄罗斯02|特供原生|限速
+      - v2|俄罗斯03|特供原生|限速
+      - v2|立陶宛01|特供原生|限速
+      - v2|匈牙利01|特供原生|限速
+      - v2|比利时01|特供原生|限速
+      - v2|乌克兰01|特供原生|限速
+      - v2|罗马尼亚01|特供原生|限速
+      - v2|瑞士01|特供原生|限速
+      - v2|奥地利01|特供原生|限速
+      - v2|土耳其01|特供原生|限速
+      - v2|土耳其02|特供原生|限速
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+  -
+    name: 🎬Netflix
+    type: select
+    proxies:
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|香港06|MPTCP|★★★
+      - v2|香港07|MPTCP|★★☆
+      - v2|香港08|MPTCP|★★☆
+      - v2|香港09|MPTCP|★★★
+      - v2|香港10|MPTCP|★★★
+      - v2|香港11|MPTCP|★★☆
+      - v2|香港12|MPTCP|★★★
+      - v2|香港13|MPTCP|★★☆
+      - v2|新加坡01|MPTCP|★★★
+      - v2|新加坡02|MPTCP|★★★
+      - v2|新加坡03|MPTCP|★★★
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|新加坡06|MPTCP|★★★
+      - v2|新加坡07|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|日本06|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|美国06|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港06|原生|★★★
+      - v2|香港01|myTVSUPER|限速
+      - v2|香港01|YouTubePre|限速
+      - v2|香港02|防送中|限速
+      - v2|台湾01|YouTubePre|限速
+      - v2|美国01|YouTubePre|限速
+      - v2|美国02|谷歌商店|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|台湾06|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|新加坡06|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本01|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|美国06|原生|★★☆
+      - v2|美国01|hulu|限速
+      - v2|英国01|原生|★★☆
+      - v2|英国02|原生|★★☆
+      - v2|英国03|原生|★★☆
+      - v2|英国04|原生|★★☆
+      - v2|英国05|原生|★★☆
+      - v2|英国06|原生|★★☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|阿根廷01|特供原生|限速
+      - v2|巴西01|特供原生|限速
+      - v2|智利01|特供原生|限速
+      - v2|阿联酋01|特供原生|限速
+      - v2|马来西亚01|特供原生|限速
+      - v2|泰国01|特供原生|限速
+      - v2|菲律宾01|特供原生|限速
+      - v2|越南01|特供原生|限速
+      - v2|印尼01|特供原生|限速
+      - v2|以色列01|特供原生|限速
+      - v2|南非01|特供原生|限速
+      - v2|尼日利亚01|特供原生|限速
+      - v2|加拿大01|特供原生|限速
+      - v2|墨西哥01|特供原生|限速
+      - v2|巴基斯坦01|特供原生|限速
+      - v2|法国01|特供原生|限速
+      - v2|意大利01|特供原生|限速
+      - v2|冰岛01|特供原生|限速
+      - v2|荷兰01|特供原生|限速
+      - v2|西班牙01|特供原生|限速
+      - v2|葡萄牙01|特供原生|限速
+      - v2|瑞典01|特供原生|限速
+      - v2|德国01|特供原生|限速
+      - v2|爱尔兰01|特供原生|限速
+      - v2|俄罗斯01|特供原生|限速
+      - v2|俄罗斯02|特供原生|限速
+      - v2|俄罗斯03|特供原生|限速
+      - v2|立陶宛01|特供原生|限速
+      - v2|匈牙利01|特供原生|限速
+      - v2|比利时01|特供原生|限速
+      - v2|乌克兰01|特供原生|限速
+      - v2|罗马尼亚01|特供原生|限速
+      - v2|瑞士01|特供原生|限速
+      - v2|奥地利01|特供原生|限速
+      - v2|土耳其01|特供原生|限速
+      - v2|土耳其02|特供原生|限速
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
+  -
+    name: 🎞️Disney+
+    type: select
+    proxies:
+      - v2|香港01|MPTCP|★★★
+      - v2|香港02|MPTCP|★★★
+      - v2|香港03|MPTCP|★★★
+      - v2|香港04|MPTCP|★★★
+      - v2|香港05|MPTCP|★★★
+      - v2|香港06|MPTCP|★★★
+      - v2|香港07|MPTCP|★★☆
+      - v2|香港08|MPTCP|★★☆
+      - v2|香港09|MPTCP|★★★
+      - v2|香港10|MPTCP|★★★
+      - v2|香港11|MPTCP|★★☆
+      - v2|香港12|MPTCP|★★★
+      - v2|香港13|MPTCP|★★☆
+      - v2|新加坡01|MPTCP|★★★
+      - v2|新加坡02|MPTCP|★★★
+      - v2|新加坡03|MPTCP|★★★
+      - v2|新加坡04|MPTCP|★★★
+      - v2|新加坡05|MPTCP|★★★
+      - v2|新加坡06|MPTCP|★★★
+      - v2|新加坡07|MPTCP|★★★
+      - v2|日本01|MPTCP|★★☆
+      - v2|日本02|MPTCP|★★☆
+      - v2|日本03|MPTCP|★★☆
+      - v2|日本04|MPTCP|★★☆
+      - v2|日本05|MPTCP|★★☆
+      - v2|日本06|MPTCP|★★☆
+      - v2|美国01|MPTCP|★★★
+      - v2|美国02|MPTCP|★★★
+      - v2|美国03|MPTCP|★★★
+      - v2|美国04|MPTCP|★★★
+      - v2|美国05|MPTCP|★★★
+      - v2|美国06|MPTCP|★★★
+      - v2|香港01|原生|★★★
+      - v2|香港02|原生|★★★
+      - v2|香港03|原生|★★★
+      - v2|香港04|原生|★★★
+      - v2|香港05|原生|★★★
+      - v2|香港06|原生|★★★
+      - v2|香港01|myTVSUPER|限速
+      - v2|香港01|YouTubePre|限速
+      - v2|香港02|防送中|限速
+      - v2|台湾01|YouTubePre|限速
+      - v2|美国01|YouTubePre|限速
+      - v2|美国02|谷歌商店|限速
+      - v2|台湾01|原生|★★☆
+      - v2|台湾02|原生|★★☆
+      - v2|台湾03|原生|★★☆
+      - v2|台湾04|原生|★★☆
+      - v2|台湾05|原生|★★☆
+      - v2|台湾06|原生|★★☆
+      - v2|新加坡01|原生|★★☆
+      - v2|新加坡02|原生|★★☆
+      - v2|新加坡03|原生|★★☆
+      - v2|新加坡04|原生|★★☆
+      - v2|新加坡05|原生|★★☆
+      - v2|新加坡06|原生|★★☆
+      - v2|日本01|原生|★★☆
+      - v2|日本02|原生|★★☆
+      - v2|日本03|原生|★★☆
+      - v2|日本04|原生|★★☆
+      - v2|日本05|原生|★★☆
+      - v2|日本01|特供原生|限速
+      - v2|美国01|原生|★★☆
+      - v2|美国02|原生|★★☆
+      - v2|美国03|原生|★★☆
+      - v2|美国04|原生|★★☆
+      - v2|美国05|原生|★★☆
+      - v2|美国06|原生|★★☆
+      - v2|美国01|hulu|限速
+      - v2|英国01|原生|★★☆
+      - v2|英国02|原生|★★☆
+      - v2|英国03|原生|★★☆
+      - v2|英国04|原生|★★☆
+      - v2|英国05|原生|★★☆
+      - v2|英国06|原生|★★☆
+      - v2|澳洲01|MPTCP|★☆☆
+      - v2|澳洲02|MPTCP|★☆☆
+      - v2|澳洲03|MPTCP|★☆☆
+      - v2|澳洲04|MPTCP|★☆☆
+      - v2|澳洲05|MPTCP|★☆☆
+      - v2|韩国01|MPTCP|★☆☆
+      - v2|韩国02|MPTCP|★☆☆
+      - v2|韩国03|MPTCP|★☆☆
+      - v2|韩国04|MPTCP|★☆☆
+      - v2|韩国05|MPTCP|★☆☆
+      - v2|阿根廷01|特供原生|限速
+      - v2|巴西01|特供原生|限速
+      - v2|智利01|特供原生|限速
+      - v2|阿联酋01|特供原生|限速
+      - v2|马来西亚01|特供原生|限速
+      - v2|泰国01|特供原生|限速
+      - v2|菲律宾01|特供原生|限速
+      - v2|越南01|特供原生|限速
+      - v2|印尼01|特供原生|限速
+      - v2|以色列01|特供原生|限速
+      - v2|南非01|特供原生|限速
+      - v2|尼日利亚01|特供原生|限速
+      - v2|加拿大01|特供原生|限速
+      - v2|墨西哥01|特供原生|限速
+      - v2|巴基斯坦01|特供原生|限速
+      - v2|法国01|特供原生|限速
+      - v2|意大利01|特供原生|限速
+      - v2|冰岛01|特供原生|限速
+      - v2|荷兰01|特供原生|限速
+      - v2|西班牙01|特供原生|限速
+      - v2|葡萄牙01|特供原生|限速
+      - v2|瑞典01|特供原生|限速
+      - v2|德国01|特供原生|限速
+      - v2|爱尔兰01|特供原生|限速
+      - v2|俄罗斯01|特供原生|限速
+      - v2|俄罗斯02|特供原生|限速
+      - v2|俄罗斯03|特供原生|限速
+      - v2|立陶宛01|特供原生|限速
+      - v2|匈牙利01|特供原生|限速
+      - v2|比利时01|特供原生|限速
+      - v2|乌克兰01|特供原生|限速
+      - v2|罗马尼亚01|特供原生|限速
+      - v2|瑞士01|特供原生|限速
+      - v2|奥地利01|特供原生|限速
+      - v2|土耳其01|特供原生|限速
+      - v2|土耳其02|特供原生|限速
+      - v2|印度01|MPTCP|★☆☆
+      - v2|印度02|MPTCP|★☆☆
 
 
-# 规则
 rules:
-# (国内媒体)
+  # 自定义规则
+  ## 您可以在此处插入您补充的自定义规则（请注意保持缩进）
 
-# > 愛奇藝台灣站
-- DOMAIN-SUFFIX,iqiyi.com,ℹ️爱奇艺
-- DOMAIN-SUFFIX,71.am,ℹ️爱奇艺
+  # 🎬Netflix
+  - DOMAIN-SUFFIX,netflix.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflix.net,🎬Netflix
+  - DOMAIN-SUFFIX,nflxext.com,🎬Netflix
+  - DOMAIN-SUFFIX,nflximg.com,🎬Netflix
+  - DOMAIN-SUFFIX,nflximg.net,🎬Netflix
+  - DOMAIN-SUFFIX,nflxso.net,🎬Netflix
+  - DOMAIN-SUFFIX,nflxvideo.net,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest0.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest1.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest2.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest3.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest4.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest5.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest6.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest7.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest8.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest9.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflixdnstest10.com,🎬Netflix
+  - DOMAIN-SUFFIX,netflix.com.edgesuite.net,🎬Netflix
+  - DOMAIN-SUFFIX,us-west-2.amazonaws.com,🎬Netflix
+  - DOMAIN-KEYWORD,dualstack.apiproxy-,🎬Netflix
+  - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🎬Netflix
+  - DOMAIN-KEYWORD,ichnaea-web-,🎬Netflix
+  - DOMAIN-KEYWORD,netflix,🎬Netflix
+  - IP-CIDR,8.41.4.0/24,🎬Netflix,no-resolve
+  - IP-CIDR,23.78.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,23.246.0.0/18,🎬Netflix,no-resolve
+  - IP-CIDR,34.192.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,34.208.0.0/12,🎬Netflix,no-resolve
+  - IP-CIDR,34.248.0.0/13,🎬Netflix,no-resolve
+  - IP-CIDR,35.160.0.0/13,🎬Netflix,no-resolve
+  - IP-CIDR,37.77.184.0/21,🎬Netflix,no-resolve
+  - IP-CIDR,38.72.126.0/24,🎬Netflix,no-resolve
+  - IP-CIDR,44.224.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,44.230.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,45.57.0.0/17,🎬Netflix,no-resolve
+  - IP-CIDR,52.0.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,52.5.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,52.7.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,52.10.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,52.12.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,52.22.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,52.24.0.0/14,🎬Netflix,no-resolve
+  - IP-CIDR,52.32.0.0/14,🎬Netflix,no-resolve
+  - IP-CIDR,52.40.0.0/14,🎬Netflix,no-resolve
+  - IP-CIDR,52.48.0.0/14,🎬Netflix,no-resolve
+  - IP-CIDR,52.54.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,52.71.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,52.72.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,52.88.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,54.0.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,54.68.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,54.74.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,54.76.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,54.85.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,54.86.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,54.148.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,54.175.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,54.186.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,54.188.0.0/15,🎬Netflix,no-resolve
+  - IP-CIDR,54.213.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,54.214.128.0/17,🎬Netflix,no-resolve
+  - IP-CIDR,64.120.128.0/17,🎬Netflix,no-resolve
+  - IP-CIDR,66.197.128.0/17,🎬Netflix,no-resolve
+  - IP-CIDR,69.53.224.0/19,🎬Netflix,no-resolve
+  - IP-CIDR,103.87.204.0/22,🎬Netflix,no-resolve
+  - IP-CIDR,108.175.32.0/20,🎬Netflix,no-resolve
+  - IP-CIDR,185.2.220.0/22,🎬Netflix,no-resolve
+  - IP-CIDR,185.9.188.0/22,🎬Netflix,no-resolve
+  - IP-CIDR,192.173.64.0/18,🎬Netflix,no-resolve
+  - IP-CIDR,198.38.96.0/19,🎬Netflix,no-resolve
+  - IP-CIDR,198.45.48.0/20,🎬Netflix,no-resolve
+  - IP-CIDR,203.75.84.0/24,🎬Netflix,no-resolve
+  - IP-CIDR,203.83.220.0/22,🎬Netflix,no-resolve
+  - IP-CIDR,203.116.0.0/16,🎬Netflix,no-resolve
+  - IP-CIDR,203.198.0.0/20,🎬Netflix,no-resolve
+  - IP-CIDR,203.198.80.0/21,🎬Netflix,no-resolve
+  - IP-CIDR,207.45.72.0/22,🎬Netflix,no-resolve
+  - IP-CIDR,208.75.76.0/22,🎬Netflix,no-resolve
+  - IP-CIDR,218.102.32.0/19,🎬Netflix,no-resolve
+  - IP-CIDR,219.76.0.0/17,🎬Netflix,no-resolve
 
-# > bilibili
-- DOMAIN-SUFFIX,bilibili.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,bangumi.bilibili.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,api.bilibili.com,🇨🇳国内媒体
-- DOMAIN,upos-hz-mirrorakam.akamaized.net,🇨🇳国内媒体
-- DOMAIN-SUFFIX,bilibili.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,acgvideo.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,bilibili.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,bilivideo.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,biliapi.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,biliapi.net,🇨🇳国内媒体
-- DOMAIN-SUFFIX,bilibili.tv,🇨🇳国内媒体
-- DOMAIN-SUFFIX,hdslb.com,🇨🇳国内媒体
-- DOMAIN-SUFFIX,apm-misaka.biliapi.net,🇨🇳国内媒体
-- IP-CIDR,120.92.112.81/32,🇨🇳国内媒体
-- IP-CIDR,119.29.29.29/32,🇨🇳国内媒体
-- IP-CIDR,203.107.1.34/32,🇨🇳国内媒体
-- IP-CIDR,203.107.1.65/32,🇨🇳国内媒体
-- IP-CIDR,203.107.1.66/32,🇨🇳国内媒体
-- IP-CIDR,150.116.92.250/32,🇨🇳国内媒体
-- IP-CIDR,203.107.1.33/32,🇨🇳国内媒体
-- IP-CIDR,116.62.182.15/32,🇨🇳国内媒体
-- IP-CIDR,164.52.110.14/32,🇨🇳国内媒体
-- IP-CIDR,117.156.18.96/32,🇨🇳国内媒体
-- IP-CIDR,148.153.38.118/32,🇨🇳国内媒体
-- IP-CIDR,164.52.76.18/32,🇨🇳国内媒体
-- IP-CIDR,128.1.62.200/32,🇨🇳国内媒体
-- IP-CIDR,128.1.62.199/32,🇨🇳国内媒体
-- IP-CIDR,128.1.62.201/32,🇨🇳国内媒体
-- IP-CIDR,36.255.222.157/32,🇨🇳国内媒体
-- IP-CIDR,164.52.76.18/32,🇨🇳国内媒体
-- IP-CIDR,14.136.134.83/32,🇨🇳国内媒体
-# > bilibili
-- DOMAIN-SUFFIX,hdslb.com,🇨🇳国内媒体
+  # 🎞️Disney+
+  - DOMAIN-SUFFIX,disneyplus.com,🎞️Disney+
+  - DOMAIN-SUFFIX,disney-plus.net,🎞️Disney+
+  - DOMAIN-SUFFIX,disneystreaming.com,🎞️Disney+
+  - DOMAIN-SUFFIX,dssott.com,🎞️Disney+
+  - DOMAIN,playback-certs.bamgrid.com,🎞️Disney+
+  - DOMAIN,disney.api.edge.bamgrid.com,🎞️Disney+
+  - DOMAIN,disney.connections.edge.bamgrid.com,🎞️Disney+
+  - DOMAIN,disney.content.edge.bamgrid.com,🎞️Disney+
+  - DOMAIN,disney.playback.edge.bamgrid.com,🎞️Disney+
+  - DOMAIN,cdn.registerdisney.go.com,🎞️Disney+
+  - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🎞️Disney+
 
-# > bilibili
-- DOMAIN-SUFFIX,biliapi.com,🅱️哔哩哔哩
-- DOMAIN-SUFFIX,biliapi.net,🅱️哔哩哔哩
-- DOMAIN-SUFFIX,bilibili.com,🅱️哔哩哔哩
-- DOMAIN-SUFFIX,bilibili.tv,🅱️哔哩哔哩
-- DOMAIN-SUFFIX,bilivideo.com,🅱️哔哩哔哩
-# USER-AGENT,All4*,🌍国外媒体
-- DOMAIN-SUFFIX,c4assets.com,🌍国外媒体
-- DOMAIN-SUFFIX,channel4.com,🌍国外媒体
-# > BBC iPlayer
-# USER-AGENT,BBCiPlayer*,🌍国外媒体
-- DOMAIN-SUFFIX,bbc.co.uk,🌍国外媒体
-- DOMAIN-SUFFIX,bbci.co.uk,🌍国外媒体
-- DOMAIN-KEYWORD,bbcfmt,🌍国外媒体
-- DOMAIN-KEYWORD,uk-live,🌍国外媒体
-# > DAZN
-- DOMAIN-SUFFIX,dazn.com,🌍国外媒体
-# USER-AGENT,DAZN*,🌍国外媒体
-- DOMAIN-SUFFIX,dazn-api.com,🌍国外媒体
-- DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍国外媒体
-- DOMAIN-KEYWORD,voddazn,🌍国外媒体
-# > encoreTVB
-# USER-AGENT,encoreTVB*,🌍国外媒体
-- DOMAIN-SUFFIX,encoretvb.com,🌍国外媒体
-- DOMAIN,edge.api.brightcove.com,🌍国外媒体
-- DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍国外媒体
-# >  🌍国外媒体 & Fox Now
-# USER-AGENT,FOX%20NOW*, 🌍国外媒体
-# USER-AGENT,FOXPlus*, 🌍国外媒体
-- DOMAIN-SUFFIX,dashasiafox.akamaized.net, 🌍国外媒体
-- DOMAIN-SUFFIX,fox.com, 🌍国外媒体
-- DOMAIN-SUFFIX,foxdcg.com, 🌍国外媒体
-- DOMAIN-SUFFIX,foxplus.com, 🌍国外媒体
-- DOMAIN-SUFFIX,staticasiafox.akamaized.net, 🌍国外媒体
-- DOMAIN-SUFFIX,theplatform.com, 🌍国外媒体
-- DOMAIN-SUFFIX,uplynk.com, 🌍国外媒体
-# > 华文电视
-# USER-AGENT,HWTVMobile*,🌍国外媒体
-- DOMAIN-SUFFIX,5itv.tv,🌍国外媒体
-- DOMAIN-SUFFIX,ocnttv.com,🌍国外媒体
-# > ITV
-# USER-AGENT,ITV_Player*,🌍国外媒体
-- DOMAIN-SUFFIX,itv.com,🌍国外媒体
-- DOMAIN-SUFFIX,itvstatic.com,🌍国外媒体
-- DOMAIN,itvpnpmobile-a.akamaihd.net,🌍国外媒体
-# > KKTV
-# USER-AGENT,KKTV*,🌍国外媒体
-# USER-AGENT,com.kktv.ios.kktv*,🌍国外媒体
-- DOMAIN-SUFFIX,kktv.com.tw,🌍国外媒体
-- DOMAIN-SUFFIX,kktv.me,🌍国外媒体
-- DOMAIN,kktv-theater.kk.stream,🌍国外媒体
-# > Line TV
-# USER-AGENT,LINE%20TV*,🌍国外媒体
-- DOMAIN-SUFFIX,linetv.tw,🌍国外媒体
-- DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍国外媒体
-# > LiTV
-- DOMAIN-SUFFIX,litv.tv,🌍国外媒体
-- DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍国外媒体
-# > My5
-# USER-AGENT,My5*,GlobalMedia
-- DOMAIN-SUFFIX,channel5.com,🌍国外媒体
-- DOMAIN-SUFFIX,my5.tv,🌍国外媒体
-- DOMAIN,d349g9zuie06uo.cloudfront.net,🌍国外媒体
-# > myTV_SUPER
-# USER-AGENT,mytv*,🌍国外媒体
-- DOMAIN-SUFFIX,mytvsuper.com,🌍国外媒体
-- DOMAIN-SUFFIX,tvb.com,🌍国外媒体
-# > Netflix
-# USER-AGENT,Argo*,🎥NETFLIX
-- DOMAIN-SUFFIX,netflix.com,🎥NETFLIX
-- DOMAIN-SUFFIX,netflix.net,🎥NETFLIX
-- DOMAIN-SUFFIX,nflxext.com,🎥NETFLIX
-- DOMAIN-SUFFIX,nflximg.com,🎥NETFLIX
-- DOMAIN-SUFFIX,nflximg.net,🎥NETFLIX
-- DOMAIN-SUFFIX,nflxso.net,🎥NETFLIX
-- DOMAIN-SUFFIX,nflxvideo.net,🎥NETFLIX
-- IP-CIDR,23.246.0.0/18,🎥NETFLIX
-- IP-CIDR,37.77.184.0/21,🎥NETFLIX
-- IP-CIDR,45.57.0.0/17,🎥NETFLIX
-- IP-CIDR,64.120.128.0/17,🎥NETFLIX
-- IP-CIDR,66.197.128.0/17,🎥NETFLIX
-- IP-CIDR,108.175.32.0/20,🎥NETFLIX
-- IP-CIDR,192.173.64.0/18,🎥NETFLIX
-- IP-CIDR,198.38.96.0/19,🎥NETFLIX
-- IP-CIDR,198.45.48.0/20,🎥NETFLIX
-# > niconico
-- DOMAIN-SUFFIX,dmc.nico,🌍国外媒体
-- DOMAIN-SUFFIX,nicovideo.jp,🌍国外媒体
-- DOMAIN-SUFFIX,nimg.jp,🌍国外媒体
-- DOMAIN-SUFFIX,socdm.com,🌍国外媒体
-# > PBS
-# USER-AGENT,PBS*,🌍国外媒体
-- DOMAIN-SUFFIX,pbs.org,🌍国外媒体
-# > Pornhub
-- DOMAIN-SUFFIX,phncdn.com,🌍国外媒体
-- DOMAIN-SUFFIX,pornhub.com,🌍国外媒体
-- DOMAIN-SUFFIX,pornhubpremium.com,🌍国外媒体
-# > Twitch
-- DOMAIN-SUFFIX,twitch.tv,🌍国外媒体
-- DOMAIN-SUFFIX,twitchcdn.net,🌍国外媒体
-- DOMAIN-SUFFIX,ttvnw.net,🌍国外媒体
-# > Viu(TV)
-# USER-AGENT,Viu*,🌍国外媒体
-# USER-AGENT,ViuTV*,🌍国外媒体
-- DOMAIN-SUFFIX,viu.com,🌍国外媒体
-- DOMAIN-SUFFIX,viu.tv,🌍国外媒体
-- DOMAIN,api.viu.now.com,🌍国外媒体
-- DOMAIN,d1k2us671qcoau.cloudfront.net,🌍国外媒体
-- DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍国外媒体
-- DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍国外媒体
-# > Youtube
-# USER-AGENT,com.google.ios.youtube*,📹谷歌油管
-# USER-AGENT,YouTube*,📹谷歌油管
-- DOMAIN-SUFFIX,googlevideo.com,📹谷歌油管
-- DOMAIN-SUFFIX,youtube.com,📹谷歌油管
-- DOMAIN,youtubei.googleapis.com,📹谷歌油管
+  # Google play
+  - DOMAIN,services.googleapis.cn,DIRECT
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT
 
-# (Music)
-# > Deezer
-# USER-AGENT,Deezer*,🌍国外媒体
-- DOMAIN-SUFFIX,deezer.com,🌍国外媒体
-- DOMAIN-SUFFIX,dzcdn.net,🌍国外媒体
-# > KKBOX
-- DOMAIN-SUFFIX,kkbox.com,🌍国外媒体
-- DOMAIN-SUFFIX,kkbox.com.tw,🌍国外媒体
-- DOMAIN-SUFFIX,kfs.io,🌍国外媒体
-# > JOOX
-# USER-AGENT,WeMusic*,🌍国外媒体
-# USER-AGENT,JOOX*,🌍国外媒体
-- DOMAIN-SUFFIX,joox.com,🌍国外媒体
-# > Pandora
-# USER-AGENT,Pandora*,🌍国外媒体
-- DOMAIN-SUFFIX,pandora.com,🌍国外媒体
-# > SoundCloud
-# USER-AGENT,SoundCloud*,🌍国外媒体
-- DOMAIN-SUFFIX,p-cdn.us,🌍国外媒体
-- DOMAIN-SUFFIX,sndcdn.com,🌍国外媒体
-- DOMAIN-SUFFIX,soundcloud.com,🌍国外媒体
-# > Spotify
-# USER-AGENT,Spotify*,🌍国外媒体
-- DOMAIN-SUFFIX,pscdn.co,🌍国外媒体
-- DOMAIN-SUFFIX,scdn.co,🌍国外媒体
-- DOMAIN-SUFFIX,spotify.com,🌍国外媒体
-- DOMAIN-SUFFIX,spoti.fi,🌍国外媒体
-- IP-CIDR,35.186.224.47/32,🌍国外媒体
-# > TIDAL
-# USER-AGENT,TIDAL*,🌍国外媒体
-- DOMAIN-SUFFIX,tidal.com,🌍国外媒体
-# > YoutubeMusic
-# USER-AGENT,com.google.ios.youtubemusic*,📹谷歌油管
-# USER-AGENT,YouTubeMusic*,📹谷歌油管
+  # Apple
+  - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
+  - DOMAIN,safebrowsing.googleapis.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
+  - DOMAIN,developer.apple.com,🐸速蛙云
+  - DOMAIN-SUFFIX,digicert.com,🐸速蛙云
+  - DOMAIN,ocsp.apple.com,🐸速蛙云
+  - DOMAIN,ocsp.comodoca.com,🐸速蛙云
+  - DOMAIN,ocsp.usertrust.com,🐸速蛙云
+  - DOMAIN,ocsp.sectigo.com,🐸速蛙云
+  - DOMAIN,ocsp.verisign.net,🐸速蛙云
+  - DOMAIN-SUFFIX,apple-dns.net,🐸速蛙云
+  - DOMAIN,testflight.apple.com,🐸速蛙云
+  - DOMAIN,sandbox.itunes.apple.com,🐸速蛙云
+  - DOMAIN,itunes.apple.com,🐸速蛙云
+  - DOMAIN-SUFFIX,apps.apple.com,🐸速蛙云
+  - DOMAIN-SUFFIX,blobstore.apple.com,🐸速蛙云
+  - DOMAIN,cvws.icloud-content.com,🐸速蛙云
+  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
+  - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+  - DOMAIN-SUFFIX,icloud.com,DIRECT
+  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
+  - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN-SUFFIX,aaplimg.com,DIRECT
+  - DOMAIN-SUFFIX,cdn20.com,DIRECT
+  - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+  - DOMAIN-SUFFIX,akadns.net,DIRECT
+  - DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+  - DOMAIN-SUFFIX,edgekey.net,DIRECT
+  - DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+  - DOMAIN-SUFFIX,mwcname.com,DIRECT
+  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+  - DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
 
+  # 抗 DNS 污染
+  - DOMAIN-KEYWORD,amazon,🐸速蛙云
+  - DOMAIN-KEYWORD,google,🐸速蛙云
+  - DOMAIN-KEYWORD,gmail,🐸速蛙云
+  - DOMAIN-KEYWORD,youtube,🐸速蛙云
+  - DOMAIN-KEYWORD,facebook,🐸速蛙云
+  - DOMAIN-SUFFIX,fb.me,🐸速蛙云
+  - DOMAIN-SUFFIX,fbcdn.net,🐸速蛙云
+  - DOMAIN-KEYWORD,twitter,🐸速蛙云
+  - DOMAIN-KEYWORD,instagram,🐸速蛙云
+  - DOMAIN-KEYWORD,dropbox,🐸速蛙云
+  - DOMAIN-SUFFIX,twimg.com,🐸速蛙云
+  - DOMAIN-KEYWORD,blogspot,🐸速蛙云
+  - DOMAIN-SUFFIX,youtu.be,🐸速蛙云
+  - DOMAIN-KEYWORD,whatsapp,🐸速蛙云
+  - DOMAIN-SUFFIX,geetest.com,🐸速蛙云
 
-# (DNS Cache Pollution Protection)
-# > Google
-- DOMAIN-SUFFIX,appspot.com,📹谷歌油管
-- DOMAIN-SUFFIX,blogger.com,📹谷歌油管
-- DOMAIN-SUFFIX,getoutline.org,📹谷歌油管
-- DOMAIN-SUFFIX,gvt0.com,📹谷歌油管
-- DOMAIN-SUFFIX,gvt1.com,📹谷歌油管
-- DOMAIN-SUFFIX,gvt3.com,📹谷歌油管
-- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,📹谷歌油管
-- DOMAIN-KEYWORD,google,📹谷歌油管
-- DOMAIN-KEYWORD,blogspot,📹谷歌油管
-# (Extra IP-CIRD)
-# > Google
-- IP-CIDR,35.190.247.0/24,📹谷歌油管
-- IP-CIDR,64.233.160.0/19,📹谷歌油管
-- IP-CIDR,66.102.0.0/20,📹谷歌油管
-- IP-CIDR,66.249.80.0/20,📹谷歌油管
-- IP-CIDR,72.14.192.0/18,📹谷歌油管
-- IP-CIDR,74.125.0.0/16,📹谷歌油管
-- IP-CIDR,108.177.8.0/21,📹谷歌油管
-- IP-CIDR,172.217.0.0/16,📹谷歌油管
-- IP-CIDR,173.194.0.0/16,📹谷歌油管
-- IP-CIDR,209.85.128.0/17,📹谷歌油管
-- IP-CIDR,216.58.192.0/19,📹谷歌油管
-- IP-CIDR,216.239.32.0/19,📹谷歌油管
-# > Microsoft
-- DOMAIN-SUFFIX,onedrive.live.com,🔰国外流量
-- DOMAIN-SUFFIX,xboxlive.com,🔰国外流量
-# > Line
-- IP-CIDR,103.2.30.0/23,🔰国外流量
-- IP-CIDR,125.209.208.0/20,🔰国外流量
-- IP-CIDR,147.92.128.0/17,🔰国外流量
-- IP-CIDR,203.104.144.0/21,🔰国外流量
-# > Facebook
-- DOMAIN-SUFFIX,cdninstagram.com,🔰国外流量
-- DOMAIN-SUFFIX,fb.com,🔰国外流量
-- DOMAIN-SUFFIX,fb.me,🔰国外流量
-- DOMAIN-SUFFIX,fbaddins.com,🔰国外流量
-- DOMAIN-SUFFIX,fbcdn.net,🔰国外流量
-- DOMAIN-SUFFIX,fbsbx.com,🔰国外流量
-- DOMAIN-SUFFIX,fbworkmail.com,🔰国外流量
-- DOMAIN-SUFFIX,instagram.com,🔰国外流量
-- DOMAIN-SUFFIX,m.me,🔰国外流量
-- DOMAIN-SUFFIX,messenger.com,🔰国外流量
-- DOMAIN-SUFFIX,oculus.com,🔰国外流量
-- DOMAIN-SUFFIX,oculuscdn.com,🔰国外流量
-- DOMAIN-SUFFIX,rocksdb.org,🔰国外流量
-- DOMAIN-SUFFIX,whatsapp.com,🔰国外流量
-- DOMAIN-SUFFIX,whatsapp.net,🔰国外流量
-- DOMAIN-KEYWORD,facebook,🔰国外流量
-- IP-CIDR,31.13.24.0/21,🔰国外流量
-- IP-CIDR,31.13.64.0/18,🔰国外流量
-- IP-CIDR,45.64.40.0/22,🔰国外流量
-- IP-CIDR,66.220.144.0/20,🔰国外流量
-- IP-CIDR,69.63.176.0/20,🔰国外流量
-- IP-CIDR,69.171.224.0/19,🔰国外流量
-- IP-CIDR,74.119.76.0/22,🔰国外流量
-- IP-CIDR,103.4.96.0/22,🔰国外流量
-- IP-CIDR,129.134.0.0/17,🔰国外流量
-- IP-CIDR,157.240.0.0/17,🔰国外流量
-- IP-CIDR,173.252.64.0/19,🔰国外流量
-- IP-CIDR,173.252.96.0/19,🔰国外流量
-- IP-CIDR,179.60.192.0/22,🔰国外流量
-- IP-CIDR,185.60.216.0/22,🔰国外流量
-- IP-CIDR,204.15.20.0/22,🔰国外流量
-# > Twitter
-- DOMAIN-SUFFIX,pscp.tv,🔰国外流量
-- DOMAIN-SUFFIX,periscope.tv,🔰国外流量
-- DOMAIN-SUFFIX,t.co,🔰国外流量
-- DOMAIN-SUFFIX,twimg.co,🔰国外流量
-- DOMAIN-SUFFIX,twimg.com,🔰国外流量
-- DOMAIN-SUFFIX,twitpic.com,🔰国外流量
-- DOMAIN-SUFFIX,vine.co,🔰国外流量
-- DOMAIN-KEYWORD,twitter,🔰国外流量
-# > Twitter
-- IP-CIDR,69.195.160.0/19,🔰国外流量
-- IP-CIDR,104.244.42.0/21,🔰国外流量
-- IP-CIDR,192.133.76.0/22,🔰国外流量
-- IP-CIDR,199.16.156.0/22,🔰国外流量
-- IP-CIDR,199.59.148.0/22,🔰国外流量
-- IP-CIDR,199.96.56.0/21,🔰国外流量
-- IP-CIDR,202.160.128.0/22,🔰国外流量
-- IP-CIDR,209.237.192.0/19,🔰国外流量
-# > Telegram
-- DOMAIN-SUFFIX,t.me,📲Telegram
-- DOMAIN-SUFFIX,tdesktop.com,📲Telegram
-- DOMAIN-SUFFIX,telegra.ph,📲Telegram
-- DOMAIN-SUFFIX,telegram.me,📲Telegram
-- DOMAIN-SUFFIX,telegram.org,📲Telegram
-- IP-CIDR,67.198.55.0/24,📲Telegram
-- IP-CIDR,91.108.4.0/22,📲Telegram
-- IP-CIDR,91.108.8.0/22,📲Telegram
-- IP-CIDR,91.108.12.0/22,📲Telegram
-- IP-CIDR,91.108.16.0/22,📲Telegram
-- IP-CIDR,91.108.56.0/22,📲Telegram
-- IP-CIDR,109.239.140.0/24,📲Telegram
-- IP-CIDR,149.154.160.0/20,📲Telegram
-- IP-CIDR,205.172.60.0/22,📲Telegram
-- DOMAIN-SUFFIX,t.me,📲Telegram
-- DOMAIN-SUFFIX,tdesktop.com,📲Telegram
-- DOMAIN-SUFFIX,telegra.ph,📲Telegram
-- DOMAIN-SUFFIX,telegram.me,📲Telegram
-- DOMAIN-SUFFIX,telegram.org,📲Telegram
-- DOMAIN-SUFFIX,t.me,📲Telegram
-- IP-CIDR,67.198.55.0/24,📲Telegram
-- IP-CIDR,91.108.4.0/22,📲Telegram
-- IP-CIDR,91.108.8.0/22,📲Telegram
-- IP-CIDR,91.108.12.0/22,📲Telegram
-- IP-CIDR,91.108.16.0/22,📲Telegram
-- IP-CIDR,91.108.56.150/32,📲Telegram
-- IP-CIDR,91.108.56.141/32,📲Telegram
-- IP-CIDR,109.239.140.0/24,📲Telegram
-- IP-CIDR,149.154.160.0/20,📲Telegram
-- IP-CIDR,149.154.164.250/32,📲Telegram
-- IP-CIDR,149.154.175.51/32,📲Telegram
-- IP-CIDR,149.154.175.53/32,📲Telegram
-- IP-CIDR,149.154.167.50/32,📲Telegram
-- IP-CIDR,149.154.167.51/32,📲Telegram
-- IP-CIDR,172.217.160.74/32,📲Telegram
-- IP-CIDR,205.172.60.0/22,📲Telegram
-# > Line
-- DOMAIN-SUFFIX,line.me,🔰国外流量
-- DOMAIN-SUFFIX,line-apps.com,🔰国外流量
-- DOMAIN-SUFFIX,line-scdn.net,🔰国外流量
-- DOMAIN-SUFFIX,naver.jp,🔰国外流量
-- IP-CIDR,103.2.30.0/23,🔰国外流量
-- IP-CIDR,125.209.208.0/20,🔰国外流量
-- IP-CIDR,147.92.128.0/17,🔰国外流量
-- IP-CIDR,203.104.144.0/21,🔰国外流量
-# > WhatsApp
-- IP-CIDR,3.123.36.126/32,🔰国外流量
-- IP-CIDR,35.157.215.84/32,🔰国外流量
-- IP-CIDR,35.157.217.255/32,🔰国外流量
-- IP-CIDR,52.58.209.134/32,🔰国外流量
-- IP-CIDR,54.93.124.31/32,🔰国外流量
-- IP-CIDR,54.162.243.80/32,🔰国外流量
-- IP-CIDR,54.173.34.141/32,🔰国外流量
-- IP-CIDR,54.235.23.242/32,🔰国外流量
-- IP-CIDR,169.45.248.118/32,🔰国外流量
-# > Other
-- DOMAIN-KEYWORD,google,📹谷歌油管
-- DOMAIN-KEYWORD,gmail,📹谷歌油管
-- DOMAIN-KEYWORD,youtube,📹谷歌油管
-- DOMAIN-KEYWORD,facebook,🔰国外流量
-- DOMAIN-SUFFIX,fb.me,🔰国外流量
-- DOMAIN-SUFFIX,fbcdn.net,🔰国外流量
-- DOMAIN-KEYWORD,twitter,🔰国外流量
-- DOMAIN-KEYWORD,instagram,🔰国外流量
-- DOMAIN-KEYWORD,dropbox,🔰国外流量
-- DOMAIN-SUFFIX,twimg.com,🔰国外流量
-- DOMAIN-KEYWORD,blogspot,🔰国外流量
-- DOMAIN-SUFFIX,youtu.be,📹谷歌油管
-- DOMAIN-KEYWORD,whatsapp,🔰国外流量
-- DOMAIN-SUFFIX,4shared.com,🔰国外流量
-- DOMAIN-SUFFIX,881903.com,🔰国外流量
-- DOMAIN-SUFFIX,9cache.com,🔰国外流量
-- DOMAIN-SUFFIX,9gag.com,🔰国外流量
-- DOMAIN-SUFFIX,abc.com,🔰国外流量
-- DOMAIN-SUFFIX,abc.net.au,🔰国外流量
-- DOMAIN-SUFFIX,abebooks.com,🔰国外流量
-- DOMAIN-SUFFIX,amazon.co.jp,🔰国外流量
-- DOMAIN-SUFFIX,apigee.com,🔰国外流量
-- DOMAIN-SUFFIX,apk-dl.com,🔰国外流量
-- DOMAIN-SUFFIX,apkfind.com,🔰国外流量
-- DOMAIN-SUFFIX,apkmirror.com,🔰国外流量
-- DOMAIN-SUFFIX,apkmonk.com,🔰国外流量
-- DOMAIN-SUFFIX,apkpure.com,🔰国外流量
-- DOMAIN-SUFFIX,aptoide.com,🔰国外流量
-- DOMAIN-SUFFIX,archive.is,🔰国外流量
-- DOMAIN-SUFFIX,archive.org,🔰国外流量
-- DOMAIN-SUFFIX,arte.tv,🔰国外流量
-- DOMAIN-SUFFIX,artstation.com,🔰国外流量
-- DOMAIN-SUFFIX,ask.com,🔰国外流量
-- DOMAIN-SUFFIX,arukas.io,🔰国外流量
-- DOMAIN-SUFFIX,avgle.com,🔰国外流量
-- DOMAIN-SUFFIX,badoo.com,🔰国外流量
-- DOMAIN-SUFFIX,bandwagonhost.com,🔰国外流量
-- DOMAIN-SUFFIX,bbc.com,🔰国外流量
-- DOMAIN-SUFFIX,behance.net,🔰国外流量
-- DOMAIN-SUFFIX,bibox.com,🔰国外流量
-- DOMAIN-SUFFIX,biggo.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,binance.com,🔰国外流量
-- DOMAIN-SUFFIX,bitcointalk.org,🔰国外流量
-- DOMAIN-SUFFIX,bitfinex.com,🔰国外流量
-- DOMAIN-SUFFIX,bitmex.com,🔰国外流量
-- DOMAIN-SUFFIX,bit-z.com,🔰国外流量
-- DOMAIN-SUFFIX,bloglovin.com,🔰国外流量
-- DOMAIN-SUFFIX,bloomberg.cn,🔰国外流量
-- DOMAIN-SUFFIX,bloomberg.com,🔰国外流量
-- DOMAIN-SUFFIX,blubrry.com,🔰国外流量
-- DOMAIN-SUFFIX,book.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,booklive.jp,🔰国外流量
-- DOMAIN-SUFFIX,books.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,box.com,🔰国外流量
-- DOMAIN-SUFFIX,businessinsider.com,🔰国外流量
-- DOMAIN-SUFFIX,bwh1.net,🔰国外流量
-- DOMAIN-SUFFIX,castbox.fm,🔰国外流量
-- DOMAIN-SUFFIX,cbc.ca,🔰国外流量
-- DOMAIN-SUFFIX,cccat.cc,🔰国外流量
-- DOMAIN-SUFFIX,cdw.com,🔰国外流量
-- DOMAIN-SUFFIX,change.org,🔰国外流量
-- DOMAIN-SUFFIX,ck101.com,🔰国外流量
-- DOMAIN-SUFFIX,clarionproject.org,🔰国外流量
-- DOMAIN-SUFFIX,clyp.it,🔰国外流量
-- DOMAIN-SUFFIX,cna.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,comparitech.com,🔰国外流量
-- DOMAIN-SUFFIX,conoha.jp,🔰国外流量
-- DOMAIN-SUFFIX,crucial.com,🔰国外流量
-- DOMAIN-SUFFIX,cts.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,cw.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,cyberctm.com,🔰国外流量
-- DOMAIN-SUFFIX,dailymotion.com,🔰国外流量
-- DOMAIN-SUFFIX,dailyview.tw,🔰国外流量
-- DOMAIN-SUFFIX,daum.net,🔰国外流量
-- DOMAIN-SUFFIX,daumcdn.net,🔰国外流量
-- DOMAIN-SUFFIX,dcard.tw,🔰国外流量
-- DOMAIN-SUFFIX,deepdiscount.com,🔰国外流量
-- DOMAIN-SUFFIX,depositphotos.com,🔰国外流量
-- DOMAIN-SUFFIX,deviantart.com,🔰国外流量
-- DOMAIN-SUFFIX,disconnect.me,🔰国外流量
-- DOMAIN-SUFFIX,discordapp.com,🔰国外流量
-- DOMAIN-SUFFIX,discordapp.net,🔰国外流量
-- DOMAIN-SUFFIX,disqus.com,🔰国外流量
-- DOMAIN-SUFFIX,dns2go.com,🔰国外流量
-- DOMAIN-SUFFIX,dropbox.com,🔰国外流量
-- DOMAIN-SUFFIX,dropboxusercontent.com,🔰国外流量
-- DOMAIN-SUFFIX,duckduckgo.com,🔰国外流量
-- DOMAIN-SUFFIX,dw.com,🔰国外流量
-- DOMAIN-SUFFIX,dynu.com,🔰国外流量
-- DOMAIN-SUFFIX,earthcam.com,🔰国外流量
-- DOMAIN-SUFFIX,ebookservice.tw,🔰国外流量
-- DOMAIN-SUFFIX,economist.com,🔰国外流量
-- DOMAIN-SUFFIX,edgecastcdn.net,🔰国外流量
-- DOMAIN-SUFFIX,edu,🔰国外流量
-- DOMAIN-SUFFIX,elpais.com,🔰国外流量
-- DOMAIN-SUFFIX,enanyang.my,🔰国外流量
-- DOMAIN-SUFFIX,esoir.be,🔰国外流量
-- DOMAIN-SUFFIX,euronews.com,🔰国外流量
-- DOMAIN-SUFFIX,feedly.com,🔰国外流量
-- DOMAIN-SUFFIX,firech.at,🔰国外流量
-- DOMAIN-SUFFIX,flickr.com,🔰国外流量
-- DOMAIN-SUFFIX,flitto.com,🔰国外流量
-- DOMAIN-SUFFIX,foreignpolicy.com,🔰国外流量
-- DOMAIN-SUFFIX,friday.tw,🔰国外流量
-- DOMAIN-SUFFIX,gate.io,🔰国外流量
-- DOMAIN-SUFFIX,getlantern.org,🔰国外流量
-- DOMAIN-SUFFIX,getsync.com,🔰国外流量
-- DOMAIN-SUFFIX,globalvoices.org,🔰国外流量
-- DOMAIN-SUFFIX,goo.ne.jp,🔰国外流量
-- DOMAIN-SUFFIX,goodreads.com,🔰国外流量
-- DOMAIN-SUFFIX,gov,🔰国外流量
-- DOMAIN-SUFFIX,gov.tw,🔰国外流量
-- DOMAIN-SUFFIX,gumroad.com,🔰国外流量
-- DOMAIN-SUFFIX,hbg.com,🔰国外流量
-- DOMAIN-SUFFIX,heroku.com,🔰国外流量
-- DOMAIN-SUFFIX,hightail.com,🔰国外流量
-- DOMAIN-SUFFIX,hk01.com,🔰国外流量
-- DOMAIN-SUFFIX,hkbf.org,🔰国外流量
-- DOMAIN-SUFFIX,hkbookcity.com,🔰国外流量
-- DOMAIN-SUFFIX,hkej.com,🔰国外流量
-- DOMAIN-SUFFIX,hket.com,🔰国外流量
-- DOMAIN-SUFFIX,hkgolden.com,🔰国外流量
-- DOMAIN-SUFFIX,hootsuite.com,🔰国外流量
-- DOMAIN-SUFFIX,hudson.org,🔰国外流量
-- DOMAIN-SUFFIX,hyread.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,ibtimes.com,🔰国外流量
-- DOMAIN-SUFFIX,i-cable.com,🔰国外流量
-- DOMAIN-SUFFIX,icij.org,🔰国外流量
-- DOMAIN-SUFFIX,icoco.com,🔰国外流量
-- DOMAIN-SUFFIX,imgur.com,🔰国外流量
-- DOMAIN-SUFFIX,initiummall.com,🔰国外流量
-- DOMAIN-SUFFIX,insecam.org,🔰国外流量
-- DOMAIN-SUFFIX,ipfs.io,🔰国外流量
-- DOMAIN-SUFFIX,issuu.com,🔰国外流量
-- DOMAIN-SUFFIX,istockphoto.com,🔰国外流量
-- DOMAIN-SUFFIX,japantimes.co.jp,🔰国外流量
-- DOMAIN-SUFFIX,jiji.com,🔰国外流量
-- DOMAIN-SUFFIX,jinx.com,🔰国外流量
-- DOMAIN-SUFFIX,jkforum.net,🔰国外流量
-- DOMAIN-SUFFIX,joinmastodon.org,🔰国外流量
-- DOMAIN-SUFFIX,justpaste.it,🔰国外流量
-- DOMAIN-SUFFIX,kakao.com,🔰国外流量
-- DOMAIN-SUFFIX,kakaocorp.com,🔰国外流量
-- DOMAIN-SUFFIX,kik.com,🔰国外流量
-- DOMAIN-SUFFIX,kobo.com,🔰国外流量
-- DOMAIN-SUFFIX,kobobooks.com,🔰国外流量
-- DOMAIN-SUFFIX,kodingen.com,🔰国外流量
-- DOMAIN-SUFFIX,lemonde.fr,🔰国外流量
-- DOMAIN-SUFFIX,lepoint.fr,🔰国外流量
-- DOMAIN-SUFFIX,lihkg.com,🔰国外流量
-- DOMAIN-SUFFIX,listennotes.com,🔰国外流量
-- DOMAIN-SUFFIX,livestream.com,🔰国外流量
-- DOMAIN-SUFFIX,logmein.com,🔰国外流量
-- DOMAIN-SUFFIX,mail.ru,🔰国外流量
-- DOMAIN-SUFFIX,mailchimp.com,🔰国外流量
-- DOMAIN-SUFFIX,marc.info,🔰国外流量
-- DOMAIN-SUFFIX,matters.news,🔰国外流量
-- DOMAIN-SUFFIX,medium.com,🔰国外流量
-- DOMAIN-SUFFIX,mega.nz,🔰国外流量
-- DOMAIN-SUFFIX,mil,🔰国外流量
-- DOMAIN-SUFFIX,mingpao.com,🔰国外流量
-- DOMAIN-SUFFIX,mobile01.com,🔰国外流量
-- DOMAIN-SUFFIX,myspace.com,🔰国外流量
-- DOMAIN-SUFFIX,myspacecdn.com,🔰国外流量
-- DOMAIN-SUFFIX,nanyang.com,🔰国外流量
-- DOMAIN-SUFFIX,naver.com,🔰国外流量
-- DOMAIN-SUFFIX,newstapa.org,🔰国外流量
-- DOMAIN-SUFFIX,nhk.or.jp,🔰国外流量
-- DOMAIN-SUFFIX,nicovideo.jp,🔰国外流量
-- DOMAIN-SUFFIX,nii.ac.jp,🔰国外流量
-- DOMAIN-SUFFIX,nikkei.com,🔰国外流量
-- DOMAIN-SUFFIX,nofile.io,🔰国外流量
-- DOMAIN-SUFFIX,now.com,🔰国外流量
-- DOMAIN-SUFFIX,nrk.no,🔰国外流量
-- DOMAIN-SUFFIX,nyt.com,🔰国外流量
-- DOMAIN-SUFFIX,nytchina.com,🔰国外流量
-- DOMAIN-SUFFIX,nytcn.me,🔰国外流量
-- DOMAIN-SUFFIX,nytco.com,🔰国外流量
-- DOMAIN-SUFFIX,nytimes.com,🔰国外流量
-- DOMAIN-SUFFIX,nytimg.com,🔰国外流量
-- DOMAIN-SUFFIX,nytlog.com,🔰国外流量
-- DOMAIN-SUFFIX,nytstyle.com,🔰国外流量
-- DOMAIN-SUFFIX,ok.ru,🔰国外流量
-- DOMAIN-SUFFIX,okex.com,🔰国外流量
-- DOMAIN-SUFFIX,on.cc,🔰国外流量
-- DOMAIN-SUFFIX,orientaldaily.com.my,🔰国外流量
-- DOMAIN-SUFFIX,overcast.fm,🔰国外流量
-- DOMAIN-SUFFIX,paltalk.com,🔰国外流量
-- DOMAIN-SUFFIX,pbxes.com,🔰国外流量
-- DOMAIN-SUFFIX,pcdvd.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,pchome.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,pcloud.com,🔰国外流量
-- DOMAIN-SUFFIX,picacomic.com,🔰国外流量
-- DOMAIN-SUFFIX,pinimg.com,🔰国外流量
-- DOMAIN-SUFFIX,pixiv.net,🔰国外流量
-- DOMAIN-SUFFIX,player.fm,🔰国外流量
-- DOMAIN-SUFFIX,plurk.com,🔰国外流量
-- DOMAIN-SUFFIX,po18.tw,🔰国外流量
-- DOMAIN-SUFFIX,prism-break.org,🔰国外流量
-- DOMAIN-SUFFIX,proxifier.com,🔰国外流量
-- DOMAIN-SUFFIX,pts.org.tw,🔰国外流量
-- DOMAIN-SUFFIX,pubu.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,pubu.tw,🔰国外流量
-- DOMAIN-SUFFIX,pureapk.com,🔰国外流量
-- DOMAIN-SUFFIX,quora.com,🔰国外流量
-- DOMAIN-SUFFIX,quoracdn.net,🔰国外流量
-- DOMAIN-SUFFIX,rakuten.co.jp,🔰国外流量
-- DOMAIN-SUFFIX,readingtimes.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,readmoo.com,🔰国外流量
-- DOMAIN-SUFFIX,reddit.com,🔰国外流量
-- DOMAIN-SUFFIX,redditmedia.com,🔰国外流量
-- DOMAIN-SUFFIX,resilio.com,🔰国外流量
-- DOMAIN-SUFFIX,reuters.com,🔰国外流量
-- DOMAIN-SUFFIX,rfi.fr,🔰国外流量
-- DOMAIN-SUFFIX,roadshow.hk,🔰国外流量
-- DOMAIN-SUFFIX,scmp.com,🔰国外流量
-- DOMAIN-SUFFIX,scribd.com,🔰国外流量
-- DOMAIN-SUFFIX,seatguru.com,🔰国外流量
-- DOMAIN-SUFFIX,shadowsocks.org,🔰国外流量
-- DOMAIN-SUFFIX,shopee.tw,🔰国外流量
-- DOMAIN-SUFFIX,slideshare.net,🔰国外流量
-- DOMAIN-SUFFIX,softfamous.com,🔰国外流量
-- DOMAIN-SUFFIX,soundcloud.com,🔰国外流量
-- DOMAIN-SUFFIX,startpage.com,🔰国外流量
-- DOMAIN-SUFFIX,steamcommunity.com,🔰国外流量
-- DOMAIN-SUFFIX,steemit.com,🔰国外流量
-- DOMAIN-SUFFIX,steemitwallet.com,🔰国外流量
-- DOMAIN-SUFFIX,t66y.com,🔰国外流量
-- DOMAIN-SUFFIX,tapatalk.com,🔰国外流量
-- DOMAIN-SUFFIX,teco-hk.org,🔰国外流量
-- DOMAIN-SUFFIX,teco-mo.org,🔰国外流量
-- DOMAIN-SUFFIX,teddysun.com,🔰国外流量
-- DOMAIN-SUFFIX,theguardian.com,🔰国外流量
-- DOMAIN-SUFFIX,theinitium.com,🔰国外流量
-- DOMAIN-SUFFIX,tineye.com,🔰国外流量
-- DOMAIN-SUFFIX,torproject.org,🔰国外流量
-- DOMAIN-SUFFIX,tumblr.com,🔰国外流量
-- DOMAIN-SUFFIX,turbobit.net,🔰国外流量
-- DOMAIN-SUFFIX,tutanota.com,🔰国外流量
-- DOMAIN-SUFFIX,tvboxnow.com,🔰国外流量
-- DOMAIN-SUFFIX,udn.com,🔰国外流量
-- DOMAIN-SUFFIX,unseen.is,🔰国外流量
-- DOMAIN-SUFFIX,upmedia.mg,🔰国外流量
-- DOMAIN-SUFFIX,uptodown.com,🔰国外流量
-- DOMAIN-SUFFIX,ustream.tv,🔰国外流量
-- DOMAIN-SUFFIX,uwants.com,🔰国外流量
-- DOMAIN-SUFFIX,v2ray.com,🔰国外流量
-- DOMAIN-SUFFIX,viber.com,🔰国外流量
-- DOMAIN-SUFFIX,videopress.com,🔰国外流量
-- DOMAIN-SUFFIX,vimeo.com,🔰国外流量
-- DOMAIN-SUFFIX,voachinese.com,🔰国外流量
-- DOMAIN-SUFFIX,voanews.com,🔰国外流量
-- DOMAIN-SUFFIX,voxer.com,🔰国外流量
-- DOMAIN-SUFFIX,vzw.com,🔰国外流量
-- DOMAIN-SUFFIX,w3schools.com,🔰国外流量
-- DOMAIN-SUFFIX,washingtonpost.com,🔰国外流量
-- DOMAIN-SUFFIX,wattpad.com,🔰国外流量
-- DOMAIN-SUFFIX,whoer.net,🔰国外流量
-- DOMAIN-SUFFIX,wikimapia.org,🔰国外流量
-- DOMAIN-SUFFIX,wikipedia.org,🔰国外流量
-- DOMAIN-SUFFIX,winudf.com,🔰国外流量
-- DOMAIN-SUFFIX,wire.com,🔰国外流量
-- DOMAIN-SUFFIX,wordpress.com,🔰国外流量
-- DOMAIN-SUFFIX,workflow.is,🔰国外流量
-- DOMAIN-SUFFIX,worldcat.org,🔰国外流量
-- DOMAIN-SUFFIX,wsj.com,🔰国外流量
-- DOMAIN-SUFFIX,wsj.net,🔰国外流量
-- DOMAIN-SUFFIX,xhamster.com,🔰国外流量
-- DOMAIN-SUFFIX,xnxx.com,🔰国外流量
-- DOMAIN-SUFFIX,xvideos.com,🔰国外流量
-- DOMAIN-SUFFIX,yahoo.com,🔰国外流量
-- DOMAIN-SUFFIX,yandex.ru,🔰国外流量
-- DOMAIN-SUFFIX,yesasia.com,🔰国外流量
-- DOMAIN-SUFFIX,yes-news.com,🔰国外流量
-- DOMAIN-SUFFIX,yomiuri.co.jp,🔰国外流量
-- DOMAIN-SUFFIX,you-get.org,🔰国外流量
-- DOMAIN-SUFFIX,zaobao.com,🔰国外流量
-- DOMAIN-SUFFIX,zb.com,🔰国外流量
-- DOMAIN-SUFFIX,zello.com,🔰国外流量
-- DOMAIN-SUFFIX,zeronet.io,🔰国外流量
-- DOMAIN-KEYWORD,github,🔰国外流量
-- DOMAIN-KEYWORD,jav,🔰国外流量
-- DOMAIN-KEYWORD,pinterest,🔰国外流量
-- DOMAIN-KEYWORD,porn,🔰国外流量
-- DOMAIN-KEYWORD,wikileaks,🔰国外流量
+  # 国外网站
+  - DOMAIN-SUFFIX,9to5mac.com,🐸速蛙云
+  - DOMAIN-SUFFIX,abpchina.org,🐸速蛙云
+  - DOMAIN-SUFFIX,adblockplus.org,🐸速蛙云
+  - DOMAIN-SUFFIX,adobe.com,🐸速蛙云
+  - DOMAIN-SUFFIX,akamaized.net,🐸速蛙云
+  - DOMAIN-SUFFIX,alfredapp.com,🐸速蛙云
+  - DOMAIN-SUFFIX,amplitude.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ampproject.org,🐸速蛙云
+  - DOMAIN-SUFFIX,android.com,🐸速蛙云
+  - DOMAIN-SUFFIX,angularjs.org,🐸速蛙云
+  - DOMAIN-SUFFIX,aolcdn.com,🐸速蛙云
+  - DOMAIN-SUFFIX,apkpure.com,🐸速蛙云
+  - DOMAIN-SUFFIX,appledaily.com,🐸速蛙云
+  - DOMAIN-SUFFIX,appshopper.com,🐸速蛙云
+  - DOMAIN-SUFFIX,appspot.com,🐸速蛙云
+  - DOMAIN-SUFFIX,arcgis.com,🐸速蛙云
+  - DOMAIN-SUFFIX,archive.org,🐸速蛙云
+  - DOMAIN-SUFFIX,armorgames.com,🐸速蛙云
+  - DOMAIN-SUFFIX,aspnetcdn.com,🐸速蛙云
+  - DOMAIN-SUFFIX,att.com,🐸速蛙云
+  - DOMAIN-SUFFIX,awsstatic.com,🐸速蛙云
+  - DOMAIN-SUFFIX,azureedge.net,🐸速蛙云
+  - DOMAIN-SUFFIX,azurewebsites.net,🐸速蛙云
+  - DOMAIN-SUFFIX,bing.com,🐸速蛙云
+  - DOMAIN-SUFFIX,bintray.com,🐸速蛙云
+  - DOMAIN-SUFFIX,bit.com,🐸速蛙云
+  - DOMAIN-SUFFIX,bit.ly,🐸速蛙云
+  - DOMAIN-SUFFIX,bitbucket.org,🐸速蛙云
+  - DOMAIN-SUFFIX,bjango.com,🐸速蛙云
+  - DOMAIN-SUFFIX,bkrtx.com,🐸速蛙云
+  - DOMAIN-SUFFIX,blog.com,🐸速蛙云
+  - DOMAIN-SUFFIX,blogcdn.com,🐸速蛙云
+  - DOMAIN-SUFFIX,blogger.com,🐸速蛙云
+  - DOMAIN-SUFFIX,blogsmithmedia.com,🐸速蛙云
+  - DOMAIN-SUFFIX,blogspot.com,🐸速蛙云
+  - DOMAIN-SUFFIX,blogspot.hk,🐸速蛙云
+  - DOMAIN-SUFFIX,bloomberg.com,🐸速蛙云
+  - DOMAIN-SUFFIX,box.com,🐸速蛙云
+  - DOMAIN-SUFFIX,box.net,🐸速蛙云
+  - DOMAIN-SUFFIX,cachefly.net,🐸速蛙云
+  - DOMAIN-SUFFIX,chromium.org,🐸速蛙云
+  - DOMAIN-SUFFIX,cl.ly,🐸速蛙云
+  - DOMAIN-SUFFIX,cloudflare.com,🐸速蛙云
+  - DOMAIN-SUFFIX,cloudfront.net,🐸速蛙云
+  - DOMAIN-SUFFIX,cloudmagic.com,🐸速蛙云
+  - DOMAIN-SUFFIX,cmail19.com,🐸速蛙云
+  - DOMAIN-SUFFIX,cnet.com,🐸速蛙云
+  - DOMAIN-SUFFIX,cocoapods.org,🐸速蛙云
+  - DOMAIN-SUFFIX,comodoca.com,🐸速蛙云
+  - DOMAIN-SUFFIX,crashlytics.com,🐸速蛙云
+  - DOMAIN-SUFFIX,culturedcode.com,🐸速蛙云
+  - DOMAIN-SUFFIX,d.pr,🐸速蛙云
+  - DOMAIN-SUFFIX,danilo.to,🐸速蛙云
+  - DOMAIN-SUFFIX,dayone.me,🐸速蛙云
+  - DOMAIN-SUFFIX,db.tt,🐸速蛙云
+  - DOMAIN-SUFFIX,deskconnect.com,🐸速蛙云
+  - DOMAIN-SUFFIX,disq.us,🐸速蛙云
+  - DOMAIN-SUFFIX,disqus.com,🐸速蛙云
+  - DOMAIN-SUFFIX,disquscdn.com,🐸速蛙云
+  - DOMAIN-SUFFIX,dnsimple.com,🐸速蛙云
+  - DOMAIN-SUFFIX,docker.com,🐸速蛙云
+  - DOMAIN-SUFFIX,dribbble.com,🐸速蛙云
+  - DOMAIN-SUFFIX,droplr.com,🐸速蛙云
+  - DOMAIN-SUFFIX,duckduckgo.com,🐸速蛙云
+  - DOMAIN-SUFFIX,dueapp.com,🐸速蛙云
+  - DOMAIN-SUFFIX,dytt8.net,🐸速蛙云
+  - DOMAIN-SUFFIX,edgecastcdn.net,🐸速蛙云
+  - DOMAIN-SUFFIX,edgekey.net,🐸速蛙云
+  - DOMAIN-SUFFIX,edgesuite.net,🐸速蛙云
+  - DOMAIN-SUFFIX,engadget.com,🐸速蛙云
+  - DOMAIN-SUFFIX,entrust.net,🐸速蛙云
+  - DOMAIN-SUFFIX,eurekavpt.com,🐸速蛙云
+  - DOMAIN-SUFFIX,evernote.com,🐸速蛙云
+  - DOMAIN-SUFFIX,fabric.io,🐸速蛙云
+  - DOMAIN-SUFFIX,fast.com,🐸速蛙云
+  - DOMAIN-SUFFIX,fastly.net,🐸速蛙云
+  - DOMAIN-SUFFIX,fc2.com,🐸速蛙云
+  - DOMAIN-SUFFIX,feedburner.com,🐸速蛙云
+  - DOMAIN-SUFFIX,feedly.com,🐸速蛙云
+  - DOMAIN-SUFFIX,feedsportal.com,🐸速蛙云
+  - DOMAIN-SUFFIX,fiftythree.com,🐸速蛙云
+  - DOMAIN-SUFFIX,firebaseio.com,🐸速蛙云
+  - DOMAIN-SUFFIX,flexibits.com,🐸速蛙云
+  - DOMAIN-SUFFIX,flickr.com,🐸速蛙云
+  - DOMAIN-SUFFIX,flipboard.com,🐸速蛙云
+  - DOMAIN-SUFFIX,g.co,🐸速蛙云
+  - DOMAIN-SUFFIX,gabia.net,🐸速蛙云
+  - DOMAIN-SUFFIX,geni.us,🐸速蛙云
+  - DOMAIN-SUFFIX,gfx.ms,🐸速蛙云
+  - DOMAIN-SUFFIX,ggpht.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ghostnoteapp.com,🐸速蛙云
+  - DOMAIN-SUFFIX,git.io,🐸速蛙云
+  - DOMAIN-KEYWORD,github,🐸速蛙云
+  - DOMAIN-SUFFIX,globalsign.com,🐸速蛙云
+  - DOMAIN-SUFFIX,gmodules.com,🐸速蛙云
+  - DOMAIN-SUFFIX,godaddy.com,🐸速蛙云
+  - DOMAIN-SUFFIX,golang.org,🐸速蛙云
+  - DOMAIN-SUFFIX,gongm.in,🐸速蛙云
+  - DOMAIN-SUFFIX,goo.gl,🐸速蛙云
+  - DOMAIN-SUFFIX,goodreaders.com,🐸速蛙云
+  - DOMAIN-SUFFIX,goodreads.com,🐸速蛙云
+  - DOMAIN-SUFFIX,gravatar.com,🐸速蛙云
+  - DOMAIN-SUFFIX,gstatic.com,🐸速蛙云
+  - DOMAIN-SUFFIX,gvt0.com,🐸速蛙云
+  - DOMAIN-SUFFIX,hockeyapp.net,🐸速蛙云
+  - DOMAIN-SUFFIX,hotmail.com,🐸速蛙云
+  - DOMAIN-SUFFIX,icons8.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ifixit.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ift.tt,🐸速蛙云
+  - DOMAIN-SUFFIX,ifttt.com,🐸速蛙云
+  - DOMAIN-SUFFIX,iherb.com,🐸速蛙云
+  - DOMAIN-SUFFIX,imageshack.us,🐸速蛙云
+  - DOMAIN-SUFFIX,img.ly,🐸速蛙云
+  - DOMAIN-SUFFIX,imgur.com,🐸速蛙云
+  - DOMAIN-SUFFIX,imore.com,🐸速蛙云
+  - DOMAIN-SUFFIX,instapaper.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ipn.li,🐸速蛙云
+  - DOMAIN-SUFFIX,is.gd,🐸速蛙云
+  - DOMAIN-SUFFIX,issuu.com,🐸速蛙云
+  - DOMAIN-SUFFIX,itgonglun.com,🐸速蛙云
+  - DOMAIN-SUFFIX,itun.es,🐸速蛙云
+  - DOMAIN-SUFFIX,ixquick.com,🐸速蛙云
+  - DOMAIN-SUFFIX,j.mp,🐸速蛙云
+  - DOMAIN-SUFFIX,js.revsci.net,🐸速蛙云
+  - DOMAIN-SUFFIX,jshint.com,🐸速蛙云
+  - DOMAIN-SUFFIX,jtvnw.net,🐸速蛙云
+  - DOMAIN-SUFFIX,justgetflux.com,🐸速蛙云
+  - DOMAIN-SUFFIX,kat.cr,🐸速蛙云
+  - DOMAIN-SUFFIX,klip.me,🐸速蛙云
+  - DOMAIN-SUFFIX,libsyn.com,🐸速蛙云
+  - DOMAIN-SUFFIX,linode.com,🐸速蛙云
+  - DOMAIN-SUFFIX,lithium.com,🐸速蛙云
+  - DOMAIN-SUFFIX,littlehj.com,🐸速蛙云
+  - DOMAIN-SUFFIX,live.com,🐸速蛙云
+  - DOMAIN-SUFFIX,live.net,🐸速蛙云
+  - DOMAIN-SUFFIX,livefilestore.com,🐸速蛙云
+  - DOMAIN-SUFFIX,llnwd.net,🐸速蛙云
+  - DOMAIN-SUFFIX,macid.co,🐸速蛙云
+  - DOMAIN-SUFFIX,macromedia.com,🐸速蛙云
+  - DOMAIN-SUFFIX,macrumors.com,🐸速蛙云
+  - DOMAIN-SUFFIX,mashable.com,🐸速蛙云
+  - DOMAIN-SUFFIX,mathjax.org,🐸速蛙云
+  - DOMAIN-SUFFIX,medium.com,🐸速蛙云
+  - DOMAIN-SUFFIX,mega.co.nz,🐸速蛙云
+  - DOMAIN-SUFFIX,mega.nz,🐸速蛙云
+  - DOMAIN-SUFFIX,megaupload.com,🐸速蛙云
+  - DOMAIN-SUFFIX,microsofttranslator.com,🐸速蛙云
+  - DOMAIN-SUFFIX,mindnode.com,🐸速蛙云
+  - DOMAIN-SUFFIX,mobile01.com,🐸速蛙云
+  - DOMAIN-SUFFIX,modmyi.com,🐸速蛙云
+  - DOMAIN-SUFFIX,msedge.net,🐸速蛙云
+  - DOMAIN-SUFFIX,myfontastic.com,🐸速蛙云
+  - DOMAIN-SUFFIX,name.com,🐸速蛙云
+  - DOMAIN-SUFFIX,nextmedia.com,🐸速蛙云
+  - DOMAIN-SUFFIX,nsstatic.net,🐸速蛙云
+  - DOMAIN-SUFFIX,nssurge.com,🐸速蛙云
+  - DOMAIN-SUFFIX,nyt.com,🐸速蛙云
+  - DOMAIN-SUFFIX,nytimes.com,🐸速蛙云
+  - DOMAIN-SUFFIX,omnigroup.com,🐸速蛙云
+  - DOMAIN-SUFFIX,onedrive.com,🐸速蛙云
+  - DOMAIN-SUFFIX,onenote.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ooyala.com,🐸速蛙云
+  - DOMAIN-SUFFIX,openvpn.net,🐸速蛙云
+  - DOMAIN-SUFFIX,openwrt.org,🐸速蛙云
+  - DOMAIN-SUFFIX,orkut.com,🐸速蛙云
+  - DOMAIN-SUFFIX,osxdaily.com,🐸速蛙云
+  - DOMAIN-SUFFIX,outlook.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ow.ly,🐸速蛙云
+  - DOMAIN-SUFFIX,paddleapi.com,🐸速蛙云
+  - DOMAIN-SUFFIX,parallels.com,🐸速蛙云
+  - DOMAIN-SUFFIX,parse.com,🐸速蛙云
+  - DOMAIN-SUFFIX,pdfexpert.com,🐸速蛙云
+  - DOMAIN-SUFFIX,periscope.tv,🐸速蛙云
+  - DOMAIN-SUFFIX,pinboard.in,🐸速蛙云
+  - DOMAIN-SUFFIX,pinterest.com,🐸速蛙云
+  - DOMAIN-SUFFIX,pixelmator.com,🐸速蛙云
+  - DOMAIN-SUFFIX,pixiv.net,🐸速蛙云
+  - DOMAIN-SUFFIX,playpcesor.com,🐸速蛙云
+  - DOMAIN-SUFFIX,playstation.com,🐸速蛙云
+  - DOMAIN-SUFFIX,playstation.com.hk,🐸速蛙云
+  - DOMAIN-SUFFIX,playstation.net,🐸速蛙云
+  - DOMAIN-SUFFIX,playstationnetwork.com,🐸速蛙云
+  - DOMAIN-SUFFIX,pushwoosh.com,🐸速蛙云
+  - DOMAIN-SUFFIX,rime.im,🐸速蛙云
+  - DOMAIN-SUFFIX,servebom.com,🐸速蛙云
+  - DOMAIN-SUFFIX,sfx.ms,🐸速蛙云
+  - DOMAIN-SUFFIX,shadowsocks.org,🐸速蛙云
+  - DOMAIN-SUFFIX,sharethis.com,🐸速蛙云
+  - DOMAIN-SUFFIX,shazam.com,🐸速蛙云
+  - DOMAIN-SUFFIX,skype.com,🐸速蛙云
+  - DOMAIN-SUFFIX,smartdns🐸速蛙云.com,🐸速蛙云
+  - DOMAIN-SUFFIX,smartmailcloud.com,🐸速蛙云
+  - DOMAIN-SUFFIX,sndcdn.com,🐸速蛙云
+  - DOMAIN-SUFFIX,sony.com,🐸速蛙云
+  - DOMAIN-SUFFIX,soundcloud.com,🐸速蛙云
+  - DOMAIN-SUFFIX,sourceforge.net,🐸速蛙云
+  - DOMAIN-SUFFIX,spotify.com,🐸速蛙云
+  - DOMAIN-SUFFIX,squarespace.com,🐸速蛙云
+  - DOMAIN-SUFFIX,sstatic.net,🐸速蛙云
+  - DOMAIN-SUFFIX,st.luluku.pw,🐸速蛙云
+  - DOMAIN-SUFFIX,stackoverflow.com,🐸速蛙云
+  - DOMAIN-SUFFIX,startpage.com,🐸速蛙云
+  - DOMAIN-SUFFIX,staticflickr.com,🐸速蛙云
+  - DOMAIN-SUFFIX,steamcommunity.com,🐸速蛙云
+  - DOMAIN-SUFFIX,symauth.com,🐸速蛙云
+  - DOMAIN-SUFFIX,symcb.com,🐸速蛙云
+  - DOMAIN-SUFFIX,symcd.com,🐸速蛙云
+  - DOMAIN-SUFFIX,tapbots.com,🐸速蛙云
+  - DOMAIN-SUFFIX,tapbots.net,🐸速蛙云
+  - DOMAIN-SUFFIX,tdesktop.com,🐸速蛙云
+  - DOMAIN-SUFFIX,techcrunch.com,🐸速蛙云
+  - DOMAIN-SUFFIX,techsmith.com,🐸速蛙云
+  - DOMAIN-SUFFIX,thepiratebay.org,🐸速蛙云
+  - DOMAIN-SUFFIX,theverge.com,🐸速蛙云
+  - DOMAIN-SUFFIX,time.com,🐸速蛙云
+  - DOMAIN-SUFFIX,timeinc.net,🐸速蛙云
+  - DOMAIN-SUFFIX,tiny.cc,🐸速蛙云
+  - DOMAIN-SUFFIX,tinypic.com,🐸速蛙云
+  - DOMAIN-SUFFIX,tmblr.co,🐸速蛙云
+  - DOMAIN-SUFFIX,todoist.com,🐸速蛙云
+  - DOMAIN-SUFFIX,trello.com,🐸速蛙云
+  - DOMAIN-SUFFIX,trustasiassl.com,🐸速蛙云
+  - DOMAIN-SUFFIX,tumblr.co,🐸速蛙云
+  - DOMAIN-SUFFIX,tumblr.com,🐸速蛙云
+  - DOMAIN-SUFFIX,tweetdeck.com,🐸速蛙云
+  - DOMAIN-SUFFIX,tweetmarker.net,🐸速蛙云
+  - DOMAIN-SUFFIX,twitch.tv,🐸速蛙云
+  - DOMAIN-SUFFIX,txmblr.com,🐸速蛙云
+  - DOMAIN-SUFFIX,typekit.net,🐸速蛙云
+  - DOMAIN-SUFFIX,ubertags.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ublock.org,🐸速蛙云
+  - DOMAIN-SUFFIX,ubnt.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ulyssesapp.com,🐸速蛙云
+  - DOMAIN-SUFFIX,urchin.com,🐸速蛙云
+  - DOMAIN-SUFFIX,usertrust.com,🐸速蛙云
+  - DOMAIN-SUFFIX,v.gd,🐸速蛙云
+  - DOMAIN-SUFFIX,v2ex.com,🐸速蛙云
+  - DOMAIN-SUFFIX,vimeo.com,🐸速蛙云
+  - DOMAIN-SUFFIX,vimeocdn.com,🐸速蛙云
+  - DOMAIN-SUFFIX,vine.co,🐸速蛙云
+  - DOMAIN-SUFFIX,vivaldi.com,🐸速蛙云
+  - DOMAIN-SUFFIX,vox-cdn.com,🐸速蛙云
+  - DOMAIN-SUFFIX,vsco.co,🐸速蛙云
+  - DOMAIN-SUFFIX,vultr.com,🐸速蛙云
+  - DOMAIN-SUFFIX,w.org,🐸速蛙云
+  - DOMAIN-SUFFIX,w3schools.com,🐸速蛙云
+  - DOMAIN-SUFFIX,webtype.com,🐸速蛙云
+  - DOMAIN-SUFFIX,wikiwand.com,🐸速蛙云
+  - DOMAIN-SUFFIX,wikileaks.org,🐸速蛙云
+  - DOMAIN-SUFFIX,wikimedia.org,🐸速蛙云
+  - DOMAIN-SUFFIX,wikipedia.com,🐸速蛙云
+  - DOMAIN-SUFFIX,wikipedia.org,🐸速蛙云
+  - DOMAIN-SUFFIX,windows.com,🐸速蛙云
+  - DOMAIN-SUFFIX,windows.net,🐸速蛙云
+  - DOMAIN-SUFFIX,wire.com,🐸速蛙云
+  - DOMAIN-SUFFIX,wordpress.com,🐸速蛙云
+  - DOMAIN-SUFFIX,workflowy.com,🐸速蛙云
+  - DOMAIN-SUFFIX,wp.com,🐸速蛙云
+  - DOMAIN-SUFFIX,wsj.com,🐸速蛙云
+  - DOMAIN-SUFFIX,wsj.net,🐸速蛙云
+  - DOMAIN-SUFFIX,xda-developers.com,🐸速蛙云
+  - DOMAIN-SUFFIX,xeeno.com,🐸速蛙云
+  - DOMAIN-SUFFIX,xiti.com,🐸速蛙云
+  - DOMAIN-SUFFIX,yahoo.com,🐸速蛙云
+  - DOMAIN-SUFFIX,yimg.com,🐸速蛙云
+  - DOMAIN-SUFFIX,ying.com,🐸速蛙云
+  - DOMAIN-SUFFIX,yoyo.org,🐸速蛙云
+  - DOMAIN-SUFFIX,ytimg.com,🐸速蛙云
 
-# (Region-Restricted Access Denied)
-- DOMAIN-SUFFIX,apartmentratings.com,🔰国外流量
-- DOMAIN-SUFFIX,apartments.com,🔰国外流量
-- DOMAIN-SUFFIX,bankmobilevibe.com,🔰国外流量
-- DOMAIN-SUFFIX,bing.com,🔰国外流量
-- DOMAIN-SUFFIX,booktopia.com.au,🔰国外流量
-- DOMAIN-SUFFIX,centauro.com.br,🔰国外流量
-- DOMAIN-SUFFIX,clearsurance.com,🔰国外流量
-- DOMAIN-SUFFIX,costco.com,🔰国外流量
-- DOMAIN-SUFFIX,crackle.com,🔰国外流量
-- DOMAIN-SUFFIX,depositphotos.cn,🔰国外流量
-- DOMAIN-SUFFIX,dish.com,🔰国外流量
-- DOMAIN-SUFFIX,dmm.co.jp,🔰国外流量
-- DOMAIN-SUFFIX,dmm.com,🔰国外流量
-- DOMAIN-SUFFIX,dnvod.tv,🔰国外流量
-- DOMAIN-SUFFIX,esurance.com,🔰国外流量
-- DOMAIN-SUFFIX,extmatrix.com,🔰国外流量
-- DOMAIN-SUFFIX,fastpic.ru,🔰国外流量
-- DOMAIN-SUFFIX,flipboard.com,🔰国外流量
-- DOMAIN-SUFFIX,fnac.be,🔰国外流量
-- DOMAIN-SUFFIX,fnac.com,🔰国外流量
-- DOMAIN-SUFFIX,funkyimg.com,🔰国外流量
-- DOMAIN-SUFFIX,fxnetworks.com,🔰国外流量
-- DOMAIN-SUFFIX,gettyimages.com,🔰国外流量
-- DOMAIN-SUFFIX,go.com,🔰国外流量
-- DOMAIN-SUFFIX,here.com,🔰国外流量
-- DOMAIN-SUFFIX,jcpenney.com,🔰国外流量
-- DOMAIN-SUFFIX,jiehua.tv,🔰国外流量
-- DOMAIN-SUFFIX,kknews.cc,🔰国外流量
-- DOMAIN-SUFFIX,mailfence.com,🔰国外流量
-- DOMAIN-SUFFIX,nationwide.com,🔰国外流量
-- DOMAIN-SUFFIX,nbc.com,🔰国外流量
-- DOMAIN-SUFFIX,nexon.com,🔰国外流量
-- DOMAIN-SUFFIX,nordstrom.com,🔰国外流量
-- DOMAIN-SUFFIX,nordstromimage.com,🔰国外流量
-- DOMAIN-SUFFIX,nordstromrack.com,🔰国外流量
-- DOMAIN-SUFFIX,read01.com,🔰国外流量
-- DOMAIN-SUFFIX,superpages.com,🔰国外流量
-- DOMAIN-SUFFIX,target.com,🔰国外流量
-- DOMAIN-SUFFIX,thinkgeek.com,🔰国外流量
-- DOMAIN-SUFFIX,tracfone.com,🔰国外流量
-- DOMAIN-SUFFIX,uploader.jp,🔰国外流量
-- DOMAIN-SUFFIX,vevo.com,🔰国外流量
-- DOMAIN-SUFFIX,viu.tv,🔰国外流量
-- DOMAIN-SUFFIX,vk.com,🔰国外流量
-- DOMAIN-SUFFIX,vsco.co,🔰国外流量
-- DOMAIN-SUFFIX,xfinity.com,🔰国外流量
-- DOMAIN-SUFFIX,zattoo.com,🔰国外流量
-# USER-AGENT,Roam*,🔰国外流量
+  # Telegram
+  - DOMAIN-SUFFIX,telegra.ph,🐸速蛙云
+  - DOMAIN-SUFFIX,telegram.org,🐸速蛙云
+  - IP-CIDR,91.108.4.0/22,🐸速蛙云
+  - IP-CIDR,91.108.8.0/21,🐸速蛙云
+  - IP-CIDR,91.108.16.0/22,🐸速蛙云
+  - IP-CIDR,91.108.56.0/22,🐸速蛙云
+  - IP-CIDR,149.154.160.0/20,🐸速蛙云
+  - IP-CIDR6,2001:67c:4e8::/48,🐸速蛙云
+  - IP-CIDR6,2001:b28:f23d::/48,🐸速蛙云
+  - IP-CIDR6,2001:b28:f23f::/48,🐸速蛙云
 
-# (The Most Popular Sites)
-# > Apple
-# >> TestFlight
-- DOMAIN,testflight.apple.com,🍎苹果服务
-# >> Apple URL Shortener
-- DOMAIN-SUFFIX,appsto.re,🍎苹果服务
-# >> iBooks Store download
-- DOMAIN,books.itunes.apple.com,🍎苹果服务
-# >> iTunes Store Moveis Trailers
-- DOMAIN,hls.itunes.apple.com,🍎苹果服务
-# >> App Store Preview
-- DOMAIN,apps.apple.com,🍎苹果服务
-- DOMAIN,itunes.apple.com,🍎苹果服务
-# >> Spotlight
-- DOMAIN,api-glb-sea.smoot.apple.com,🍎苹果服务
-# >> Dictionary
-- DOMAIN,lookup-api.apple.com,🍎苹果服务
-# >> Apple News and Apple Map TOMTOM Version
-- DOMAIN,gspe1-ssl.ls.apple.com,🍎苹果服务
-# USER-AGENT,AppleNews*,🍎苹果服务
-# USER-AGENT,com.apple.news*,🍎苹果服务
-- DOMAIN-SUFFIX,apple.news,🍎苹果服务
-- DOMAIN,news-client.apple.com,🍎苹果服务
-- DOMAIN,news-edge.apple.com,🍎苹果服务
-- DOMAIN,news-events.apple.com,🍎苹果服务
-- DOMAIN,apple.comscoreresearch.com,🍎苹果服务
-# > Google
-- DOMAIN-SUFFIX,abc.xyz,📹谷歌油管
-- DOMAIN-SUFFIX,android.com,📹谷歌油管
-- DOMAIN-SUFFIX,androidify.com,📹谷歌油管
-- DOMAIN-SUFFIX,dialogflow.com,📹谷歌油管
-- DOMAIN-SUFFIX,autodraw.com,📹谷歌油管
-- DOMAIN-SUFFIX,capitalg.com,📹谷歌油管
-- DOMAIN-SUFFIX,certificate-transparency.org,📹谷歌油管
-- DOMAIN-SUFFIX,chrome.com,📹谷歌油管
-- DOMAIN-SUFFIX,chromeexperiments.com,📹谷歌油管
-- DOMAIN-SUFFIX,chromestatus.com,📹谷歌油管
-- DOMAIN-SUFFIX,chromium.org,📹谷歌油管
-- DOMAIN-SUFFIX,creativelab5.com,📹谷歌油管
-- DOMAIN-SUFFIX,debug.com,📹谷歌油管
-- DOMAIN-SUFFIX,deepmind.com,📹谷歌油管
-- DOMAIN-SUFFIX,firebaseio.com,📹谷歌油管
-- DOMAIN-SUFFIX,getmdl.io,📹谷歌油管
-- DOMAIN-SUFFIX,ggpht.com,📹谷歌油管
-- DOMAIN-SUFFIX,gmail.com,📹谷歌油管
-- DOMAIN-SUFFIX,gmodules.com,📹谷歌油管
-- DOMAIN-SUFFIX,godoc.org,📹谷歌油管
-- DOMAIN-SUFFIX,golang.org,📹谷歌油管
-- DOMAIN-SUFFIX,gstatic.com,📹谷歌油管
-- DOMAIN-SUFFIX,gv.com,📹谷歌油管
-- DOMAIN-SUFFIX,gwtproject.org,📹谷歌油管
-- DOMAIN-SUFFIX,itasoftware.com,📹谷歌油管
-- DOMAIN-SUFFIX,madewithcode.com,📹谷歌油管
-- DOMAIN-SUFFIX,material.io,📹谷歌油管
-- DOMAIN-SUFFIX,polymer-project.org,📹谷歌油管
-- DOMAIN-SUFFIX,admin.recaptcha.net,📹谷歌油管
-- DOMAIN-SUFFIX,recaptcha.net,📹谷歌油管
-- DOMAIN-SUFFIX,shattered.io,📹谷歌油管
-- DOMAIN-SUFFIX,synergyse.com,📹谷歌油管
-- DOMAIN-SUFFIX,tensorflow.org,📹谷歌油管
-- DOMAIN-SUFFIX,tfhub.dev,📹谷歌油管
-- DOMAIN-SUFFIX,tiltbrush.com,📹谷歌油管
-- DOMAIN-SUFFIX,waveprotocol.org,📹谷歌油管
-- DOMAIN-SUFFIX,waymo.com,📹谷歌油管
-- DOMAIN-SUFFIX,webmproject.org,📹谷歌油管
-- DOMAIN-SUFFIX,webrtc.org,📹谷歌油管
-- DOMAIN-SUFFIX,whatbrowser.org,📹谷歌油管
-- DOMAIN-SUFFIX,widevine.com,📹谷歌油管
-- DOMAIN-SUFFIX,x.company,📹谷歌油管
-- DOMAIN-SUFFIX,youtu.be,📹谷歌油管
-- DOMAIN-SUFFIX,yt.be,📹谷歌油管
-- DOMAIN-SUFFIX,ytimg.com,📹谷歌油管
-# > Microsoft
-- DOMAIN-SUFFIX,1drv.com,🔰国外流量
-- DOMAIN-SUFFIX,1drv.ms,🔰国外流量
-- DOMAIN-SUFFIX,live.com,🔰国外流量
-- DOMAIN-SUFFIX,live.net,🔰国外流量
-- DOMAIN-SUFFIX,livefilestore.com,🔰国外流量
-- DOMAIN-SUFFIX,storage.msn.com,🔰国外流量
-- DOMAIN-SUFFIX,blob.core.windows.net,🔰国外流量
-- DOMAIN-SUFFIX,livefilestore.com,🔰国外流量
-- DOMAIN-SUFFIX,onedrive.com,🔰国外流量
-- DOMAIN-SUFFIX,storage.live.com,🔰国外流量
-- DOMAIN-SUFFIX,storage.msn.com,🔰国外流量
-- DOMAIN,oneclient.sfx.ms,🔰国外流量
-# > Other
-- DOMAIN-SUFFIX,0rz.tw,🔰国外流量
-- DOMAIN-SUFFIX,4bluestones.biz,🔰国外流量
-- DOMAIN-SUFFIX,9bis.net,🔰国外流量
-- DOMAIN-SUFFIX,allconnected.co,🔰国外流量
-- DOMAIN-SUFFIX,amazonaws.com,🔰国外流量
-- DOMAIN-SUFFIX,aol.com,🔰国外流量
-- DOMAIN-SUFFIX,bcc.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,bit.ly,🔰国外流量
-- DOMAIN-SUFFIX,bitshare.com,🔰国外流量
-- DOMAIN-SUFFIX,blog.jp,🔰国外流量
-- DOMAIN-SUFFIX,blogimg.jp,🔰国外流量
-- DOMAIN-SUFFIX,blogtd.org,🔰国外流量
-- DOMAIN-SUFFIX,broadcast.co.nz,🔰国外流量
-- DOMAIN-SUFFIX,camfrog.com,🔰国外流量
-- DOMAIN-SUFFIX,cfos.de,🔰国外流量
-- DOMAIN-SUFFIX,citypopulation.de,🔰国外流量
-- DOMAIN-SUFFIX,cloudfront.net,🔰国外流量
-- DOMAIN-SUFFIX,ctitv.com.tw,🔰国外流量
-- DOMAIN-SUFFIX,cuhk.edu.hk,🔰国外流量
-- DOMAIN-SUFFIX,cusu.hk,🔰国外流量
-- DOMAIN-SUFFIX,discuss.com.hk,🔰国外流量
-- DOMAIN-SUFFIX,dropboxapi.com,🔰国外流量
-- DOMAIN-SUFFIX,duolingo.cn,🔰国外流量
-- DOMAIN-SUFFIX,edditstatic.com,🔰国外流量
-- DOMAIN-SUFFIX,flickriver.com,🔰国外流量
-- DOMAIN-SUFFIX,focustaiwan.tw,🔰国外流量
-- DOMAIN-SUFFIX,free.fr,🔰国外流量
-- DOMAIN-SUFFIX,ftchinese.com,🔰国外流量
-- DOMAIN-SUFFIX,gigacircle.com,🔰国外流量
-- DOMAIN-SUFFIX,hk-pub.com,🔰国外流量
-- DOMAIN-SUFFIX,hosting.co.uk,🔰国外流量
-- DOMAIN-SUFFIX,hwcdn.net,🔰国外流量
-- DOMAIN-SUFFIX,iphone4hongkong.com,🔰国外流量
-- DOMAIN-SUFFIX,iphonetaiwan.org,🔰国外流量
-- DOMAIN-SUFFIX,iptvbin.com,🔰国外流量
-- DOMAIN-SUFFIX,jtvnw.net,🔰国外流量
-- DOMAIN-SUFFIX,linksalpha.com,🔰国外流量
-- DOMAIN-SUFFIX,manyvids.com,🔰国外流量
-- DOMAIN-SUFFIX,myactimes.com,🔰国外流量
-- DOMAIN-SUFFIX,newsblur.com,🔰国外流量
-- DOMAIN-SUFFIX,now.im,🔰国外流量
-- DOMAIN-SUFFIX,redditlist.com,🔰国外流量
-- DOMAIN-SUFFIX,smartmailcloud.com,🔰国外流量
-- DOMAIN-SUFFIX,signal.org,🔰国外流量
-- DOMAIN-SUFFIX,sparknotes.com,🔰国外流量
-- DOMAIN-SUFFIX,streetvoice.com,🔰国外流量
-- DOMAIN-SUFFIX,supertop.co,🔰国外流量
-- DOMAIN-SUFFIX,tv.com,🔰国外流量
-- DOMAIN-SUFFIX,typepad.com,🔰国外流量
-- DOMAIN-SUFFIX,udnbkk.com,🔰国外流量
-- DOMAIN-SUFFIX,whispersystems.org,🔰国外流量
-- DOMAIN-SUFFIX,wikia.com,🔰国外流量
-- DOMAIN-SUFFIX,wn.com,🔰国外流量
-- DOMAIN-SUFFIX,wolframalpha.com,🔰国外流量
-- DOMAIN-SUFFIX,x-art.com,🔰国外流量
-- DOMAIN-SUFFIX,yimg.com,🔰国外流量
+  # LAN
+  - DOMAIN,injections.adguard.org,DIRECT
+  - DOMAIN,local.adguard.org,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
 
-- DOMAIN-SUFFIX,9to5mac.com,🔰国外流量
-- DOMAIN-SUFFIX,abpchina.org,🔰国外流量
-- DOMAIN-SUFFIX,adblockplus.org,🔰国外流量
-- DOMAIN-SUFFIX,adobe.com,🔰国外流量
-- DOMAIN-SUFFIX,alfredapp.com,🔰国外流量
-- DOMAIN-SUFFIX,amplitude.com,🔰国外流量
-- DOMAIN-SUFFIX,ampproject.org,🔰国外流量
-- DOMAIN-SUFFIX,android.com,🔰国外流量
-- DOMAIN-SUFFIX,angularjs.org,🔰国外流量
-- DOMAIN-SUFFIX,aolcdn.com,🔰国外流量
-- DOMAIN-SUFFIX,apkpure.com,🔰国外流量
-- DOMAIN-SUFFIX,appledaily.com,🔰国外流量
-- DOMAIN-SUFFIX,appshopper.com,🔰国外流量
-- DOMAIN-SUFFIX,appspot.com,🔰国外流量
-- DOMAIN-SUFFIX,arcgis.com,🔰国外流量
-- DOMAIN-SUFFIX,archive.org,🔰国外流量
-- DOMAIN-SUFFIX,armorgames.com,🔰国外流量
-- DOMAIN-SUFFIX,aspnetcdn.com,🔰国外流量
-- DOMAIN-SUFFIX,att.com,🔰国外流量
-- DOMAIN-SUFFIX,awsstatic.com,🔰国外流量
-- DOMAIN-SUFFIX,azureedge.net,🔰国外流量
-- DOMAIN-SUFFIX,azurewebsites.net,🔰国外流量
-- DOMAIN-SUFFIX,bing.com,🔰国外流量
-- DOMAIN-SUFFIX,bintray.com,🔰国外流量
-- DOMAIN-SUFFIX,bit.com,🔰国外流量
-- DOMAIN-SUFFIX,bit.ly,🔰国外流量
-- DOMAIN-SUFFIX,bitbucket.org,🔰国外流量
-- DOMAIN-SUFFIX,bjango.com,🔰国外流量
-- DOMAIN-SUFFIX,bkrtx.com,🔰国外流量
-- DOMAIN-SUFFIX,blog.com,🔰国外流量
-- DOMAIN-SUFFIX,blogcdn.com,🔰国外流量
-- DOMAIN-SUFFIX,blogger.com,🔰国外流量
-- DOMAIN-SUFFIX,blogsmithmedia.com,🔰国外流量
-- DOMAIN-SUFFIX,blogspot.com,🔰国外流量
-- DOMAIN-SUFFIX,blogspot.hk,🔰国外流量
-- DOMAIN-SUFFIX,bloomberg.com,🔰国外流量
-- DOMAIN-SUFFIX,box.com,🔰国外流量
-- DOMAIN-SUFFIX,box.net,🔰国外流量
-- DOMAIN-SUFFIX,cachefly.net,🔰国外流量
-- DOMAIN-SUFFIX,chromium.org,🔰国外流量
-- DOMAIN-SUFFIX,cl.ly,🔰国外流量
-- DOMAIN-SUFFIX,cloudflare.com,🔰国外流量
-- DOMAIN-SUFFIX,cloudfront.net,🔰国外流量
-- DOMAIN-SUFFIX,cloudmagic.com,🔰国外流量
-- DOMAIN-SUFFIX,cmail19.com,🔰国外流量
-- DOMAIN-SUFFIX,cnet.com,🔰国外流量
-- DOMAIN-SUFFIX,cocoapods.org,🔰国外流量
-- DOMAIN-SUFFIX,comodoca.com,🔰国外流量
-- DOMAIN-SUFFIX,content.office.net,🔰国外流量
-- DOMAIN-SUFFIX,crashlytics.com,🔰国外流量
-- DOMAIN-SUFFIX,culturedcode.com,🔰国外流量
-- DOMAIN-SUFFIX,d.pr,🔰国外流量
-- DOMAIN-SUFFIX,danilo.to,🔰国外流量
-- DOMAIN-SUFFIX,dayone.me,🔰国外流量
-- DOMAIN-SUFFIX,db.tt,🔰国外流量
-- DOMAIN-SUFFIX,deskconnect.com,🔰国外流量
-- DOMAIN-SUFFIX,digicert.com,🔰国外流量
-- DOMAIN-SUFFIX,disq.us,🔰国外流量
-- DOMAIN-SUFFIX,disqus.com,🔰国外流量
-- DOMAIN-SUFFIX,disquscdn.com,🔰国外流量
-- DOMAIN-SUFFIX,dlercloud.com,🔰国外流量
-- DOMAIN-SUFFIX,dnsimple.com,🔰国外流量
-- DOMAIN-SUFFIX,docker.com,🔰国外流量
-- DOMAIN-SUFFIX,dribbble.com,🔰国外流量
-- DOMAIN-SUFFIX,droplr.com,🔰国外流量
-- DOMAIN-SUFFIX,duckduckgo.com,🔰国外流量
-- DOMAIN-SUFFIX,dueapp.com,🔰国外流量
-- DOMAIN-SUFFIX,dytt8.net,🔰国外流量
-- DOMAIN-SUFFIX,edgecastcdn.net,🔰国外流量
-- DOMAIN-SUFFIX,edgekey.net,🔰国外流量
-- DOMAIN-SUFFIX,edgesuite.net,🔰国外流量
-- DOMAIN-SUFFIX,engadget.com,🔰国外流量
-- DOMAIN-SUFFIX,entrust.net,🔰国外流量
-- DOMAIN-SUFFIX,eurekavpt.com,🔰国外流量
-- DOMAIN-SUFFIX,evernote.com,🔰国外流量
-- DOMAIN-SUFFIX,fabric.io,🔰国外流量
-- DOMAIN-SUFFIX,fast.com,🔰国外流量
-- DOMAIN-SUFFIX,fastly.net,🔰国外流量
-- DOMAIN-SUFFIX,fc2.com,🔰国外流量
-- DOMAIN-SUFFIX,feedburner.com,🔰国外流量
-- DOMAIN-SUFFIX,feedly.com,🔰国外流量
-- DOMAIN-SUFFIX,feedsportal.com,🔰国外流量
-- DOMAIN-SUFFIX,fiftythree.com,🔰国外流量
-- DOMAIN-SUFFIX,firebaseio.com,🔰国外流量
-- DOMAIN-SUFFIX,flexibits.com,🔰国外流量
-- DOMAIN-SUFFIX,flickr.com,🔰国外流量
-- DOMAIN-SUFFIX,flipboard.com,🔰国外流量
-- DOMAIN-SUFFIX,g.co,🔰国外流量
-- DOMAIN-SUFFIX,gabia.net,🔰国外流量
-- DOMAIN-SUFFIX,geni.us,🔰国外流量
-- DOMAIN-SUFFIX,gfx.ms,🔰国外流量
-- DOMAIN-SUFFIX,ggpht.com,🔰国外流量
-- DOMAIN-SUFFIX,ghostnoteapp.com,🔰国外流量
-- DOMAIN-SUFFIX,git.io,🔰国外流量
-- DOMAIN-KEYWORD,github,🔰国外流量
-- DOMAIN-SUFFIX,g.co,🔰国外流量
-- DOMAIN-SUFFIX,gabia.net,🔰国外流量
-- DOMAIN-SUFFIX,garena.com,🔰国外流量
-- DOMAIN-SUFFIX,gameloft.com,🔰国外流量
-- DOMAIN-SUFFIX,geni.us,🔰国外流量
-- DOMAIN-SUFFIX,get.how,🔰国外流量
-- DOMAIN-SUFFIX,getcloudapp.com,🔰国外流量
-- DOMAIN-SUFFIX,getfoxy🔰国外流量.org,🔰国外流量
-- DOMAIN-SUFFIX,getlantern.org,🔰国外流量
-- DOMAIN-SUFFIX,getmdl.io,🔰国外流量
-- DOMAIN-SUFFIX,getpricetag.com,🔰国外流量
-- DOMAIN-SUFFIX,gfw.press,🔰国外流量
-- DOMAIN-SUFFIX,gfx.ms,🔰国外流量
-- DOMAIN-SUFFIX,ggpht.com,🔰国外流量
-- DOMAIN-SUFFIX,ghostnoteapp.com,🔰国外流量
-- DOMAIN-SUFFIX,git.io,🔰国外流量
-- DOMAIN-SUFFIX,gitbook.com,🔰国外流量
-- DOMAIN-SUFFIX,globalsign.com,🔰国外流量
-- DOMAIN-SUFFIX,gmocloud.com,🔰国外流量
-- DOMAIN-SUFFIX,gmodules.com,🔰国外流量
-- DOMAIN-SUFFIX,go.com,🔰国外流量
-- DOMAIN-SUFFIX,go.jp,🔰国外流量
-- DOMAIN-SUFFIX,godaddy.com,🔰国外流量
-- DOMAIN-SUFFIX,golang.org,🔰国外流量
-- DOMAIN-SUFFIX,gongm.in,🔰国外流量
-- DOMAIN-SUFFIX,goo.gl,📹谷歌油管
-- DOMAIN-SUFFIX,goodreaders.com,🔰国外流量
-- DOMAIN-SUFFIX,goodreads.com,🔰国外流量
-- DOMAIN-SUFFIX,gravatar.com,🔰国外流量
-- DOMAIN-SUFFIX,gstatic.cn,🔰国外流量
-- DOMAIN-SUFFIX,gstatic.com,🔰国外流量
-- DOMAIN-SUFFIX,gunsamerica.com,🔰国外流量
-- DOMAIN-SUFFIX,gvt0.com,🔰国外流量
-- DOMAIN-SUFFIX,gvt1.com,🔰国外流量
-- DOMAIN-SUFFIX,globalsign.com,🔰国外流量
-- DOMAIN-SUFFIX,gmodules.com,🔰国外流量
-- DOMAIN-SUFFIX,godaddy.com,🔰国外流量
-- DOMAIN-SUFFIX,golang.org,🔰国外流量
-- DOMAIN-SUFFIX,gongm.in,🔰国外流量
-- DOMAIN-SUFFIX,goo.gl,📹谷歌油管
-- DOMAIN-SUFFIX,goodreaders.com,🔰国外流量
-- DOMAIN-SUFFIX,goodreads.com,🔰国外流量
-- DOMAIN-SUFFIX,gravatar.com,🔰国外流量
-- DOMAIN-SUFFIX,gstatic.com,🔰国外流量
-- DOMAIN-SUFFIX,gvt0.com,🔰国外流量
-- DOMAIN-SUFFIX,hockeyapp.net,🔰国外流量
-- DOMAIN-SUFFIX,hotmail.com,🔰国外流量
-- DOMAIN-SUFFIX,icons8.com,🔰国外流量
-- DOMAIN-SUFFIX,ift.tt,🔰国外流量
-- DOMAIN-SUFFIX,ifttt.com,🔰国外流量
-- DOMAIN-SUFFIX,iherb.com,🔰国外流量
-- DOMAIN-SUFFIX,imageshack.us,🔰国外流量
-- DOMAIN-SUFFIX,img.ly,🔰国外流量
-- DOMAIN-SUFFIX,imgur.com,🔰国外流量
-- DOMAIN-SUFFIX,imore.com,🔰国外流量
-- DOMAIN-SUFFIX,instapaper.com,🔰国外流量
-- DOMAIN-SUFFIX,ipn.li,🔰国外流量
-- DOMAIN-SUFFIX,is.gd,🔰国外流量
-- DOMAIN-SUFFIX,issuu.com,🔰国外流量
-- DOMAIN-SUFFIX,itgonglun.com,🔰国外流量
-- DOMAIN-SUFFIX,itun.es,🔰国外流量
-- DOMAIN-SUFFIX,ixquick.com,🔰国外流量
-- DOMAIN-SUFFIX,j.mp,🔰国外流量
-- DOMAIN-SUFFIX,js.revsci.net,🔰国外流量
-- DOMAIN-SUFFIX,jshint.com,🔰国外流量
-- DOMAIN-SUFFIX,jtvnw.net,🔰国外流量
-- DOMAIN-SUFFIX,justgetflux.com,🔰国外流量
-- DOMAIN-SUFFIX,kat.cr,🔰国外流量
-- DOMAIN-SUFFIX,klip.me,🔰国外流量
-- DOMAIN-SUFFIX,libsyn.com,🔰国外流量
-- DOMAIN-SUFFIX,licdn.com,🔰国外流量
-- DOMAIN-SUFFIX,linkedin.com,🔰国外流量
-- DOMAIN-SUFFIX,linode.com,🔰国外流量
-- DOMAIN-SUFFIX,lithium.com,🔰国外流量
-- DOMAIN-SUFFIX,littlehj.com,🔰国外流量
-- DOMAIN-SUFFIX,live.com,🔰国外流量
-- DOMAIN-SUFFIX,live.net,🔰国外流量
-- DOMAIN-SUFFIX,livefilestore.com,🔰国外流量
-- DOMAIN-SUFFIX,llnwd.net,🔰国外流量
-- DOMAIN-SUFFIX,macid.co,🔰国外流量
-- DOMAIN-SUFFIX,macromedia.com,🔰国外流量
-- DOMAIN-SUFFIX,macrumors.com,🔰国外流量
-- DOMAIN-SUFFIX,mashable.com,🔰国外流量
-- DOMAIN-SUFFIX,mathjax.org,🔰国外流量
-- DOMAIN-SUFFIX,medium.com,🔰国外流量
-- DOMAIN-SUFFIX,mega.co.nz,🔰国外流量
-- DOMAIN-SUFFIX,mega.nz,🔰国外流量
-- DOMAIN-SUFFIX,megaupload.com,🔰国外流量
-- DOMAIN-SUFFIX,microsofttranslator.com,🔰国外流量
-- DOMAIN-SUFFIX,mindnode.com,🔰国外流量
-- DOMAIN-SUFFIX,mobile01.com,🔰国外流量
-- DOMAIN-SUFFIX,modmyi.com,🔰国外流量
-- DOMAIN-SUFFIX,msedge.net,🔰国外流量
-- DOMAIN-SUFFIX,myfontastic.com,🔰国外流量
-- DOMAIN-SUFFIX,name.com,🔰国外流量
-- DOMAIN-SUFFIX,nextmedia.com,🔰国外流量
-- DOMAIN-SUFFIX,nsstatic.net,🔰国外流量
-- DOMAIN-SUFFIX,nssurge.com,🔰国外流量
-- DOMAIN-SUFFIX,nyt.com,🔰国外流量
-- DOMAIN-SUFFIX,nytimes.com,🔰国外流量
-- DOMAIN-SUFFIX,office365.com,🔰国外流量
-- DOMAIN-SUFFIX,omnigroup.com,🔰国外流量
-- DOMAIN-SUFFIX,onedrive.com,🔰国外流量
-- DOMAIN-SUFFIX,onenote.com,🔰国外流量
-- DOMAIN-SUFFIX,ooyala.com,🔰国外流量
-- DOMAIN-SUFFIX,openvpn.net,🔰国外流量
-- DOMAIN-SUFFIX,openwrt.org,🔰国外流量
-- DOMAIN-SUFFIX,orkut.com,🔰国外流量
-- DOMAIN-SUFFIX,osxdaily.com,🔰国外流量
-- DOMAIN-SUFFIX,outlook.com,🔰国外流量
-- DOMAIN-SUFFIX,ow.ly,🔰国外流量
-- DOMAIN-SUFFIX,paddleapi.com,🔰国外流量
-- DOMAIN-SUFFIX,parallels.com,🔰国外流量
-- DOMAIN-SUFFIX,parse.com,🔰国外流量
-- DOMAIN-SUFFIX,pdfexpert.com,🔰国外流量
-- DOMAIN-SUFFIX,periscope.tv,🔰国外流量
-- DOMAIN-SUFFIX,pinboard.in,🔰国外流量
-- DOMAIN-SUFFIX,pinterest.com,🔰国外流量
-- DOMAIN-SUFFIX,pixelmator.com,🔰国外流量
-- DOMAIN-SUFFIX,pixiv.net,🔰国外流量
-- DOMAIN-SUFFIX,playpcesor.com,🔰国外流量
-- DOMAIN-SUFFIX,playstation.com,🔰国外流量
-- DOMAIN-SUFFIX,playstation.com.hk,🔰国外流量
-- DOMAIN-SUFFIX,playstation.net,🔰国外流量
-- DOMAIN-SUFFIX,playstationnetwork.com,🔰国外流量
-- DOMAIN-SUFFIX,pushwoosh.com,🔰国外流量
-- DOMAIN-SUFFIX,rime.im,🔰国外流量
-- DOMAIN-SUFFIX,servebom.com,🔰国外流量
-- DOMAIN-SUFFIX,sfx.ms,🔰国外流量
-- DOMAIN-SUFFIX,shadowsocks.org,🔰国外流量
-- DOMAIN-SUFFIX,sharethis.com,🔰国外流量
-- DOMAIN-SUFFIX,shazam.com,🔰国外流量
-- DOMAIN-SUFFIX,skype.com,🔰国外流量
-- DOMAIN-SUFFIX,smartdns🔰国外流量.com,🔰国外流量
-- DOMAIN-SUFFIX,smartmailcloud.com,🔰国外流量
-- DOMAIN-SUFFIX,sndcdn.com,🔰国外流量
-- DOMAIN-SUFFIX,sony.com,🔰国外流量
-- DOMAIN-SUFFIX,soundcloud.com,🔰国外流量
-- DOMAIN-SUFFIX,sourceforge.net,🔰国外流量
-- DOMAIN-SUFFIX,spotify.com,🔰国外流量
-- DOMAIN-SUFFIX,squarespace.com,🔰国外流量
-- DOMAIN-SUFFIX,sstatic.net,🔰国外流量
-- DOMAIN-SUFFIX,st.luluku.pw,🔰国外流量
-- DOMAIN-SUFFIX,stackoverflow.com,🔰国外流量
-- DOMAIN-SUFFIX,startpage.com,🔰国外流量
-- DOMAIN-SUFFIX,staticflickr.com,🔰国外流量
-- DOMAIN-SUFFIX,steamcommunity.com,🔰国外流量
-- DOMAIN-SUFFIX,symauth.com,🔰国外流量
-- DOMAIN-SUFFIX,symcb.com,🔰国外流量
-- DOMAIN-SUFFIX,symcd.com,🔰国外流量
-- DOMAIN-SUFFIX,tapbots.com,🔰国外流量
-- DOMAIN-SUFFIX,tapbots.net,🔰国外流量
-- DOMAIN-SUFFIX,tdesktop.com,🔰国外流量
-- DOMAIN-SUFFIX,techcrunch.com,🔰国外流量
-- DOMAIN-SUFFIX,techsmith.com,🔰国外流量
-- DOMAIN-SUFFIX,thepiratebay.org,🔰国外流量
-- DOMAIN-SUFFIX,theverge.com,🔰国外流量
-- DOMAIN-SUFFIX,time.com,🔰国外流量
-- DOMAIN-SUFFIX,timeinc.net,🔰国外流量
-- DOMAIN-SUFFIX,tiny.cc,🔰国外流量
-- DOMAIN-SUFFIX,tinypic.com,🔰国外流量
-- DOMAIN-SUFFIX,tmblr.co,🔰国外流量
-- DOMAIN-SUFFIX,todoist.com,🔰国外流量
-- DOMAIN-SUFFIX,trello.com,🔰国外流量
-- DOMAIN-SUFFIX,trustasiassl.com,🔰国外流量
-- DOMAIN-SUFFIX,tumblr.co,🔰国外流量
-- DOMAIN-SUFFIX,tumblr.com,🔰国外流量
-- DOMAIN-SUFFIX,tweetdeck.com,🔰国外流量
-- DOMAIN-SUFFIX,tweetmarker.net,🔰国外流量
-- DOMAIN-SUFFIX,twitch.tv,🔰国外流量
-- DOMAIN-SUFFIX,txmblr.com,🔰国外流量
-- DOMAIN-SUFFIX,typekit.net,🔰国外流量
-- DOMAIN-SUFFIX,ubertags.com,🔰国外流量
-- DOMAIN-SUFFIX,ublock.org,🔰国外流量
-- DOMAIN-SUFFIX,ubnt.com,🔰国外流量
-- DOMAIN-SUFFIX,ulyssesapp.com,🔰国外流量
-- DOMAIN-SUFFIX,urchin.com,🔰国外流量
-- DOMAIN-SUFFIX,usertrust.com,🔰国外流量
-- DOMAIN-SUFFIX,v.gd,🔰国外流量
-- DOMAIN-SUFFIX,vimeo.com,🔰国外流量
-- DOMAIN-SUFFIX,vimeocdn.com,🔰国外流量
-- DOMAIN-SUFFIX,vine.co,🔰国外流量
-- DOMAIN-SUFFIX,vivaldi.com,🔰国外流量
-- DOMAIN-SUFFIX,vox-cdn.com,🔰国外流量
-- DOMAIN-SUFFIX,vsco.co,🔰国外流量
-- DOMAIN-SUFFIX,vultr.com,🔰国外流量
-- DOMAIN-SUFFIX,w.org,🔰国外流量
-- DOMAIN-SUFFIX,w3schools.com,🔰国外流量
-- DOMAIN-SUFFIX,webtype.com,🔰国外流量
-- DOMAIN-SUFFIX,wikiwand.com,🔰国外流量
-- DOMAIN-SUFFIX,wikileaks.org,🔰国外流量
-- DOMAIN-SUFFIX,wikimedia.org,🔰国外流量
-- DOMAIN-SUFFIX,wikipedia.com,🔰国外流量
-- DOMAIN-SUFFIX,wikipedia.org,🔰国外流量
-- DOMAIN-SUFFIX,windows.com,🔰国外流量
-- DOMAIN-SUFFIX,windows.net,🔰国外流量
-- DOMAIN-SUFFIX,wire.com,🔰国外流量
-- DOMAIN-SUFFIX,wordpress.com,🔰国外流量
-- DOMAIN-SUFFIX,workflowy.com,🔰国外流量
-- DOMAIN-SUFFIX,wp.com,🔰国外流量
-- DOMAIN-SUFFIX,wsj.com,🔰国外流量
-- DOMAIN-SUFFIX,wsj.net,🔰国外流量
-- DOMAIN-SUFFIX,xda-developers.com,🔰国外流量
-- DOMAIN-SUFFIX,xeeno.com,🔰国外流量
-- DOMAIN-SUFFIX,xiti.com,🔰国外流量
-- DOMAIN-SUFFIX,yahoo.com,🔰国外流量
-- DOMAIN-SUFFIX,yimg.com,🔰国外流量
-- DOMAIN-SUFFIX,ying.com,🔰国外流量
-- DOMAIN-SUFFIX,yoyo.org,🔰国外流量
-- DOMAIN-SUFFIX,ytimg.com,🔰国外流量
-- DOMAIN-SUFFIX,blobstroe.apple.com,🔰国外流量
-- DOMAIN-SUFFIX,licensing.mp.microsoft.com,🔰国外流量
+  - IP-CIDR,0.0.0.0/8,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,17.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,169.254.0.0/16,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.0.0.0/24,DIRECT
+  - IP-CIDR,192.0.2.0/24,DIRECT
+  - IP-CIDR,192.88.99.0/24,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,198.18.0.0/15,DIRECT
+  - IP-CIDR,198.51.100.0/24,DIRECT
+  - IP-CIDR,203.0.113.0/24,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR,240.0.0.0/4,DIRECT
+  - IP-CIDR,255.255.255.255/32,DIRECT
+  - IP-CIDR6,::1/128,DIRECT
+  - IP-CIDR6,fe80::/10,DIRECT
+  - IP-CIDR6,fc00::/7,DIRECT
+  - IP-CIDR6,ff00::/8,DIRECT
 
-
-# China Area Network
-- DOMAIN-KEYWORD,netease,DIRECT
-# USER-AGENT,NeteaseMusic*,DIRECT
-# USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,DIRECT
-# USER-AGENT, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*,DIRECT
-# USER-AGENT, %E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90**,DIRECT
-# USER-AGENT, NeteaseMusic**, DIRECT
-# USER-AGENT, 网易云音乐*, DIRECT
-# USER-AGENT, 网易云音乐**, DIRECT
-- DOMAIN-SUFFIX,music.126.net,DIRECT
-- DOMAIN-SUFFIX,163.com,DIRECT
-- DOMAIN-SUFFIX,music.163.com,DIRECT
-- DOMAIN-SUFFIX,interface.music.163.com,DIRECT
-- DOMAIN-SUFFIX,interface3.music.163.com,DIRECT
-- DOMAIN-SUFFIX,apm.music.163.com,DIRECT
-- DOMAIN-SUFFIX,apm3.music.163.com,DIRECT
-- DOMAIN-SUFFIX,man.netease.com,DIRECT
-- DOMAIN-SUFFIX,api.iplay.163.com,DIRECT
-- IP-CIDR,59.111.181.60/32,DIRECT
-- IP-CIDR,223.252.199.66/32,DIRECT
-- IP-CIDR,223.252.199.67/32,DIRECT
-- IP-CIDR,59.111.160.195/32,DIRECT
-- IP-CIDR,59.111.160.197/32,DIRECT
-- IP-CIDR,59.111.181.35/32,DIRECT
-- IP-CIDR,59.111.181.38/32,DIRECT
-- IP-CIDR,39.105.63.80/32,DIRECT
-- IP-CIDR,47.100.127.239/32,DIRECT
-- IP-CIDR,118.24.63.156/32,DIRECT
-- IP-CIDR,193.112.159.225/32,DIRECT
-- IP-CIDR,59.111.181.155/32,DIRECT
-- IP-CIDR,115.236.118.33/32,DIRECT
-- IP-CIDR, 59.111.128.0/17, DIRECT
-- IP-CIDR, 115.236.112.0/20,DIRECT
-- IP-CIDR, 223.252.192.0/19,DIRECT
-- DOMAIN-SUFFIX,ac.dun.163yun.com,DIRECT
-- DOMAIN-SUFFIX,mr.da.netease.com,DIRECT
-- DOMAIN-SUFFIX,crash.163.com,DIRECT
-- IP-CIDR,101.71.154.241/32,DIRECT
-- DOMAIN-SUFFIX,imap.163.com,DIRECT
-- DOMAIN-SUFFIX,isure.stream.qqmusic.qq.com,DIRECT
-- IP-CIDR,101.71.154.241/32,DIRECT
-- IP-CIDR,115.236.118.33/32,DIRECT
-- DOMAIN,music.163.com,DIRECT
-- DOMAIN,interface.music.163.com,DIRECT
-- DOMAIN,interface3.music.163.com,DIRECT
-- DOMAIN,apm.music.163.com,DIRECT
-- DOMAIN,apm3.music.163.com,DIRECT
-- DOMAIN,man.netease.com,DIRECT
-- DOMAIN,api.iplay.163.com,DIRECT
-- IP-CIDR,59.111.181.60/32,DIRECT
-- IP-CIDR,223.252.199.66/32,DIRECT
-- IP-CIDR,223.252.199.67/32,DIRECT
-- IP-CIDR,59.111.160.195/32,DIRECT
-- IP-CIDR,59.111.160.197/32,DIRECT
-- IP-CIDR,59.111.181.35/32,DIRECT
-- IP-CIDR,59.111.181.38/32,DIRECT
-- IP-CIDR,39.105.63.80/32,DIRECT
-- IP-CIDR,47.100.127.239/32,DIRECT
-- IP-CIDR,118.24.63.156/32,DIRECT
-- IP-CIDR,193.112.159.225/32,DIRECT
-- IP-CIDR,59.111.181.155/32,DIRECT
-- IP-CIDR,101.71.154.241/32,DIRECT
-- IP-CIDR,115.236.118.33/32,DIRECT
-
-# > 360
-- DOMAIN-SUFFIX,qhres.com,DIRECT
-- DOMAIN-SUFFIX,qhimg.com,DIRECT
-# > Akamai
-# - DOMAIN-SUFFIX,akadns.net,DIRECT
-# - DOMAIN-SUFFIX,akamai.net,DIRECT
-# - DOMAIN-SUFFIX,akamaiedge.net,DIRECT
-# - DOMAIN-SUFFIX,akamaihd.net,DIRECT
-# - DOMAIN-SUFFIX,akamaistream.net,DIRECT
-
-# > Alibaba
-# USER-AGENT,%E4%BC%98%E9%85%B7*,DIRECT
-- DOMAIN-SUFFIX,alibaba.com,DIRECT
-- DOMAIN-SUFFIX,alicdn.com,DIRECT
-- DOMAIN-SUFFIX,alikunlun.com,DIRECT
-- DOMAIN-SUFFIX,alipay.com,DIRECT
-- DOMAIN-SUFFIX,amap.com,DIRECT
-- DOMAIN-SUFFIX,autonavi.com,DIRECT
-- DOMAIN-SUFFIX,dingtalk.com,DIRECT
-- DOMAIN-SUFFIX,mxhichina.com,DIRECT
-- DOMAIN-SUFFIX,soku.com,DIRECT
-- DOMAIN-SUFFIX,taobao.com,DIRECT
-- DOMAIN-SUFFIX,tmall.com,DIRECT
-- DOMAIN-SUFFIX,tmall.hk,DIRECT
-- DOMAIN-SUFFIX,ykimg.com,DIRECT
-- DOMAIN-SUFFIX,youku.com,DIRECT
-- DOMAIN-SUFFIX,xiami.com,DIRECT
-- DOMAIN-SUFFIX,xiami.net,DIRECT
-
-# > Baidu
-- DOMAIN-SUFFIX,baidu.com,DIRECT
-- DOMAIN-SUFFIX,baidubcr.com,DIRECT
-- DOMAIN-SUFFIX,bdstatic.com,DIRECT
-- DOMAIN-SUFFIX,yunjiasu-cdn.net,DIRECT
-# > Blizzard
-- DOMAIN-SUFFIX,blizzard.com,DIRECT
-- DOMAIN-SUFFIX,battle.net,DIRECT
-- DOMAIN,blzddist1-a.akamaihd.net,DIRECT
-# > ByteDance
-- DOMAIN-SUFFIX,feiliao.com,DIRECT
-- DOMAIN-SUFFIX,pstatp.com,DIRECT
-- DOMAIN-SUFFIX,snssdk.com,DIRECT
-- DOMAIN-SUFFIX,iesdouyin.com,DIRECT
-- DOMAIN-SUFFIX,toutiao.com,DIRECT
-# > CCTV
-- DOMAIN-SUFFIX,cctv.com,DIRECT
-- DOMAIN-SUFFIX,cctvpic.com,DIRECT
-- DOMAIN-SUFFIX,livechina.com,DIRECT
-# > DiDi
-- DOMAIN-SUFFIX,didialift.com,DIRECT
-- DOMAIN-SUFFIX,didiglobal.com,DIRECT
-- DOMAIN-SUFFIX,udache.com,DIRECT
-# > 蛋蛋赞
-- DOMAIN-SUFFIX,343480.com,DIRECT
-- DOMAIN-SUFFIX,baduziyuan.com,DIRECT
-- DOMAIN-SUFFIX,com-hs-hkdy.com,DIRECT
-- DOMAIN-SUFFIX,czybjz.com,DIRECT
-- DOMAIN-SUFFIX,dandanzan.com,DIRECT
-- DOMAIN-SUFFIX,fjhps.com,DIRECT
-- DOMAIN-SUFFIX,kuyunbo.club,DIRECT
-# > ChinaNet
-- DOMAIN-SUFFIX,21cn.com,DIRECT
-# > HunanTV
-- DOMAIN-SUFFIX,hitv.com,DIRECT
-- DOMAIN-SUFFIX,mgtv.com,DIRECT
-# > iQiyi
-- DOMAIN-SUFFIX,iqiyi.com,DIRECT
-- DOMAIN-SUFFIX,iqiyipic.com,DIRECT
-- DOMAIN-SUFFIX,71.am.com,DIRECT
-# > JD
-- DOMAIN-SUFFIX,jd.com,DIRECT
-- DOMAIN-SUFFIX,jd.hk,DIRECT
-- DOMAIN-SUFFIX,jdpay.com,DIRECT
-- DOMAIN-SUFFIX,360buyimg.com,DIRECT
-# > Kingsoft
-- DOMAIN-SUFFIX,iciba.com,DIRECT
-- DOMAIN-SUFFIX,ksosoft.com,DIRECT
-# > Meitu
-- DOMAIN-SUFFIX,meitu.com,DIRECT
-- DOMAIN-SUFFIX,meitudata.com,DIRECT
-- DOMAIN-SUFFIX,meitustat.com,DIRECT
-- DOMAIN-SUFFIX,meipai.com,DIRECT
-# > MI
-- DOMAIN-SUFFIX,duokan.com,DIRECT
-- DOMAIN-SUFFIX,mi-img.com,DIRECT
-- DOMAIN-SUFFIX,miui.com,DIRECT
-- DOMAIN-SUFFIX,miwifi.com,DIRECT
-- DOMAIN-SUFFIX,xiaomi.com,DIRECT
-# > Microsoft
-- DOMAIN-SUFFIX,microsoft.com,DIRECT
-- DOMAIN-SUFFIX,msecnd.net,DIRECT
-- DOMAIN-SUFFIX,office365.com,DIRECT
-- DOMAIN-SUFFIX,outlook.com,DIRECT
-- DOMAIN-SUFFIX,s-microsoft.com,DIRECT
-- DOMAIN-SUFFIX,visualstudio.com,DIRECT
-- DOMAIN-SUFFIX,windows.com,DIRECT
-- DOMAIN-SUFFIX,windowsupdate.com,DIRECT
-- DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
-
-# > Sina
-- DOMAIN-SUFFIX,sina.com,DIRECT
-- DOMAIN-SUFFIX,weibo.com,DIRECT
-- DOMAIN-SUFFIX,weibocdn.com,DIRECT
-# > Sohu
-- DOMAIN-SUFFIX,sohu.com,DIRECT
-- DOMAIN-SUFFIX,sohucs.com,DIRECT
-- DOMAIN-SUFFIX,sohu-inc.com,DIRECT
-- DOMAIN-SUFFIX,v-56.com,DIRECT
-# > Sogo
-- DOMAIN-SUFFIX,sogo.com,DIRECT
-- DOMAIN-SUFFIX,sogou.com,DIRECT
-- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
-# > Steam
-- DOMAIN-SUFFIX,steampowered.com,DIRECT
-- DOMAIN-SUFFIX,steam-chat.com,DIRECT
-- DOMAIN-SUFFIX,steamgames.com,DIRECT
-- DOMAIN-SUFFIX,steamusercontent.com,DIRECT
-- DOMAIN-SUFFIX,steamcontent.com,DIRECT
-- DOMAIN-SUFFIX,steamstatic.com,DIRECT
-- DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
-- DOMAIN-SUFFIX,steamstat.us,DIRECT
-# > Tencent
-# USER-AGENT,MicroMessenger%20Client,DIRECT
-# USER-AGENT,WeChat*,DIRECT
-- DOMAIN-SUFFIX,gtimg.com,DIRECT
-- DOMAIN-SUFFIX,idqqimg.com,DIRECT
-- DOMAIN-SUFFIX,igamecj.com,DIRECT
-- DOMAIN-SUFFIX,myapp.com,DIRECT
-- DOMAIN-SUFFIX,myqcloud.com,DIRECT
-- DOMAIN-SUFFIX,qq.com,DIRECT
-- DOMAIN-SUFFIX,tencent.com,DIRECT
-- DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
-# > YYeTs
-# USER-AGENT,YYeTs*,DIRECT
-- DOMAIN-SUFFIX,jstucdn.com,DIRECT
-- DOMAIN-SUFFIX,zimuzu.io,DIRECT
-- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
-- DOMAIN-SUFFIX,zmz2019.com,DIRECT
-- DOMAIN-SUFFIX,zmzapi.com,DIRECT
-- DOMAIN-SUFFIX,zmzapi.net,DIRECT
-- DOMAIN-SUFFIX,zmzfile.com,DIRECT
-# > Content Delivery Network
-- DOMAIN-SUFFIX,ccgslb.com,DIRECT
-- DOMAIN-SUFFIX,ccgslb.net,DIRECT
-- DOMAIN-SUFFIX,chinanetcenter.com,DIRECT
-- DOMAIN-SUFFIX,meixincdn.com,DIRECT
-- DOMAIN-SUFFIX,ourdvs.com,DIRECT
-- DOMAIN-SUFFIX,staticdn.net,DIRECT
-- DOMAIN-SUFFIX,wangsu.com,DIRECT
-# > IP Query
-- DOMAIN-SUFFIX,ipip.net,DIRECT
-- DOMAIN-SUFFIX,ip.la,DIRECT
-- DOMAIN-SUFFIX,ip-cdn.com,DIRECT
-- DOMAIN-SUFFIX,ipv6-test.com,DIRECT
-- DOMAIN-SUFFIX,test-ipv6.com,DIRECT
-- DOMAIN-SUFFIX,whatismyip.com,DIRECT
-# > Speed Test
-# - DOMAIN-SUFFIX,speedtest.net,DIRECT
-- DOMAIN-SUFFIX,netspeedtestmaster.com,DIRECT
-- DOMAIN,speedtest.macpaw.com,DIRECT
-# > Private Tracker
-- DOMAIN-SUFFIX,awesome-hd.me,DIRECT
-- DOMAIN-SUFFIX,broadcasthe.net,DIRECT
-- DOMAIN-SUFFIX,chdbits.co,DIRECT
-- DOMAIN-SUFFIX,classix-unlimited.co.uk,DIRECT
-- DOMAIN-SUFFIX,empornium.me,DIRECT
-- DOMAIN-SUFFIX,gazellegames.net,DIRECT
-- DOMAIN-SUFFIX,hdchina.org,DIRECT
-- DOMAIN-SUFFIX,hdsky.me,DIRECT
-- DOMAIN-SUFFIX,jpopsuki.eu,DIRECT
-- DOMAIN-SUFFIX,keepfrds.com,DIRECT
-- DOMAIN-SUFFIX,m-team.cc,DIRECT
-- DOMAIN-SUFFIX,nanyangpt.com,DIRECT
-- DOMAIN-SUFFIX,ncore.cc,DIRECT
-- DOMAIN-SUFFIX,open.cd,DIRECT
-- DOMAIN-SUFFIX,ourbits.club,DIRECT
-- DOMAIN-SUFFIX,passthepopcorn.me,DIRECT
-- DOMAIN-SUFFIX,privatehd.to,DIRECT
-- DOMAIN-SUFFIX,redacted.ch,DIRECT
-- DOMAIN-SUFFIX,springsunday.net,DIRECT
-- DOMAIN-SUFFIX,tjupt.org,DIRECT
-- DOMAIN-SUFFIX,totheglory.im,DIRECT
-# > Other
-- DOMAIN-SUFFIX,cn,DIRECT
-- DOMAIN-SUFFIX,360in.com,DIRECT
-- DOMAIN-SUFFIX,51ym.me,DIRECT
-- DOMAIN-SUFFIX,8686c.com,DIRECT
-- DOMAIN-SUFFIX,abchina.com,DIRECT
-- DOMAIN-SUFFIX,accuweather.com,DIRECT
-- DOMAIN-SUFFIX,aicoinstorge.com,DIRECT
-- DOMAIN-SUFFIX,air-matters.com,DIRECT
-- DOMAIN-SUFFIX,air-matters.io,DIRECT
-- DOMAIN-SUFFIX,aixifan.com,DIRECT
-- DOMAIN-SUFFIX,amd.com,DIRECT
-- DOMAIN-SUFFIX,b612.net,DIRECT
-- DOMAIN-SUFFIX,bdatu.com,DIRECT
-- DOMAIN-SUFFIX,beitaichufang.com,DIRECT
-- DOMAIN-SUFFIX,bjango.com,DIRECT
-- DOMAIN-SUFFIX,booking.com,DIRECT
-- DOMAIN-SUFFIX,bstatic.com,DIRECT
-- DOMAIN-SUFFIX,cailianpress.com,DIRECT
-- DOMAIN-SUFFIX,camera360.com,DIRECT
-- DOMAIN-SUFFIX,chinaso.com,DIRECT
-- DOMAIN-SUFFIX,chua.pro,DIRECT
-- DOMAIN-SUFFIX,chuimg.com,DIRECT
-- DOMAIN-SUFFIX,chunyu.mobi,DIRECT
-- DOMAIN-SUFFIX,chushou.tv,DIRECT
-- DOMAIN-SUFFIX,cmbchina.com,DIRECT
-- DOMAIN-SUFFIX,cmbimg.com,DIRECT
-- DOMAIN-SUFFIX,ctrip.com,DIRECT
-- DOMAIN-SUFFIX,dfcfw.com,DIRECT
-- DOMAIN-SUFFIX,docschina.org,DIRECT
-- DOMAIN-SUFFIX,douban.com,DIRECT
-- DOMAIN-SUFFIX,doubanio.com,DIRECT
-- DOMAIN-SUFFIX,douyu.com,DIRECT
-- DOMAIN-SUFFIX,dxycdn.com,DIRECT
-- DOMAIN-SUFFIX,dytt8.net,DIRECT
-- DOMAIN-SUFFIX,eastmoney.com,DIRECT
-- DOMAIN-SUFFIX,eudic.net,DIRECT
-- DOMAIN-SUFFIX,feng.com,DIRECT
-- DOMAIN-SUFFIX,fengkongcloud.com,DIRECT
-- DOMAIN-SUFFIX,frdic.com,DIRECT
-- DOMAIN-SUFFIX,futu5.com,DIRECT
-- DOMAIN-SUFFIX,futunn.com,DIRECT
-- DOMAIN-SUFFIX,geilicdn.com,DIRECT
-- DOMAIN-SUFFIX,getpricetag.com,DIRECT
-- DOMAIN-SUFFIX,gifshow.com,DIRECT
-- DOMAIN-SUFFIX,godic.net,DIRECT
-- DOMAIN-SUFFIX,hicloud.com,DIRECT
-- DOMAIN-SUFFIX,hongxiu.com,DIRECT
-- DOMAIN-SUFFIX,hostbuf.com,DIRECT
-- DOMAIN-SUFFIX,huxiucdn.com,DIRECT
-- DOMAIN-SUFFIX,huya.com,DIRECT
-- DOMAIN-SUFFIX,infinitynewtab.com,DIRECT
-- DOMAIN-SUFFIX,ithome.com,DIRECT
-- DOMAIN-SUFFIX,java.com,DIRECT
-- DOMAIN-SUFFIX,jidian.im,DIRECT
-- DOMAIN-SUFFIX,kaiyanapp.com,DIRECT
-- DOMAIN-SUFFIX,kaspersky-labs.com,DIRECT
-- DOMAIN-SUFFIX,keepcdn.com,DIRECT
-- DOMAIN-SUFFIX,kkmh.com,DIRECT
-- DOMAIN-SUFFIX,licdn.com,DIRECT
-- DOMAIN-SUFFIX,linkedin.com,DIRECT
-- DOMAIN-SUFFIX,loli.net,DIRECT
-- DOMAIN-SUFFIX,luojilab.com,DIRECT
-- DOMAIN-SUFFIX,maoyan.com,DIRECT
-- DOMAIN-SUFFIX,maoyun.tv,DIRECT
-- DOMAIN-SUFFIX,meituan.com,DIRECT
-- DOMAIN-SUFFIX,meituan.net,DIRECT
-- DOMAIN-SUFFIX,mobike.com,DIRECT
-- DOMAIN-SUFFIX,mubu.com,DIRECT
-- DOMAIN-SUFFIX,myzaker.com,DIRECT
-- DOMAIN-SUFFIX,nim-lang-cn.org,DIRECT
-- DOMAIN-SUFFIX,nvidia.com,DIRECT
-- DOMAIN-SUFFIX,oracle.com,DIRECT
-- DOMAIN-SUFFIX,paypal.com,DIRECT
-- DOMAIN-SUFFIX,paypalobjects.com,DIRECT
-- DOMAIN-SUFFIX,qdaily.com,DIRECT
-- DOMAIN-SUFFIX,qidian.com,DIRECT
-- DOMAIN-SUFFIX,qyer.com,DIRECT
-- DOMAIN-SUFFIX,qyerstatic.com,DIRECT
-- DOMAIN-SUFFIX,raychase.net,DIRECT
-- DOMAIN-SUFFIX,ronghub.com,DIRECT
-- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
-- DOMAIN-SUFFIX,sankuai.com,DIRECT
-- DOMAIN-SUFFIX,scomper.me,DIRECT
-- DOMAIN-SUFFIX,seafile.com,DIRECT
-- DOMAIN-SUFFIX,sm.ms,DIRECT
-- DOMAIN-SUFFIX,smzdm.com,DIRECT
-- DOMAIN-SUFFIX,snapdrop.net,DIRECT
-- DOMAIN-SUFFIX,snwx.com,DIRECT
-- DOMAIN-SUFFIX,s-reader.com,DIRECT
-- DOMAIN-SUFFIX,sspai.com,DIRECT
-- DOMAIN-SUFFIX,takungpao.com,DIRECT
-- DOMAIN-SUFFIX,teamviewer.com,DIRECT
-- DOMAIN-SUFFIX,tianyancha.com,DIRECT
-- DOMAIN-SUFFIX,udacity.com,DIRECT
-- DOMAIN-SUFFIX,uning.com,DIRECT
-- DOMAIN-SUFFIX,vmware.com,DIRECT
-- DOMAIN-SUFFIX,weather.com,DIRECT
-- DOMAIN-SUFFIX,weico.cc,DIRECT
-- DOMAIN-SUFFIX,weidian.com,DIRECT
-- DOMAIN-SUFFIX,xiachufang.com,DIRECT
-- DOMAIN-SUFFIX,ximalaya.com,DIRECT
-- DOMAIN-SUFFIX,xinhuanet.com,DIRECT
-- DOMAIN-SUFFIX,xmcdn.com,DIRECT
-- DOMAIN-SUFFIX,yangkeduo.com,DIRECT
-- DOMAIN-SUFFIX,zhangzishi.cc,DIRECT
-- DOMAIN-SUFFIX,zhihu.com,DIRECT
-- DOMAIN-SUFFIX,zhimg.com,DIRECT
-- DOMAIN-SUFFIX,zhuihd.com,DIRECT
-- DOMAIN,download.jetbrains.com,DIRECT
-- DOMAIN-SUFFIX,vd.l.qq.com,DIRECT
-- DOMAIN-SUFFIX,analytics.strava.com,DIRECT
-- DOMAIN,vd.l.qq.com,DIRECT
-- DOMAIN,analytics.strava.com,DIRECT
-
-# > Apple
-- DOMAIN-SUFFIX,aaplimg.com,🍎苹果服务
-- DOMAIN-SUFFIX,apple.co,🍎苹果服务
-- DOMAIN-SUFFIX,apple.com,🍎苹果服务
-- DOMAIN-SUFFIX,appstore.com,🍎苹果服务
-- DOMAIN-SUFFIX,cdn-apple.com,🍎苹果服务
-- DOMAIN-SUFFIX,crashlytics.com,🍎苹果服务
-- DOMAIN-SUFFIX,icloud.com,🍎苹果服务
-- DOMAIN-SUFFIX,icloud-content.com,🍎苹果服务
-- DOMAIN-SUFFIX,me.com,🍎苹果服务
-- DOMAIN-SUFFIX,mzstatic.com,🍎苹果服务
-- DOMAIN,www-cdn.icloud.com.akadns.net,🍎苹果服务
-- IP-CIDR,17.0.0.0/8,🍎苹果服务
-
-# Local Area Network
-- IP-CIDR,192.168.0.0/16,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT
-- IP-CIDR,172.16.0.0/12,DIRECT
-- IP-CIDR,127.0.0.0/8,DIRECT
-- IP-CIDR,100.64.0.0/10,DIRECT
-
-- DOMAIN-SUFFIX,local,DIRECT
-- IP-CIDR,127.0.0.0/8,DIRECT
-- IP-CIDR,172.16.0.0/12,DIRECT
-- IP-CIDR,192.168.0.0/16,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT
-- IP-CIDR,17.0.0.0/8,DIRECT
-- IP-CIDR,100.64.0.0/10,DIRECT
-
-# DNSPod Public DNS+
-- IP-CIDR,119.28.28.28/32,DIRECT
-
-- GEOIP,CN,DIRECT
-- MATCH,🐟漏网之鱼
+  # 最终规则
+  - GEOIP,CN,DIRECT
+  - MATCH,🐸速蛙云
