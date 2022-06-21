@@ -1,5 +1,5 @@
 #---------------------------------------------------#
-## 上次更新于：2022-06-06 10:54:04
+## 上次更新于：2022-06-18 23:57:50
 #---------------------------------------------------#
 
 port: 7890
@@ -14,1479 +14,1479 @@ proxies:
   -
     name: v2|香港01|MPTCP|★★★
     type: ss
-    server: 3urbvz0srnta639sdy2s8jimfnpgegqmf6p45gnq.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyzamn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyzamn2wojzh.sina.cn
   -
     name: v2|香港02|MPTCP|★★★
     type: ss
-    server: ovnbyauvcoa9phzkhoqgazvapigiceswux92afcu.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsy3wmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsy3wmn2wojzh.sina.cn
   -
     name: v2|香港03|MPTCP|★★★
     type: ss
-    server: 9s9owuhre6lub4j58ouvhgqwrtxzchctq6z6ayrt.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyrqmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyrqmn2wojzh.sina.cn
   -
     name: v2|香港04|MPTCP|★★★
     type: ss
-    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszremn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszremn2wojzh.sina.cn
   -
     name: v2|香港05|MPTCP|★★★
     type: ss
-    server: vdp9o6qc5s8tgqqp7jdsrrtaqhx8emesjpmkre8w.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsz3xmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsz3xmn2wojzh.sina.cn
   -
     name: v2|香港06|MPTCP|★★★
     type: ss
-    server: ol77aajx6oc0ijvwhof6atddsqvenlcxurzfainv7l.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyjqmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyjqmn2wojzh.sina.cn
   -
     name: v2|香港07|MPTCP|★★☆
     type: ss
-    server: lqpfpnrqlmonylhi3n2rujzpig3ls3vmmcqrpuuxts.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsy3xmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsy3xmn2wojzh.sina.cn
   -
     name: v2|香港08|MPTCP|★★☆
     type: ss
-    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyzdmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyzdmn2wojzh.sina.cn
   -
     name: v2|香港09|MPTCP|★★★
     type: ss
-    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszrjmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszrjmn2wojzh.sina.cn
   -
     name: v2|香港10|MPTCP|★★★
     type: ss
-    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsz3wmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsz3wmn2wojzh.sina.cn
   -
     name: v2|香港11|MPTCP|★★☆
     type: ss
-    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsytrmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsytrmn2wojzh.sina.cn
   -
     name: v2|香港12|MPTCP|★★★
     type: ss
-    server: 7uplflid9v1yzrkztonw4mfkk8b3stjl0q2icrex.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsytwmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsytwmn2wojzh.sina.cn
   -
     name: v2|香港13|MPTCP|★★☆
     type: ss
-    server: kixmlgnfi4iaw2hhqogh4jcp0i6cplazhelpucn7.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyrkmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyrkmn2wojzh.sina.cn
   -
     name: v2|新加坡01|MPTCP|★★★
     type: ss
-    server: 7uplflid9v1yzrkztonw4mfkk8b3stjl0q2icrex.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyjvmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyjvmn2wojzh.sina.cn
   -
     name: v2|新加坡02|MPTCP|★★★
     type: ss
-    server: kixmlgnfi4iaw2hhqogh4jcp0i6cplazhelpucn7.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsytsmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsytsmn2wojzh.sina.cn
   -
     name: v2|新加坡03|MPTCP|★★★
     type: ss
-    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyrrmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyrrmn2wojzh.sina.cn
   -
     name: v2|新加坡04|MPTCP|★★★
     type: ss
-    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsztrmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsztrmn2wojzh.sina.cn
   -
     name: v2|新加坡05|MPTCP|★★★
     type: ss
-    server: ol77aajx6oc0ijvwhof6atddsqvenlcxurzfainv7l.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsz3umn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsz3umn2wojzh.sina.cn
   -
     name: v2|新加坡06|MPTCP|★★★
     type: ss
-    server: pcf6n56m0fyjxn9mihl64jj8ltlijvkpl4bgdt48.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyrpmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyrpmn2wojzh.sina.cn
   -
     name: v2|新加坡07|MPTCP|★★★
     type: ss
-    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jomn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jomn2wojzh.sina.cn
   -
     name: v2|日本01|MPTCP|★★☆
     type: ss
-    server: fqwcrcbg6fucoec2oigyzmiiy3wumvrqjzugvawg.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyjsmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyjsmn2wojzh.sina.cn
   -
     name: v2|日本02|MPTCP|★★☆
     type: ss
-    server: sgyd4ixfsqyu757djgdg8da8h0gwc6hg62elztqk.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyttmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyttmn2wojzh.sina.cn
   -
     name: v2|日本03|MPTCP|★★☆
     type: ss
-    server: ihnhivs2f3qobwei85x9niz30oolvnzqzw59kwi0.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyrmmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyrmmn2wojzh.sina.cn
   -
     name: v2|日本04|MPTCP|★★☆
     type: ss
-    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszrcmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszrcmn2wojzh.sina.cn
   -
     name: v2|日本05|MPTCP|★★☆
     type: ss
-    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsz3vmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsz3vmn2wojzh.sina.cn
   -
     name: v2|日本06|MPTCP|★★☆
     type: ss
-    server: fd8pixvqhlvsxp6j21grlidzt3xjixsj6axpuikjfs.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsy3umn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsy3umn2wojzh.sina.cn
   -
     name: v2|美国01|MPTCP|★★★
     type: ss
-    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszjhmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszjhmn2wojzh.sina.cn
   -
     name: v2|美国02|MPTCP|★★★
     type: ss
-    server: sgyd4ixfsqyu757djgdg8da8h0gwc6hg62elztqk.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyjxmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyjxmn2wojzh.sina.cn
   -
     name: v2|美国03|MPTCP|★★★
     type: ss
-    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszjgmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszjgmn2wojzh.sina.cn
   -
     name: v2|美国04|MPTCP|★★★
     type: ss
-    server: 2osgtus9dhg3sc6hfs3pldqng2glcc9k1k9ykjzt.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsztumn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsztumn2wojzh.sina.cn
   -
     name: v2|美国05|MPTCP|★★★
     type: ss
-    server: mbhwkatmlxx5srwgh6axzpz4wnk27ppu5gyllnvv.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsz3smn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsz3smn2wojzh.sina.cn
   -
     name: v2|美国06|MPTCP|★★★
     type: ss
-    server: k35i2qapope3jwe8whblqemjigfrvewrsv4ve52m.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jqmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jqmn2wojzh.sina.cn
   -
     name: v2|香港01|原生|★★★
     type: ss
-    server: 9s9owuhre6lub4j58ouvhgqwrtxzchctq6z6ayrt.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyjomn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyjomn2wojzh.sina.cn
   -
     name: v2|香港02|原生|★★★
     type: ss
-    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyjymn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyjymn2wojzh.sina.cn
   -
     name: v2|香港03|原生|★★★
     type: ss
-    server: vdp9o6qc5s8tgqqp7jdsrrtaqhx8emesjpmkre8w.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyrimn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyrimn2wojzh.sina.cn
   -
     name: v2|香港04|原生|★★★
     type: ss
-    server: vdp9o6qc5s8tgqqp7jdsrrtaqhx8emesjpmkre8w.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszjwmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszjwmn2wojzh.sina.cn
   -
     name: v2|香港05|原生|★★★
     type: ss
-    server: ifz4apw8gqjso0tgdtjctvkyhmfs5ppazrixdffc.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsz3tmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsz3tmn2wojzh.sina.cn
   -
     name: v2|香港06|原生|★★★
     type: ss
-    server: sgyd4ixfsqyu757djgdg8da8h0gwc6hg62elztqk.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsytxmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsytxmn2wojzh.sina.cn
   -
     name: v2|香港01|myTVSUPER|限速
     type: ss
-    server: ovnbyauvcoa9phzkhoqgazvapigiceswux92afcu.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszz3mn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszz3mn2wojzh.sina.cn
   -
     name: v2|香港01|YouTubePre|限速
     type: ss
-    server: 3z1g1ees3rlmirzl172pq2zuwllkntunrzrcrskebw.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2drmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2drmn2wojzh.sina.cn
   -
     name: v2|香港02|防送中|限速
     type: ss
-    server: mbhwkatmlxx5srwgh6axzpz4wnk27ppu5gyllnvv.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jpmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jpmn2wojzh.sina.cn
   -
     name: v2|台湾01|YouTubePre|限速
     type: ss
-    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2b3mn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2b3mn2wojzh.sina.cn
   -
     name: v2|美国01|YouTubePre|限速
     type: ss
-    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2lumn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2lumn2wojzh.sina.cn
   -
     name: v2|美国02|谷歌商店|限速
     type: ss
-    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jmmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jmmn2wojzh.sina.cn
   -
     name: v2|台湾01|原生|★★☆
     type: ss
-    server: enzr581yy9g9duqnzokmb19odcqki4juasht093i.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyzcmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyzcmn2wojzh.sina.cn
   -
     name: v2|台湾02|原生|★★☆
     type: ss
-    server: ihnhivs2f3qobwei85x9niz30oolvnzqzw59kwi0.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsyzumn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsyzumn2wojzh.sina.cn
   -
     name: v2|台湾03|原生|★★☆
     type: ss
-    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszttmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszttmn2wojzh.sina.cn
   -
     name: v2|台湾04|原生|★★☆
     type: ss
-    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzgmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzgmn2wojzh.sina.cn
   -
     name: v2|台湾05|原生|★★☆
     type: ss
-    server: 9s9owuhre6lub4j58ouvhgqwrtxzchctq6z6ayrt.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsz3qmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsz3qmn2wojzh.sina.cn
   -
     name: v2|台湾06|原生|★★☆
     type: ss
-    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jvmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jvmn2wojzh.sina.cn
   -
     name: v2|新加坡01|原生|★★☆
     type: ss
-    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszlxmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszlxmn2wojzh.sina.cn
   -
     name: v2|新加坡02|原生|★★☆
     type: ss
-    server: kixmlgnfi4iaw2hhqogh4jcp0i6cplazhelpucn7.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszlwmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszlwmn2wojzh.sina.cn
   -
     name: v2|新加坡03|原生|★★☆
     type: ss
-    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszj3mn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszj3mn2wojzh.sina.cn
   -
     name: v2|新加坡04|原生|★★☆
     type: ss
-    server: 7p5bbihbyvizwl8qs7pd7jclkrkzgm5q95abo8su.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzxmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzxmn2wojzh.sina.cn
   -
     name: v2|新加坡05|原生|★★☆
     type: ss
-    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsz3rmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsz3rmn2wojzh.sina.cn
   -
     name: v2|新加坡06|原生|★★☆
     type: ss
-    server: r6axbnbbu1xshrqpz6g9h96ekwisfdjibwiytstt.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jrmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jrmn2wojzh.sina.cn
   -
     name: v2|日本01|原生|★★☆
     type: ss
-    server: fqwcrcbg6fucoec2oigyzmiiy3wumvrqjzugvawg.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzzmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzzmn2wojzh.sina.cn
   -
     name: v2|日本02|原生|★★☆
     type: ss
-    server: jlky9xlmfq3kfbhhkod5coq8tzpdpeeqmdeqtckv.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzfmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzfmn2wojzh.sina.cn
   -
     name: v2|日本03|原生|★★☆
     type: ss
-    server: wj7g03ui2ttlh6vdnlmhd264mhgxeh2ushfrubbc.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzcmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzcmn2wojzh.sina.cn
   -
     name: v2|日本04|原生|★★☆
     type: ss
-    server: 8lusgkosx0nrhdow8si0ffipac19nnpiavao6eml.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzemn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzemn2wojzh.sina.cn
   -
     name: v2|日本05|原生|★★☆
     type: ss
-    server: 09x7rl5q5v0y7vxsznegknfvlxi13ohh8k97ozse.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzhmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzhmn2wojzh.sina.cn
   -
     name: v2|日本01|特供原生|限速
     type: ss
-    server: 3urbvz0srnta639sdy2s8jimfnpgegqmf6p45gnq.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzymn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzymn2wojzh.sina.cn
   -
     name: v2|美国01|原生|★★☆
     type: ss
-    server: pcf6n56m0fyjxn9mihl64jj8ltlijvkpl4bgdt48.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszjmmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszjmmn2wojzh.sina.cn
   -
     name: v2|美国02|原生|★★☆
     type: ss
-    server: mbhwkatmlxx5srwgh6axzpz4wnk27ppu5gyllnvv.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszjpmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszjpmn2wojzh.sina.cn
   -
     name: v2|美国03|原生|★★☆
     type: ss
-    server: ihnhivs2f3qobwei85x9niz30oolvnzqzw59kwi0.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsztvmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsztvmn2wojzh.sina.cn
   -
     name: v2|美国04|原生|★★☆
     type: ss
-    server: fd8pixvqhlvsxp6j21grlidzt3xjixsj6axpuikjfs.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzwmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzwmn2wojzh.sina.cn
   -
     name: v2|美国05|原生|★★☆
     type: ss
-    server: xpiras0lekntwos2m6sauxwpfi9reishxvvg2p8b.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszr3mn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszr3mn2wojzh.sina.cn
   -
     name: v2|美国06|原生|★★☆
     type: ss
-    server: 3z1g1ees3rlmirzl172pq2zuwllkntunrzrcrskebw.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jtmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jtmn2wojzh.sina.cn
   -
     name: v2|美国01|hulu|限速
     type: ss
-    server: k35i2qapope3jwe8whblqemjigfrvewrsv4ve52m.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2btmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2btmn2wojzh.sina.cn
   -
     name: v2|英国01|原生|★★☆
     type: ss
-    server: pcf6n56m0fyjxn9mihl64jj8ltlijvkpl4bgdt48.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2bsmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2bsmn2wojzh.sina.cn
   -
     name: v2|英国02|原生|★★☆
     type: ss
-    server: ovnbyauvcoa9phzkhoqgazvapigiceswux92afcu.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2bvmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2bvmn2wojzh.sina.cn
   -
     name: v2|英国03|原生|★★☆
     type: ss
-    server: lc6qsaopz62rrlbjkk2wptvp4qbfsdesuknfh8lw.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2bumn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2bumn2wojzh.sina.cn
   -
     name: v2|英国04|原生|★★☆
     type: ss
-    server: 926x2v04nekuaeyu0ngjuurl6qeigebf7onbpz3b.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2bxmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2bxmn2wojzh.sina.cn
   -
     name: v2|英国05|原生|★★☆
     type: ss
-    server: 3urbvz0srnta639sdy2s8jimfnpgegqmf6p45gnq.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2bwmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2bwmn2wojzh.sina.cn
   -
     name: v2|英国06|原生|★★☆
     type: ss
-    server: 7p5bbihbyvizwl8qs7pd7jclkrkzgm5q95abo8su.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jsmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jsmn2wojzh.sina.cn
   -
     name: v2|澳洲01|MPTCP|★☆☆
     type: ss
-    server: 3urbvz0srnta639sdy2s8jimfnpgegqmf6p45gnq.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsy3rmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsy3rmn2wojzh.sina.cn
   -
     name: v2|澳洲02|MPTCP|★☆☆
     type: ss
-    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsztzmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsztzmn2wojzh.sina.cn
   -
     name: v2|澳洲03|MPTCP|★☆☆
     type: ss
-    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszrzmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszrzmn2wojzh.sina.cn
   -
     name: v2|澳洲04|MPTCP|★☆☆
     type: ss
-    server: 3z1g1ees3rlmirzl172pq2zuwllkntunrzrcrskebw.k1h8.top
-    port: 54721
+    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszztmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszztmn2wojzh.sina.cn
   -
     name: v2|澳洲05|MPTCP|★☆☆
     type: ss
-    server: zjypnpl1nq8xv8xzied4hnibarkzm8w3iosq0vce.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzsmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzsmn2wojzh.sina.cn
   -
     name: v2|韩国01|MPTCP|★☆☆
     type: ss
-    server: 0r9dtk2cfiv9dicy1quj9cz14ackgdpbopxveqyu.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsy3qmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsy3qmn2wojzh.sina.cn
   -
     name: v2|韩国02|MPTCP|★☆☆
     type: ss
-    server: fqwcrcbg6fucoec2oigyzmiiy3wumvrqjzugvawg.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszrhmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszrhmn2wojzh.sina.cn
   -
     name: v2|韩国03|MPTCP|★☆☆
     type: ss
-    server: ol77aajx6oc0ijvwhof6atddsqvenlcxurzfainv7l.k1h8.top
-    port: 54721
+    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszrwmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszrwmn2wojzh.sina.cn
   -
     name: v2|韩国04|MPTCP|★☆☆
     type: ss
-    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzjmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzjmn2wojzh.sina.cn
   -
     name: v2|韩国05|MPTCP|★☆☆
     type: ss
-    server: 2osgtus9dhg3sc6hfs3pldqng2glcc9k1k9ykjzt.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszzimn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszzimn2wojzh.sina.cn
   -
     name: v2|阿根廷01|特供原生|限速
     type: ss
-    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2bymn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2bymn2wojzh.sina.cn
   -
     name: v2|巴西01|特供原生|限速
     type: ss
-    server: 8lusgkosx0nrhdow8si0ffipac19nnpiavao6eml.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2lvmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2lvmn2wojzh.sina.cn
   -
     name: v2|智利01|特供原生|限速
     type: ss
-    server: bvjtmi3cvopxlpboqfdajrgwr0moatrgdony6fdc.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsmlsmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsmlsmn2wojzh.sina.cn
   -
     name: v2|阿联酋01|特供原生|限速
     type: ss
-    server: 0rein9b013chifckr4epdpzvocphlnwlafrkd6he.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsmlqmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsmlqmn2wojzh.sina.cn
   -
     name: v2|马来西亚01|特供原生|限速
     type: ss
-    server: pcf6n56m0fyjxn9mihl64jj8ltlijvkpl4bgdt48.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2lqmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2lqmn2wojzh.sina.cn
   -
     name: v2|泰国01|特供原生|限速
     type: ss
-    server: ifz4apw8gqjso0tgdtjctvkyhmfs5ppazrixdffc.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2ltmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2ltmn2wojzh.sina.cn
   -
     name: v2|菲律宾01|特供原生|限速
     type: ss
-    server: 0r9dtk2cfiv9dicy1quj9cz14ackgdpbopxveqyu.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2lsmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2lsmn2wojzh.sina.cn
   -
     name: v2|越南01|特供原生|限速
     type: ss
-    server: 8lusgkosx0nrhdow8si0ffipac19nnpiavao6eml.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2lwmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2lwmn2wojzh.sina.cn
   -
     name: v2|印尼01|特供原生|限速
     type: ss
-    server: ncxlzzryzjmpbqrghv2yzsigt1xnsadiwyiiaf2x.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jzmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jzmn2wojzh.sina.cn
   -
     name: v2|以色列01|特供原生|限速
     type: ss
-    server: 0r9dtk2cfiv9dicy1quj9cz14ackgdpbopxveqyu.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsmlwmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsmlwmn2wojzh.sina.cn
   -
     name: v2|南非01|特供原生|限速
     type: ss
-    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jamn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jamn2wojzh.sina.cn
   -
     name: v2|尼日利亚01|特供原生|限速
     type: ss
-    server: jlky9xlmfq3kfbhhkod5coq8tzpdpeeqmdeqtckv.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jimn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jimn2wojzh.sina.cn
   -
     name: v2|加拿大01|特供原生|限速
     type: ss
-    server: 97fmhnugpxtpcrbnronlivxbcsqbfvxasgnvhamo.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jdmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jdmn2wojzh.sina.cn
   -
     name: v2|墨西哥01|特供原生|限速
     type: ss
-    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jfmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jfmn2wojzh.sina.cn
   -
     name: v2|巴基斯坦01|特供原生|限速
     type: ss
-    server: enzr581yy9g9duqnzokmb19odcqki4juasht093i.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jjmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jjmn2wojzh.sina.cn
   -
     name: v2|法国01|特供原生|限速
     type: ss
-    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2lzmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2lzmn2wojzh.sina.cn
   -
     name: v2|意大利01|特供原生|限速
     type: ss
-    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2lymn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2lymn2wojzh.sina.cn
   -
     name: v2|冰岛01|特供原生|限速
     type: ss
-    server: u0vawdyjcapbx2qokpfrfitjy42cnryjkzjra3cj.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2lxmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2lxmn2wojzh.sina.cn
   -
     name: v2|荷兰01|特供原生|限速
     type: ss
-    server: jlgptnkkjvki3jjdh8jlb3fg1dqbsupki0hag05z.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jcmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jcmn2wojzh.sina.cn
   -
     name: v2|西班牙01|特供原生|限速
     type: ss
-    server: r6axbnbbu1xshrqpz6g9h96ekwisfdjibwiytstt.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jlmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jlmn2wojzh.sina.cn
   -
     name: v2|葡萄牙01|特供原生|限速
     type: ss
-    server: 5rnspl5wtguaxa1xq6kjrg0klzerajkkowfntyeb.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsmlumn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsmlumn2wojzh.sina.cn
   -
     name: v2|瑞典01|特供原生|限速
     type: ss
-    server: szhilgxlekvcrc1xnk5f6h77zhpepimr7v3ycztp.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jnmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jnmn2wojzh.sina.cn
   -
     name: v2|德国01|特供原生|限速
     type: ss
-    server: mjbcintogemygotzpmkc32zpbf1r6usyg24ba0va.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jxmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jxmn2wojzh.sina.cn
   -
     name: v2|爱尔兰01|特供原生|限速
     type: ss
-    server: lqpfpnrqlmonylhi3n2rujzpig3ls3vmmcqrpuuxts.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jwmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jwmn2wojzh.sina.cn
   -
     name: v2|俄罗斯01|特供原生|限速
     type: ss
-    server: kcsv278o2soma8jshvyebm4fcfjsnvjg44gghiiu.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszjkmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszjkmn2wojzh.sina.cn
   -
     name: v2|俄罗斯02|特供原生|限速
     type: ss
-    server: 97fmhnugpxtpcrbnronlivxbcsqbfvxasgnvhamo.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszrlmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszrlmn2wojzh.sina.cn
   -
     name: v2|俄罗斯03|特供原生|限速
     type: ss
-    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszrvmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszrvmn2wojzh.sina.cn
   -
     name: v2|立陶宛01|特供原生|限速
     type: ss
-    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jymn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jymn2wojzh.sina.cn
   -
     name: v2|匈牙利01|特供原生|限速
     type: ss
-    server: ifz4apw8gqjso0tgdtjctvkyhmfs5ppazrixdffc.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2j3mn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2j3mn2wojzh.sina.cn
   -
     name: v2|比利时01|特供原生|限速
     type: ss
-    server: ratpjecijh9nh3al4z64ee9yn4vdqfsukejiqulr.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsmlrmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsmlrmn2wojzh.sina.cn
   -
     name: v2|乌克兰01|特供原生|限速
     type: ss
-    server: 97fmhnugpxtpcrbnronlivxbcsqbfvxasgnvhamo.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsmltmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsmltmn2wojzh.sina.cn
   -
     name: v2|罗马尼亚01|特供原生|限速
     type: ss
-    server: 0r9dtk2cfiv9dicy1quj9cz14ackgdpbopxveqyu.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsmlvmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsmlvmn2wojzh.sina.cn
   -
     name: v2|瑞士01|特供原生|限速
     type: ss
-    server: kcsv278o2soma8jshvyebm4fcfjsnvjg44gghiiu.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jkmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jkmn2wojzh.sina.cn
   -
     name: v2|奥地利01|特供原生|限速
     type: ss
-    server: bvjtmi3cvopxlpboqfdajrgwr0moatrgdony6fdc.k1h8.top
-    port: 54721
+    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgsmlxmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgsmlxmn2wojzh.sina.cn
   -
     name: v2|土耳其01|特供原生|限速
     type: ss
-    server: 7uplflid9v1yzrkztonw4mfkk8b3stjl0q2icrex.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2lrmn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2lrmn2wojzh.sina.cn
   -
     name: v2|土耳其02|特供原生|限速
     type: ss
-    server: 91wuvryqbvziafpy79ai3u7ft5apxemcxzl2csxorl.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgs2jumn2wm6l7.sina.cn
+      host: uhb4t4il5bumgs2jumn2wojzh.sina.cn
   -
     name: v2|印度01|MPTCP|★☆☆
     type: ss
-    server: mhikkjrof1z8vlbgm6upccdftuczk11mrr96a5qk.k1h8.top
-    port: 54721
+    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszjimn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszjimn2wojzh.sina.cn
   -
     name: v2|印度02|MPTCP|★☆☆
     type: ss
-    server: 7uplflid9v1yzrkztonw4mfkk8b3stjl0q2icrex.k1h8.top
-    port: 54721
+    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    port: 56286
     cipher: aes-128-gcm
-    password: 14766e02e778
+    password: 14d488b58777
     udp: false
     plugin: obfs
     plugin-opts:
       mode: http
-      host: uhb4t4il5budgszramn2wm6l7.sina.cn
+      host: uhb4t4il5bumgszramn2wojzh.sina.cn
 proxy-groups:
   -
     name: 🐸速蛙云
