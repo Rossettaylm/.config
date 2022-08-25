@@ -14,6 +14,9 @@ export ZSH_HOME="$HOME/.config/zsh"
 export ZSH="$ZSH_HOME/oh-my-zsh"
 export FZF_HOME="$HOME/Softwares/fzf"
 
+export CUDA_PATH="/opt/cuda"
+export PATH=$PATH:$CUDA_PATH/bin:$CUDA_PATH/lib64
+
 export EDITOR=nvim
 export TERM=xterm-256color
 

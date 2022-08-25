@@ -20,6 +20,10 @@ alias gs='git config credential.helper store'
 alias up='sudo pacman -Syyu'
 alias clip='xclip -selection c'
 alias px='proxychains'
+alias xm="xmake"
+alias xmr="xmake build && xmake run"
+alias sdrnow="shutdown -r now"
+alias sdnow="shutdown now"
 
 # alacritty colorscheme
 # 准备工作: pip install alacritty-colorscheme

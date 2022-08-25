@@ -1,5 +1,5 @@
 #---------------------------------------------------#
-## 上次更新于：2022-06-18 23:57:50
+## 上次更新于：2022-07-09 13:01:29
 #---------------------------------------------------#
 
 port: 7890
@@ -14,7 +14,7 @@ proxies:
   -
     name: v2|香港01|MPTCP|★★★
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: fn2h42afcujssizuem.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -26,7 +26,7 @@ proxies:
   -
     name: v2|香港02|MPTCP|★★★
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: fa2da7yfcvzcsizofi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -38,7 +38,7 @@ proxies:
   -
     name: v2|香港03|MPTCP|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: oard2aifcv3ssidtoa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -50,7 +50,7 @@ proxies:
   -
     name: v2|香港04|MPTCP|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: eu3t2yqfcv2cspbjoa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -62,7 +62,7 @@ proxies:
   -
     name: v2|香港05|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: eyvsczafcvrcsmlvh4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -74,7 +74,7 @@ proxies:
   -
     name: v2|香港06|MPTCP|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: pq2t2oqfcv3sslbpoa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -86,7 +86,7 @@ proxies:
   -
     name: v2|香港07|MPTCP|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: fa3sc2ifcvvssizkh4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -98,7 +98,7 @@ proxies:
   -
     name: v2|香港08|MPTCP|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: fmrcipafcvqcsizzgi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -110,7 +110,7 @@ proxies:
   -
     name: v2|香港09|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: er3xw2ifcujsspbxea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -122,7 +122,7 @@ proxies:
   -
     name: v2|香港10|MPTCP|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: eyuda7yfcukssmjcfi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -134,7 +134,7 @@ proxies:
   -
     name: v2|香港11|MPTCP|★★☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: p43hqhyfcvtsslzjfu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -146,7 +146,7 @@ proxies:
   -
     name: v2|香港12|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: pyvtazifcvqssltufi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -158,7 +158,7 @@ proxies:
   -
     name: v2|香港13|MPTCP|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: oezcw7ifcujssijfhe.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -170,7 +170,7 @@ proxies:
   -
     name: v2|新加坡01|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: p52xwaifcuzsslbvea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -182,7 +182,7 @@ proxies:
   -
     name: v2|新加坡02|MPTCP|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: pz3xchafcuecslzxey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -194,7 +194,7 @@ proxies:
   -
     name: v2|新加坡03|MPTCP|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: ob2c46yfcvussijuhq.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -206,7 +206,7 @@ proxies:
   -
     name: v2|新加坡04|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: eivhqaifcvwssplufu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -218,7 +218,7 @@ proxies:
   -
     name: v2|新加坡05|MPTCP|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: eythwgqfcvscsmlqea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -230,7 +230,7 @@ proxies:
   -
     name: v2|新加坡06|MPTCP|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: obzsiyqfculcsijtgi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -242,7 +242,7 @@ proxies:
   -
     name: v2|新加坡07|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: gfzhq3yfculcq7bsfu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -254,7 +254,7 @@ proxies:
   -
     name: v2|日本01|MPTCP|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: p5yso3qfcv3sslbqpi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -266,7 +266,7 @@ proxies:
   -
     name: v2|日本02|MPTCP|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: pzzt2zafcuecslzsoa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -278,7 +278,7 @@ proxies:
   -
     name: v2|日本03|MPTCP|★★☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: oe5x47qfculcsijoem.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -290,7 +290,7 @@ proxies:
   -
     name: v2|日本04|MPTCP|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: euwxq3qfcv2cspbafu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -302,7 +302,7 @@ proxies:
   -
     name: v2|日本05|MPTCP|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: eyrco7ifcukssmltpi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -314,7 +314,7 @@ proxies:
   -
     name: v2|日本06|MPTCP|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: fazhw7ifcuzssizfea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -326,7 +326,7 @@ proxies:
   -
     name: v2|美国01|MPTCP|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: eavhcyafcu2cso3uey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -338,7 +338,7 @@ proxies:
   -
     name: v2|美国02|MPTCP|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: p4qda3qfculcsl3rfi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -350,7 +350,7 @@ proxies:
   -
     name: v2|美国03|MPTCP|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: eaxso3yfculcsozbpi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -362,7 +362,7 @@ proxies:
   -
     name: v2|美国04|MPTCP|★★★
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: ei4xwpifcvrcspjmea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -374,7 +374,7 @@ proxies:
   -
     name: v2|美国05|MPTCP|★★★
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: ez2hcpifcvusspruey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -386,7 +386,7 @@ proxies:
   -
     name: v2|美国06|MPTCP|★★★
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: gf2d27ifcvtcq7b3oa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -398,7 +398,7 @@ proxies:
   -
     name: v2|香港01|原生|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: pqzxqzafcvxcslbgfu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -410,7 +410,7 @@ proxies:
   -
     name: v2|香港02|原生|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: p4wx42afcv3sslzaem.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -422,7 +422,7 @@ proxies:
   -
     name: v2|香港03|原生|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: oeusc2yfcvtssil3h4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -434,7 +434,7 @@ proxies:
   -
     name: v2|香港04|原生|★★★
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: ej3sw2ifcuecsorxhe.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -446,7 +446,7 @@ proxies:
   -
     name: v2|香港05|原生|★★★
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: ezyd22afcv3csprxoa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -458,7 +458,7 @@ proxies:
   -
     name: v2|香港06|原生|★★★
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: pytcc2yfcuecsltqh4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -470,7 +470,7 @@ proxies:
   -
     name: v2|香港01|myTVSUPER|限速
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: hn5sizyfcvzcsmz3gi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -482,7 +482,7 @@ proxies:
   -
     name: v2|香港01|YouTubePre|限速
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: hmqhq3qfcvusq6lsfu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -494,7 +494,7 @@ proxies:
   -
     name: v2|香港02|防送中|限速
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: hy5sihyfcvusq7bogi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -506,7 +506,7 @@ proxies:
   -
     name: v2|台湾01|YouTubePre|限速
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: hqwsi6yfcv3cq6ragi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -518,7 +518,7 @@ proxies:
   -
     name: v2|美国01|YouTubePre|限速
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: h55xw7yfcvwsq6r3ea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -530,7 +530,7 @@ proxies:
   -
     name: v2|美国02|谷歌商店|限速
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: hy3h4hyfcv3sq7bjem.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -542,7 +542,7 @@ proxies:
   -
     name: v2|台湾01|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: fmthqyafcvscsitqfu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -554,7 +554,7 @@ proxies:
   -
     name: v2|台湾02|原生|★★☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: fvycc2yfcvxcsjjqh4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -566,7 +566,7 @@ proxies:
   -
     name: v2|台湾03|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: eiwd2oqfcuecspjgoa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -578,7 +578,7 @@ proxies:
   -
     name: v2|台湾04|原生|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: hessozifcvxcsmdwpi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -590,7 +590,7 @@ proxies:
   -
     name: v2|台湾05|原生|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: ezzs4zyfcvvssprthq.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -602,7 +602,7 @@ proxies:
   -
     name: v2|台湾06|原生|★★☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: gevhw2yfcvzcq73uea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -614,7 +614,7 @@ proxies:
   -
     name: v2|新加坡01|原生|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: eewsc2afcu2csobah4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -626,7 +626,7 @@ proxies:
   -
     name: v2|新加坡02|原生|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: eezdapifcu2ssobefi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -638,7 +638,7 @@ proxies:
   -
     name: v2|新加坡03|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: eitci3ifcvtcsplqgi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -650,7 +650,7 @@ proxies:
   -
     name: v2|新加坡04|原生|★★☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: ha3da3qfcvvssmzifi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -662,7 +662,7 @@ proxies:
   -
     name: v2|新加坡05|原生|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: e45xqyqfcv3ssprofu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -674,7 +674,7 @@ proxies:
   -
     name: v2|新加坡06|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: gf3s42ifcvwsq7bxhq.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -686,7 +686,7 @@ proxies:
   -
     name: v2|日本01|原生|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: hnzduoqfcu2csmzrpu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -698,7 +698,7 @@ proxies:
   -
     name: v2|日本02|原生|★★☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: hf3c47yfcuecsmjwhq.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -710,7 +710,7 @@ proxies:
   -
     name: v2|日本03|原生|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: hfyxq3yfcvtssmjrfu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -722,7 +722,7 @@ proxies:
   -
     name: v2|日本04|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: hf5t22ifcvqcsmj2oa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -734,7 +734,7 @@ proxies:
   -
     name: v2|日本05|原生|★★☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: heqhchafcvvssmdsey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -746,7 +746,7 @@ proxies:
   -
     name: v2|日本01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: hn3h43yfcujssmzwem.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -758,7 +758,7 @@ proxies:
   -
     name: v2|美国01|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: en2x4aifcvscsozvem.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -770,7 +770,7 @@ proxies:
   -
     name: v2|美国02|原生|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: en5ci7ifcu2ssoz2gi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -782,7 +782,7 @@ proxies:
   -
     name: v2|美国03|原生|★★☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: ei2sopafcv3sspjppi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -794,7 +794,7 @@ proxies:
   -
     name: v2|美国04|原生|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: ha5cwzafcv3csmznhe.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -806,7 +806,7 @@ proxies:
   -
     name: v2|美国05|原生|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: e43sioqfcvtcsprkgi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -818,7 +818,7 @@ proxies:
   -
     name: v2|美国06|原生|★★☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: geqxc2yfcuecq73tey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -830,7 +830,7 @@ proxies:
   -
     name: v2|美国01|hulu|限速
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: hu2hcyafcvusq6zpey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -842,7 +842,7 @@ proxies:
   -
     name: v2|英国01|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: hu4so7yfcvvsq6ztpi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -854,7 +854,7 @@ proxies:
   -
     name: v2|英国02|原生|★★☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: hryhw7yfcvqcq6zqea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -866,7 +866,7 @@ proxies:
   -
     name: v2|英国03|原生|★★☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: hr2sc2afcvtcq6zvh4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -878,7 +878,7 @@ proxies:
   -
     name: v2|英国04|原生|★★☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: hr5dapafcv2cq6zzfi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -890,7 +890,7 @@ proxies:
   -
     name: v2|英国05|原生|★★☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: hqtsw7qfcvwsq6trhe.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -902,7 +902,7 @@ proxies:
   -
     name: v2|英国06|原生|★★☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: getcohyfcvtsq73xpi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -914,7 +914,7 @@ proxies:
   -
     name: v2|澳洲01|MPTCP|★☆☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: fb5hq2ifcvwssib2fu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -926,7 +926,7 @@ proxies:
   -
     name: v2|澳洲02|MPTCP|★☆☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: ev5cw6yfcv3sspj2he.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -938,7 +938,7 @@ proxies:
   -
     name: v2|澳洲03|MPTCP|★☆☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: e4xdu2yfcuzssprapu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -950,7 +950,7 @@ proxies:
   -
     name: v2|澳洲04|MPTCP|★☆☆
     type: ss
-    server: jyr2bfaarlfjdy7w77x8ptuj1xvvhma4iphjht3w.p6691.top
+    server: havxc7yfcvqssm3vey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -962,7 +962,7 @@ proxies:
   -
     name: v2|澳洲05|MPTCP|★☆☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: haucopafcvvssmzcpi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -974,7 +974,7 @@ proxies:
   -
     name: v2|韩国01|MPTCP|★☆☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: faqc4yqfcukssi3shq.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -986,7 +986,7 @@ proxies:
   -
     name: v2|韩国02|MPTCP|★☆☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: eu5xc3yfcujsspboey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -998,7 +998,7 @@ proxies:
   -
     name: v2|韩国03|MPTCP|★☆☆
     type: ss
-    server: o0axdqw2fhdaiyjmpyfztxoia1h5kkcrbsrgqpc9fl.p6691.top
+    server: e4uswzifcvwcspt3he.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1010,7 +1010,7 @@ proxies:
   -
     name: v2|韩国04|MPTCP|★☆☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: heuxwpafcuzssmd3ea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1022,7 +1022,7 @@ proxies:
   -
     name: v2|韩国05|MPTCP|★☆☆
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: hexccoqfcv3ssmbbh4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1034,7 +1034,7 @@ proxies:
   -
     name: v2|阿根廷01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: hquh43yfcvvsq6t2em.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1046,7 +1046,7 @@ proxies:
   -
     name: v2|巴西01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: h53soyafcvwcq6rwpi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1058,7 +1058,7 @@ proxies:
   -
     name: v2|智利01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: gashczafcvxcq7twey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1070,7 +1070,7 @@ proxies:
   -
     name: v2|阿联酋01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: gb5c47yfcvqcq7z2hq.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1082,7 +1082,7 @@ proxies:
   -
     name: v2|马来西亚01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: hq3c4aifcvusq6rjhq.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1094,7 +1094,7 @@ proxies:
   -
     name: v2|泰国01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: hq5t22afcuksq6rnoa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1106,7 +1106,7 @@ proxies:
   -
     name: v2|菲律宾01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: h5zhcgqfcvrcq6rsey.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1118,7 +1118,7 @@ proxies:
   -
     name: v2|越南01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: h4tdapifcu2sq7lxfi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1130,7 +1130,7 @@ proxies:
   -
     name: v2|印尼01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: ge2tu3yfcvscq7zppu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1142,7 +1142,7 @@ proxies:
   -
     name: v2|以色列01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: ga3tahyfcvqcq7rjfi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1154,7 +1154,7 @@ proxies:
   -
     name: v2|南非01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: h4zx47qfcuzsq7jgem.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1166,7 +1166,7 @@ proxies:
   -
     name: v2|尼日利亚01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: hyscc3yfcuecq7dwh4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1178,7 +1178,7 @@ proxies:
   -
     name: v2|加拿大01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: h4ycioqfcvrcq7jlgi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1190,7 +1190,7 @@ proxies:
   -
     name: v2|墨西哥01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: h44s47qfcvwcq7jmhq.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1202,7 +1202,7 @@ proxies:
   -
     name: v2|巴基斯坦01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: hytxwzafcujsq7drea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1214,7 +1214,7 @@ proxies:
   -
     name: v2|法国01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: h4vcw2yfculcq7luhe.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1226,7 +1226,7 @@ proxies:
   -
     name: v2|意大利01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: h4xtu2afculcq7jbpu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1238,7 +1238,7 @@ proxies:
   -
     name: v2|冰岛01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: h4qscgqfculcq7lth4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1250,7 +1250,7 @@ proxies:
   -
     name: v2|荷兰01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: h42hqhafcujsq7jpfu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1262,7 +1262,7 @@ proxies:
   -
     name: v2|西班牙01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: hyutahafcvtsq7d2fi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1274,7 +1274,7 @@ proxies:
   -
     name: v2|葡萄牙01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: gawxwgqfcvvsq7raea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1286,7 +1286,7 @@ proxies:
   -
     name: v2|瑞典01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: hyzdu2afcuzsq7bepu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1298,7 +1298,7 @@ proxies:
   -
     name: v2|德国01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: gewda3yfcvxcq7zgfi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1310,7 +1310,7 @@ proxies:
   -
     name: v2|爱尔兰01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: geycw6yfcvvsq7zlhe.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1322,7 +1322,7 @@ proxies:
   -
     name: v2|俄罗斯01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: ea4swzifcvwssozmhe.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1334,7 +1334,7 @@ proxies:
   -
     name: v2|俄罗斯02|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: eqrdaaifcv3csp3tfi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1346,7 +1346,7 @@ proxies:
   -
     name: v2|俄罗斯03|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: e55hwyafcvqcspz2ea.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1358,7 +1358,7 @@ proxies:
   -
     name: v2|立陶宛01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: ge4x43ifcvxcq7zmem.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1370,7 +1370,7 @@ proxies:
   -
     name: v2|匈牙利01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: gbysiaifcvwcq7zrgi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1382,7 +1382,7 @@ proxies:
   -
     name: v2|比利时01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: gb2xq7qfcvxcq7zvfu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1394,7 +1394,7 @@ proxies:
   -
     name: v2|乌克兰01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: gaqd2oqfcv3cq7troa.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1406,7 +1406,7 @@ proxies:
   -
     name: v2|罗马尼亚01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: gauso3ifcvzcq7t2pi.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1418,7 +1418,7 @@ proxies:
   -
     name: v2|瑞士01|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: hywsw2yfcvzcq7bahe.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1430,7 +1430,7 @@ proxies:
   -
     name: v2|奥地利01|特供原生|限速
     type: ss
-    server: z9dw9kus6vksnlxlu5tirlniweoxrsjbduwmh8rl.p6691.top
+    server: gazccaifcuksq7rfh4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1442,7 +1442,7 @@ proxies:
   -
     name: v2|土耳其01|特供原生|限速
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: hqyxqaifcvqcq6refu.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1454,7 +1454,7 @@ proxies:
   -
     name: v2|土耳其02|特供原生|限速
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: gexsc3yfcv3sq7zch4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1466,7 +1466,7 @@ proxies:
   -
     name: v2|印度01|MPTCP|★☆☆
     type: ss
-    server: acfsnui7geismdxwansql59rlcjkhc34syupzetume.p6691.top
+    server: eayccgqfcvtssozlh4.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
@@ -1478,7 +1478,7 @@ proxies:
   -
     name: v2|印度02|MPTCP|★☆☆
     type: ss
-    server: v31pl0uwygyblhxogyd2pdr827ojve9wyhrcvqyh3s.p6691.top
+    server: eush4yafcvqcspdwem.q7450.top
     port: 56286
     cipher: aes-128-gcm
     password: 14d488b58777
