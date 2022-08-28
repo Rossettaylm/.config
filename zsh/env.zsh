@@ -7,15 +7,13 @@ export TOMCAT_HOME="/usr/share/tomcat8"
 export GITHUB_ACCOUNT_PREFIX="https://github.com/Rossettaylm"
 export SCRIPTS_HOME="$HOME/.config/scripts"
 
-export PATH=$PATH:$SCRIPTS_HOME
-
 # Path to your oh-my-zsh installation.
 export ZSH_HOME="$HOME/.config/zsh"
 export ZSH="$ZSH_HOME/oh-my-zsh"
 export FZF_HOME="$HOME/Softwares/fzf"
 
 export CUDA_PATH="/opt/cuda"
-export PATH=$PATH:$CUDA_PATH/bin:$CUDA_PATH/lib64
+export PATH=$PATH:$SCRIPTS_HOME:$CUDA_PATH/bin:$CUDA_PATH/lib64
 
 export EDITOR=nvim
 export TERM=xterm-256color

@@ -1,7 +1,13 @@
-
+ # _________  _   _ ____   ____ 
+# |__  / ___|| | | |  _ \ / ___|
+  # / /\___ \| |_| | |_) | |    
+ # / /_ ___) |  _  |  _ <| |___ 
+# /____|____/|_| |_|_| \_\\____|
+                              
 # 加载环境变量
 source $HOME/.config/zsh/env.zsh
 
+# 主题
 ZSH_THEME="cloud"
 # ZSH_THEME="ys"
 # ZSH_THEME="steeef"
@@ -11,6 +17,7 @@ ZSH_THEME="cloud"
 # 刷新自动补全
 zstyle ':completion:*' rehash true
 
+# 插件 
 # 系统目录 $ZSH/plugins 自定义目录$ZSH/custom/plugins
 plugins=(git
     sudo 
@@ -19,13 +26,18 @@ plugins=(git
     zsh-autosuggestions
 )
 
+# ohmyzsh
 source $ZSH/oh-my-zsh.sh
 
+# fzf
 [ -f "$ZSH_HOME/fzf.zsh" ] && source "$ZSH_HOME/fzf.zsh"
 
+# aliases
 [ -f "$ZSH_HOME/aliases.zsh" ] && source "$ZSH_HOME/aliases.zsh"
 
+# functions
 [ -f "$ZSH_HOME/functions.zsh" ] && source "$ZSH_HOME/functions.zsh"
 
+# mappings
 [ -f "$ZSH_HOME/mappings.zsh" ] && source $ZSH_HOME/mappings.zsh
 
