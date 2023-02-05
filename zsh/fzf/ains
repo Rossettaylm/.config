@@ -1,0 +1,9 @@
+# apt + fzf 实现package的查找安装
+
+local inst=`sudo apt list | fzf -m --header="[Apt:Install]" | cut -d '/' -f 1`
+
+if [[ -n $inst ]]; then
+    sudo apt install $inst
+fi
+
+

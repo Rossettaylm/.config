@@ -22,6 +22,7 @@ zstyle ':completion:*' rehash true
 plugins=(git
     sudo 
     web-search
+    # 在wsl上有性能问题
     zsh-syntax-highlighting
     zsh-autosuggestions
 )
@@ -41,3 +42,5 @@ source $ZSH/oh-my-zsh.sh
 # mappings
 [ -f "$ZSH_HOME/mappings.zsh" ] && source $ZSH_HOME/mappings.zsh
 
+# 执行wsl2代理设置
+$HOME/.config/scripts/proxy.sh

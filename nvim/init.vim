@@ -123,7 +123,7 @@ nnoremap <LEADER><CR> :nohlsearch<CR>
 "打开侧边文件树
 nnoremap <silent> <LEADER>e :Lex 20<CR> 
 "open a terminal window
-noremap <leader>/ :set splitright<CR>:vsplit<CR>:term<CR>
+noremap <leader>\ :set splitright<CR>:vsplit<CR>:term<CR>
 
 "复制到剪贴板 - wsl
 vnoremap <silent> Y :'<,'>w !clip.exe<CR>
@@ -207,6 +207,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'mg979/vim-xtabline'
 
 Plug 'scrooloose/nerdcommenter' 
+
 Plug 'kevinhwang91/rnvimr', {'on': 'RnvimrToggle'}
 Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
@@ -231,6 +232,7 @@ call plug#end()
 
 "nerdcommenter config
 let g:NERDSpaceDelims=1
+noremap <silent> <leader>/ :call nerdcommenter#Comment('n', 'toggle')<CR>
 
 ">>> colortheme
 " color snazzy

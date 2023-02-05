@@ -1,0 +1,7 @@
+# apt + fzf 实现本地package的模糊查找和卸载
+
+local uinst=`sudo apt list --installed | cut -d '/' -f 1 | fzf -m --header="[Apt:uninstall]" | cut -d '/' -f 1`
+
+if [[ -n "$uinst" ]]; then
+    sudo apt -Rns $uinst
+fi
