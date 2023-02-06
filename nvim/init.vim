@@ -124,11 +124,10 @@ nnoremap <LEADER><CR> :nohlsearch<CR>
 nnoremap <silent> <LEADER>e :Lex 20<CR> 
 "open a terminal window
 noremap <leader>\ :set splitright<CR>:vsplit<CR>:term<CR>
-
-"复制到剪贴板 - wsl
-vnoremap <silent> Y :'<,'>w !clip.exe<CR>
+"复制到剪贴板 - wsV
+" vnoremap <silent> Y :'<,'>w !clip.exe<CR>
 "复制到剪贴板 - linux
-vnoremap <silent> Y :'<,'>w !xclip -i -sec c<CR>
+vnoremap <silent> Y :'<,'>w !xclip -selection c<CR><CR>
 " vnoremap Y "+y
 "yank to end of this line in normal mode
 nnoremap Y y$
