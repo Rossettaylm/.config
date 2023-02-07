@@ -214,7 +214,7 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 "Plug 'Yggdroot/leaderF', { 'do': ':LeaderfInstallCExtension' }
 "autocomplete indent
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'davidhalter/jedi-vim'
 Plug 'honza/vim-snippets'
 " highlight for python
