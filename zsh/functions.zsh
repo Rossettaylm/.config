@@ -28,9 +28,8 @@ commit () {
         git commit -a
         printf "\n>>>>>>>>>> Do you want to push your changes to remote? [y / n]\n"
         read MSG_PUSH
-        echo MSG_PUSH
-        if [ "${MSG_PUSH}" = "y"]; then
-            git push 2>&1
+        if [ "${MSG_PUSH}" == "y"]; then
+            git push
             printf "\nYour changes has been pushed to remote!\n"
         else 
             printf "\nYour changes are temporarily stored locally!\n"
