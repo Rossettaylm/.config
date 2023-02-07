@@ -21,14 +21,20 @@ commit () {
     echo "checking $DIR status"
     git status 
     printf "Commit and Push your changes? [ y / n ]\n"
-    read msg
-    if [ "${msg}" = "y" ]; then
-        printf "\n>>>>>>>>>>add / commit current changes<<<<<<<<<<\n"
+    read MSG
+    if [ "${MSG}" = "y" ]; then
+        printf "\n>>>>>>>>>> add / commit current changes <<<<<<<<<<\n"
         git add . 
         git commit -a
-        printf "\n>>>>>>>>>> push current changes <<<<<<<<<<\n"
-        git push
+        printf "\n>>>>>>>>>> Do you want to push your changes? [y/n]\n"
+        read MSG
         git status
+        if [ "${MSG}" = "y"]; then
+            git push
+            printf "\nYour changes has been pushed to remote!\n"
+        else 
+            printf "\nYour changes are temporarily stored locally!\n"
+        fi
     else
         printf "Nothing gonna be changed!\n"
     fi
