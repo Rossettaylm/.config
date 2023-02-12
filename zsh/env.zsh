@@ -13,7 +13,7 @@ export SOFTWARE_HOME="$HOME/softwares"
 export FZF_HOME="$SOFTWARE_HOME/fzf"
 export NODE_HOME="$SOFTWARE_HOME/nodejs"
 
-export PATH=$PATH:$SCRIPTS_HOME:$NODE_HOME/bin
+export PATH=$PATH:$SCRIPTS_HOME:$NODE_HOME/bin:$HOME/.local/bin
 
 export EDITOR=nvim
 export TERM=xterm-256color

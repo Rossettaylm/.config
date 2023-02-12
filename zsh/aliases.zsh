@@ -19,6 +19,7 @@ alias xm="xmake"
 alias xmr="xmake build && xmake run"
 alias sdrnow="shutdown -r now"
 alias sdnow="shutdown now"
+alias python="python3"
 alias code=/mnt/c/Users/Rossetta/AppData/Local/Programs/Microsoft\\\ VS\\\ Code/code.exe
 
 
