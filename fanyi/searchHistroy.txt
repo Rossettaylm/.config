@@ -1,0 +1,15 @@
+day-2023-02-12:
+word
+  n. 字，词，单词；（某人说的）话，言语（words）；简短的交谈，谈话；命令，指示；消息，信息；诺言，承诺；口角，吵架（words）；（警告、建议、赞扬的）话，话语；歌词（words）；一个字（所说或所写的最小量）（a word）；（不同于行动的）言，言语；字（尤指16或32个字节的计算机数据基本单位）；《圣经》，福音（the Word）
+  v. 措辞，用词
+  int. <美> （表示接受或同意别人刚说的话）就是，说得对
+  【名】 （Word）（英）沃德（人名）
+
+niubility
+  牛 B
+whoami
+  n. 显示本用户信息
+LS
+  abbr. 激光系统（Laser System）；发射场（Launch Site）；限位开关（Limit Switch）；信号电平开关（Level Switch）
+DBF
+  abbr. 数据表文件
