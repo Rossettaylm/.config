@@ -41,3 +41,4 @@ source $ZSH/oh-my-zsh.sh
 # mappings
 [ -f "$ZSH_HOME/mappings.zsh" ] && source $ZSH_HOME/mappings.zsh
 
+[ -f "/etc/resolv.conf" ] && set_proxy

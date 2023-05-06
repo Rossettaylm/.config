@@ -10,12 +10,11 @@ export SCRIPTS_HOME="$HOME/.config/scripts"
 # Path to your oh-my-zsh installation.
 export ZSH_HOME="$HOME/.config/zsh"
 export ZSH="$ZSH_HOME/oh-my-zsh"
-export FZF_HOME="$HOME/Softwares/fzf"
+export FZF_HOME="$HOME/softwares/fzf"
 
-export CUDA_PATH="/opt/cuda"
-export PATH=$PATH:$SCRIPTS_HOME:$CUDA_PATH/bin:$CUDA_PATH/lib64
+export PATH=$SCRIPTS_HOME:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 export EDITOR=nvim
 export TERM=xterm-256color
-
 

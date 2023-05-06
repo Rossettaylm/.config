@@ -23,6 +23,8 @@ alias xm="xmake"
 alias xmr="xmake build && xmake run"
 alias sdrnow="shutdown -r now"
 alias sdnow="shutdown now"
+alias fd="fdfind"
+alias cat="batcat"
 
 # alacritty colorscheme
 # 准备工作: pip install alacritty-colorscheme

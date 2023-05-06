@@ -4,18 +4,36 @@
 # |  _|  / /_|  _|  
 # |_|   /____|_|    
 #
+#
 
-export FZF_DEFAULT_COMMAND="fd --type f --hidden --exclude '.git'"
-export FZF_DEFAULT_OPTS='--height 60% --layout reverse --border'
-export FZF_CTRL_T_COMMAND="fd --type f --hidden --exclude '.git'"
-export FZF_ALT_C_COMMAND="fd --type d --hidden --exclude '.git'"
-# export FZF_CTRL_T_OPTS="--preview 'bat --style=numbers --color=always --line-range :500 {}'" # file or directory
+# config ** completion
+_fzf_comprun() {
+  local command=$1
+  shift
 
-# change to ctrl-p
-export FZF_CTRL_T_OPTS="--preview 'file {}' --preview-window up,1,border-horizontal" 
+  case "$command" in
+    cd)           fzf --preview 'tree -C {} | head -200' --preview-label='Directories'          "$@" ;;
+    export|unset) fzf --preview "eval 'echo \$'{}" --preview-label='Environment Variables'      "$@" ;;
+    ssh)          fzf --preview 'dig {}' --preview-label='Hosts'                                "$@" ;;
+    nvim)         fzf --preview 'bat -n --color=always {}' --preview-label='Files'              "$@" ;;
+    kill)         fzf --preview-label='Processes'                                               "$@" ;;
+    *)            fzf --preview 'bat -n --color=always {}' --preview-label='Search'             "$@" ;;
+  esac
+}
 
-# change to ctrl-h
-export FZF_CTRL_R_OPTS="" # history
+export FZF_DEFAULT_COMMAND="fdfind --type f --hidden --exclude '.git'"
+export FZF_DEFAULT_OPTS="--height 80% --layout reverse --border --preview 'bat -n --color=always {}'"
+export FZF_CTRL_T_COMMAND="fdfind --type f --hidden --exclude '.git'"
+export FZF_ALT_C_COMMAND="fdfind --type d --hidden --exclude '.git'"
+
+# change to ctrl-p override
+export FZF_CTRL_T_OPTS="${FZF_DEFAULT_OPTS} --preview-label='Files'" 
+
+# change to ctrl-h override
+export FZF_CTRL_R_OPTS="${FZF_DEFAULT_OPTS} --preview-label='History Commands'" # history
+
+# override preview with tree
+export FZF_ALT_C_OPTS="--preview 'tree -C {}' --preview-label='Directorys'"
 
 _fzf_fpath=${0:h}/fzf
 fpath+=$_fzf_fpath

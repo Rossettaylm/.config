@@ -34,3 +34,25 @@ commit () {
     fi
 }
 
+function set_proxy () {
+    export LOCAL_IP=$(cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2)
+    export all_proxy="http://${LOCAL_IP}:7890"
+    git config --global http.proxy "${all_proxy}"
+    git config --global https.proxy "${all_proxy}"
+}
+
+
+function unset_proxy () {
+    unset all_proxy
+    git config --global --unset http.proxy
+    git config --global --unset https.proxy 
+}
+
+function test_proxy() {
+    resp=$(curl -I -s --connect-timeout 5 -m 5 -w "%{http_code}" -o /dev/null www.google.com)
+    if [ ${resp} = 200 ]; then
+        echo "State Code: $resp, Proxy setup succeeded!"
+    else
+        echo "State Code: $resp, Proxy setup failed!"
+    fi
+}
