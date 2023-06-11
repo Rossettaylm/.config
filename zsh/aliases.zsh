@@ -2,8 +2,8 @@
 
 alias ll="ls -lh"
 alias la="ls -a"
-alias setproxy="export http_proxy='http://127.0.0.1:7890' && export https_proxy='https://127.0.0.1:7890'"
-alias unsetproxy="unset http_proxy && unset https_proxy"
+# alias setproxy="export http_proxy='http://127.0.0.1:7890' && export https_proxy='https://127.0.0.1:7890'"
+# alias unsetproxy="unset http_proxy && unset https_proxy"
 alias e="exit"
 alias sudo="sudo -E"
 alias neo='neofetch'
@@ -25,6 +25,9 @@ alias sdrnow="shutdown -r now"
 alias sdnow="shutdown now"
 alias fd="fdfind"
 alias cat="batcat"
+alias cmb="cmake_build"
+alias cmr="cmake_run"
+alias make="make -j8"
 
 # alacritty colorscheme
 # 准备工作: pip install alacritty-colorscheme

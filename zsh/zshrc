@@ -8,7 +8,7 @@
 source $HOME/.config/zsh/env.zsh
 
 # 主题
-ZSH_THEME="cloud"
+ZSH_THEME="amuse"
 # ZSH_THEME="ys"
 # ZSH_THEME="steeef"
 # ZSH_THEME="awesomepanda"
@@ -19,8 +19,9 @@ zstyle ':completion:*' rehash true
 
 # 插件 
 # 系统目录 $ZSH/plugins 自定义目录$ZSH/custom/plugins
-plugins=(git
-    sudo 
+plugins=(
+		git
+    sudo
     web-search
     zsh-syntax-highlighting
     zsh-autosuggestions

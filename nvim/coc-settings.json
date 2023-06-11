@@ -1,40 +1,35 @@
 {
-	"coc.preferences.enableFloatHighlight": true,
-	"coc.preferences.snippetStatusText": "Ⓢ ",
 	"coc.preferences.extensionUpdateCheck": "daily",
 	"coc.preferences.messageLevel": "error",
-	"coc.source.around.firstMatch": false,
-	"coc.source.buffer.firstMatch": false,
-	"prettier.trailingComma": "all",
-	"pyright.organizeimports.provider": "pyright",
-	"pyright.enable": true,
-	"pyright.completion.snippetSupport": true,
-	"python.venvPath": "/home/rossetta/miniconda3/envs",
-	"python.autoComplete.addBrackets": true,
-	"python.formatting.provider": "yapf",
-	"python.formatting.yapfArgs": [
-		"--style",
-		"{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
-	],
-	"prettier.semi": true,
-	"prettier.printWidth": 100,
-	"prettier.eslintIntegration": true,
-	"prettier.disableLanguages": [],
-	"prettier.formatterPriority": 1,
-	"prettier.useTabs": true,
-	"prettier.singleQuote": false,
-	"suggest.detailMaxLength": 60,
-	"suggest.noselect": true,
+	"coc.source.syntax.firstMatch": false,
+	"clangd.arguments": [
+    "--all-scopes-completion", 
+    "--background-index", 
+    "--clang-tidy",
+    "--clang-tidy-checks=performance-*, bugprone-*, misc-*, google-*, modernize-*, readability-*, portability-*",
+    "--compile-commands-dir=${workspaceFolder}/build", 
+    "--completion-parse=auto",
+    "--completion-style=bundled", 
+    "--fallback-style=google",
+    "--function-arg-placeholders=true",
+    "--header-insertion-decorators", 
+    "--header-insertion=iwyu", 
+    "--include-cleaner-stdlib", 
+    "--log=verbose", 
+    "--pch-storage=memory", 
+    "--pretty", 
+    "--ranking-model=decision_forest", 
+		"-j=8"
+		],
+		"clangd.fallbackFlags": [
+			"-std=c++17"
+		],
 	"suggest.enablePreselect": false,
 	"suggest.triggerAfterInsertEnter": true,
 	"suggest.autoTrigger": "always",
-	"suggest.timeout": 2000,
-	"suggest.enablePreview": true,
-	"suggest.floatEnable": true,
+	"suggest.timeout": 5000,
 	"suggest.detailField": "preview",
 	"suggest.snippetIndicator": "",
-	"suggest.triggerCompletionWait": 100,
-	"suggest.echodocSupport": true,
 	"suggest.completionItemKindLabels": {
 		"class": "\uf0e8",
 		"color": "\ue22b",
@@ -70,25 +65,130 @@
 	"diagnostic.refreshOnInsertMode": false,
 	"diagnostic.checkCurrentLine": true,
 	"diagnostic.virtualTextPrefix": " ❯❯❯ ",
-	"diagnostic.virtualText": true,
+	"diagnostic.virtualText": false,
 	"codeLens.enable": true,
-	"codeLens.separator": "‣",
-	"snippets.userSnippetsDirectory": "~/.config/nvim/plugged/vim-snippets/snippets",
-	"snippets.ultisnips.enable": true,
-	"snippets.ultisnips.usePythonx": true,
-	"snippets.ultisnips.directories": [
-		"UltiSnips",
-		"~/.config/nvim",
-		"~/.config/nvim/plugged/vim-snippets/UltiSnips"
-	],
 	"list.previewHighlightGroup": "Statement",
-	"coc.preferences.formatOnSaveFiletypes": [
-		"javascript",
-		"typescript",
-		"json",
-		"python",
-		"c",
-		"markdown"
+	"list.nextKeymap": "<C-j>",
+	"list.previousKeymap": "<C-k>",
+	"snippets.ultisnips.directories": [
+		"$HOME/.config/nvim/Ultisnips/",
+		"$HOME/.config/nvim/plugged/vim-snippets/UltiSnips/"
 	],
-	"signature.target": "float"
+	"yaml.format.enable": true,
+	"signature.target": "float",
+	"yank.enableCompletion": false,
+	"explorer.width": 38,
+	"explorer.quitOnOpen": true,
+	"explorer.sources": [
+		{
+			"name": "buffer",
+			"expand": false
+		},
+		{
+			"name": "file",
+			"expand": true
+		}
+	],
+	"explorer.file.column.indent.indentLine": true,
+	"explorer.file.showHiddenFiles": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.keyMappingMode": "none",
+	"explorer.buffer.showHiddenBuffers": false,
+	"explorer.keyMappings.global": {
+		"k": "nodePrev",
+		"j": "nodeNext",
+		"m": "toggleSelection",        // mark
+		"<tab>": "actionMenu",
+		"gl": "expandRecursive",
+		"gh": "collapseRecursive",
+		"l": ["wait", "expandable?", "expand", "open"],
+		"<cr>": ["wait", "expandable?", "cd", "open"],
+		"I": "open:vsplit",
+		"o": ["wait", "expanded?", "collapse", "expand"],
+		"O": "open:tab",
+		"n": "collapse",
+		"h": "gotoParent",
+		"yp": "copyFilepath",
+		"yn": "copyFilename",
+		"yy": "copyFile",
+		"dd": "cutFile",
+		"pp": "pasteFile",
+		"dD": "deleteForever",
+		"a": "addFile",
+		"i": "addFile",
+		"M": "addDirectory",
+		"rn": "rename",
+		".": "toggleHidden",
+		"zh": "toggleHidden",
+		"R": "refresh",
+		"?": "help",
+		"q": "quit",
+		"X": "systemExecute",
+		"gd": "listDrive",
+		"f": "search",
+		"F": "searchRecursive",
+		"B": "gotoSource:file",
+		"b": "gotoSource:buffer",
+		"[[": "sourcePrev",
+		"]]": "sourceNext",
+		"[d": "diagnosticPrev",
+		"]d": "diagnosticNext",
+		"[c": "gitPrev",
+		"]c": "gitNext",
+		"<<": "gitStage",
+		">>": "gitUnstage"
+	},
+	"python.formatting.provider": "yapf",
+	"python.formatting.yapfArgs": [
+		"--style",
+		"{SPACES_AROUND_POWER_OPERATOR: True, SPACES_BEFORE_COMMENT: 1}"
+	],
+	"html.format.enable": true,
+	"json.format.enable": true,
+	"eslint.autoFixOnSave": false,
+	"prettier.printWidth": 100,
+	"prettier.disableLanguages": [],
+	"prettier.formatterPriority": 1,
+	"prettier.useTabs": true,
+	"prettier.trailingComma": "all",
+	"prettier.singleQuote": false,
+	"diagnostic-languageserver.filetypes": {
+		"vim": "vint",
+		"email": "languagetool",
+		"markdown": ["write-good", "markdownlint"],
+		"sh": "shellcheck",
+		"elixir": ["mix_credo", "mix_credo_compile"],
+		"eelixir": ["mix_credo", "mix_credo_compile"],
+		"php": ["phpstan", "psalm"]
+	},
+	"diagnostic-languageserver.formatFiletypes": {
+		"elixir": "mix_format",
+		"eelixir": "mix_format"
+	},
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+			"rootPatterns": [".ccls", ".ccls-root", "compile_commands.json", ".git/", ".hg/"],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				}
+			}, 
+	},
+	"clangd": {
+		"command": "clangd",
+		"rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+		"filetypes": ["c", "cpp", "objc", "objcpp"],
+		"initializationOptions": {
+			"cacheDirectory": "/tmp/clangd",
+			"fallbackFlags": [
+				"-I/usr/local/include",
+				"-I/usr/include",
+				"-I${workspaceFolder}/include",
+				"-std=c++17,"
+			]
+		},
+	}
+}
 }

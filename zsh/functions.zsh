@@ -34,7 +34,7 @@ commit () {
     fi
 }
 
-function set_proxy () {
+set_proxy () {
     export LOCAL_IP=$(cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2)
     export all_proxy="http://${LOCAL_IP}:7890"
     git config --global http.proxy "${all_proxy}"
@@ -42,17 +42,45 @@ function set_proxy () {
 }
 
 
-function unset_proxy () {
+unset_proxy () {
     unset all_proxy
     git config --global --unset http.proxy
     git config --global --unset https.proxy 
 }
 
-function test_proxy() {
+test_proxy() {
     resp=$(curl -I -s --connect-timeout 5 -m 5 -w "%{http_code}" -o /dev/null www.google.com)
     if [ ${resp} = 200 ]; then
         echo "State Code: $resp, Proxy setup succeeded!"
     else
         echo "State Code: $resp, Proxy setup failed!"
     fi
+}
+
+cmake_build() {
+	# if "build"" is exist or "build" is not empty
+	if [[ -f "./CMakeLists.txt" ]]; then
+		if [[ -d "./build" ]]; then
+			cmake -B ./build && cmake --build "./build"
+		else 
+			mkdir ./build && cmake -B ./build && cmake --build "./build"
+		fi
+	fi
+}
+
+cmake_run() {
+	if [[ -f "./CMakeLists.txt" ]]; then 
+		local PROCESS=$(cat "./CMakeLists.txt" | grep add_executable | cut -d '(' -f 2 | cut -d ' ' -f 1)
+		if [[ -n ${PROCESS} && -f "./build/${PROCESS}" ]]; then 
+			./build/${PROCESS}
+		fi
+	fi
+}
+
+function print_lib_path() {
+	gcc -print-search-dirs | awk -F'[:=]' '/libraries/ { for(i=2; i<=NF; i++) print $i }' | bat
+}
+
+function print_include_path() {
+	gcc -xc++ -E -Wp,-v - </dev/null
 }
