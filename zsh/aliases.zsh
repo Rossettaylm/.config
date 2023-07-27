@@ -28,6 +28,8 @@ alias cat="batcat"
 alias cmb="cmake_build"
 alias cmr="cmake_run"
 alias make="make -j8"
+alias msq="mysql -urossetta -pfilae"
+alias cdcode="cd $CODE_HOME/vscode_projects"
 
 # alacritty colorscheme
 # 准备工作: pip install alacritty-colorscheme
