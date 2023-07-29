@@ -53,7 +53,7 @@ set autochdir
 set exrc
 set secure
 set number
-"set relativenumber
+set relativenumber
 set cursorline
 set noexpandtab
 set tabstop=2
