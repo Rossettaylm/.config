@@ -21,13 +21,13 @@ _fzf_comprun() {
   esac
 }
 
-export FZF_DEFAULT_COMMAND="fdfind --type f --hidden --exclude '.git'"
-export FZF_DEFAULT_OPTS="--height 80% --layout reverse --border --preview 'bat -n --color=always {}'"
+export FZF_DEFAULT_COMMAND="fdfind --hidden --exclude '.git'"
+export FZF_DEFAULT_OPTS="--height 80% --layout reverse --border"
 export FZF_CTRL_T_COMMAND="fdfind --type f --hidden --exclude '.git'"
 export FZF_ALT_C_COMMAND="fdfind --type d --hidden --exclude '.git'"
 
 # change to ctrl-p override
-export FZF_CTRL_T_OPTS="${FZF_DEFAULT_OPTS} --preview-label='Files'" 
+export FZF_CTRL_T_OPTS="${FZF_DEFAULT_OPTS} --preview-label='Files' --preview 'bat -n --color=always {}'" 
 
 # change to ctrl-h override
 export FZF_CTRL_R_OPTS="${FZF_DEFAULT_OPTS} --preview-label='History Commands'" # history

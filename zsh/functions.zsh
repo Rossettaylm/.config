@@ -36,9 +36,10 @@ commit () {
 
 set_proxy () {
     export LOCAL_IP=$(cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2)
-    export all_proxy="http://${LOCAL_IP}:7890"
-    git config --global http.proxy "${all_proxy}"
-    git config --global https.proxy "${all_proxy}"
+    export ALL_PROXY="http://${LOCAL_IP}:7890"
+		unset LOCAL_IP
+    git config --global http.proxy "${ALL_PROXY}"
+    git config --global https.proxy "${ALL_PROXY}"
 }
 
 

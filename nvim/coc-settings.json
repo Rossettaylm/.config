@@ -3,27 +3,25 @@
 	"coc.preferences.messageLevel": "error",
 	"coc.source.syntax.firstMatch": false,
 	"clangd.arguments": [
-    "--all-scopes-completion", 
-    "--background-index", 
-    "--clang-tidy",
-    "--clang-tidy-checks=performance-*, bugprone-*, misc-*, google-*, modernize-*, readability-*, portability-*",
-    "--compile-commands-dir=${workspaceFolder}/build", 
-    "--completion-parse=auto",
-    "--completion-style=bundled", 
-    "--fallback-style=google",
-    "--function-arg-placeholders=true",
-    "--header-insertion-decorators", 
-    "--header-insertion=iwyu", 
-    "--include-cleaner-stdlib", 
-    "--log=verbose", 
-    "--pch-storage=memory", 
-    "--pretty", 
-    "--ranking-model=decision_forest", 
+		"--all-scopes-completion",
+		"--background-index",
+		"--clang-tidy",
+		"--clang-tidy-checks=performance-*, bugprone-*, misc-*, google-*, modernize-*, readability-*, portability-*",
+		"--compile-commands-dir=${workspaceFolder}/build",
+		"--completion-parse=auto",
+		"--completion-style=bundled",
+		"--fallback-style=google",
+		"--function-arg-placeholders=true",
+		"--header-insertion-decorators",
+		"--header-insertion=iwyu",
+		"--include-cleaner-stdlib",
+		"--log=verbose",
+		"--pch-storage=memory",
+		"--pretty",
+		"--ranking-model=decision_forest",
 		"-j=8"
-		],
-		"clangd.fallbackFlags": [
-			"-std=c++17"
-		],
+	],
+	"clangd.fallbackFlags": ["-std=c++17"],
 	"suggest.enablePreselect": false,
 	"suggest.triggerAfterInsertEnter": true,
 	"suggest.autoTrigger": "always",
@@ -97,7 +95,7 @@
 	"explorer.keyMappings.global": {
 		"k": "nodePrev",
 		"j": "nodeNext",
-		"m": "toggleSelection",        // mark
+		"m": "toggleSelection", // mark
 		"<tab>": "actionMenu",
 		"gl": "expandRecursive",
 		"gh": "collapseRecursive",
@@ -166,29 +164,19 @@
 		"eelixir": "mix_format"
 	},
 	"languageserver": {
-		"ccls": {
-			"command": "ccls",
-			"filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
-			"rootPatterns": [".ccls", ".ccls-root", "compile_commands.json", ".git/", ".hg/"],
+		"clangd": {
+			"command": "clangd",
+			"rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+			"filetypes": ["c", "cpp", "objc", "objcpp"],
 			"initializationOptions": {
-				"cache": {
-					"directory": "/tmp/ccls"
-				}
-			}, 
-	},
-	"clangd": {
-		"command": "clangd",
-		"rootPatterns": ["compile_flags.txt", "compile_commands.json"],
-		"filetypes": ["c", "cpp", "objc", "objcpp"],
-		"initializationOptions": {
-			"cacheDirectory": "/tmp/clangd",
-			"fallbackFlags": [
-				"-I/usr/local/include",
-				"-I/usr/include",
-				"-I${workspaceFolder}/include",
-				"-std=c++17,"
-			]
-		},
+				"cacheDirectory": "/tmp/clangd",
+				"fallbackFlags": [
+					"-I/usr/local/include",
+					"-I/usr/include",
+					"-I${workspaceFolder}/include",
+					"-std=c++17,"
+				]
+			}
+		}
 	}
-}
 }

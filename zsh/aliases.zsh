@@ -30,6 +30,7 @@ alias cmr="cmake_run"
 alias make="make -j8"
 alias msq="mysql -urossetta -pfilae"
 alias cdcode="cd $CODE_HOME/vscode_projects"
+alias cloc='cloc --exclude-dir "build" "out" ".vscode"'
 
 # alacritty colorscheme
 # 准备工作: pip install alacritty-colorscheme

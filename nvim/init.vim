@@ -352,11 +352,11 @@ call plug#begin('$HOME/.config/nvim/plugged')
 Plug 'itchyny/vim-cursorword'
 
 " Treesitter
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-treesitter/playground'
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/playground'
 
 " Pretty Dress
-Plug 'theniceboy/nvim-deus'
+" Plug 'theniceboy/nvim-deus'
 Plug 'sainnhe/everforest'
 
 " Status line
@@ -526,7 +526,8 @@ set re=0
 set termguicolors " enable true colors support
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 " color deus
-color deus
+" color deus
+color everforest
 
 
 hi NonText ctermfg=gray guifg=grey10
@@ -894,19 +895,19 @@ nnoremap <LEADER>gl :Agit<CR>
 let g:agit_no_default_mappings = 1
 
 
-" ==================== nvim-treesitter ====================
-if g:nvim_plugins_installation_completed == 1
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-	-- one of "all", "language", or a list of languages
-	ensure_installed = {"c", "cpp", "python", "bash"},
-	highlight = {
-		enable = true,              -- false will disable the whole extension
-		disable = { "rust" },  -- list of language that will be disabled
-	},
-}
-EOF
-endif
+" " ==================== nvim-treesitter ====================
+" if g:nvim_plugins_installation_completed == 1
+" lua <<EOF
+" require'nvim-treesitter.configs'.setup {
+" 	-- one of "all", "language", or a list of languages
+" 	ensure_installed = {"c", "cpp", "python", "bash"},
+" 	highlight = {
+" 		enable = true,              -- false will disable the whole extension
+" 		disable = { "rust" },  -- list of language that will be disabled
+" 	},
+" }
+" EOF
+" endif
 
 
 " ==================== nvim-scrollbar ====================
