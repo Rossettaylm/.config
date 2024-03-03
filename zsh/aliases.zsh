@@ -29,14 +29,3 @@ alias cmb="cmake_build"
 alias cmr="cmake_run"
 alias make="make -j8"
 alias msq="mysql -urossetta -pfilae"
-alias cdcode="cd $CODE_HOME/vscode_projects"
-alias cloc='cloc --exclude-dir "build" "out" ".vscode"'
-
-# alacritty colorscheme
-# 准备工作: pip install alacritty-colorscheme
-#
-LIGHT_COLOR='base16-github-256.yml'
-DARK_COLOR='base16-snazzy-256.yml'
-alias day='alacritty-colorscheme -V apply $LIGHT_COLOR'
-alias night='alacritty-colorscheme -V apply $DARK_COLOR'
-

@@ -15,6 +15,7 @@ export SOFTWARES_HOME="$HOME/softwares"
 
 export PATH=$SCRIPTS_HOME:$PATH
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$PATH:/usr/local/mariadb/bin
 
 export EDITOR=nvim
 export TERM=xterm-256color

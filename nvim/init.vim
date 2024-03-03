@@ -549,6 +549,7 @@ let g:coc_global_extensions = [
 	\ 'coc-json',
 	\ 'coc-lists',
 	\ 'coc-prettier',
+	\ 'coc-sh',
 	\ 'coc-pyright',
 	\ 'coc-snippets',
 	\ 'coc-translator',
