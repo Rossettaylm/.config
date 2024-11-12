@@ -15,9 +15,9 @@ _fzf_comprun() {
     cd)           fzf --preview 'tree -C {} | head -200' --preview-label='Directories'          "$@" ;;
     export|unset) fzf --preview "eval 'echo \$'{}" --preview-label='Environment Variables'      "$@" ;;
     ssh)          fzf --preview 'dig {}' --preview-label='Hosts'                                "$@" ;;
-    nvim)         fzf --preview 'bat -n --color=always {}' --preview-label='Files'              "$@" ;;
+    nvim)         fzf --preview 'batcat -n --color=always {}' --preview-label='Files'              "$@" ;;
     kill)         fzf --preview-label='Processes'                                               "$@" ;;
-    *)            fzf --preview 'bat -n --color=always {}' --preview-label='Search'             "$@" ;;
+    *)            fzf --preview 'batcat -n --color=always {}' --preview-label='Search'             "$@" ;;
   esac
 }
 
@@ -27,7 +27,7 @@ export FZF_CTRL_T_COMMAND="fdfind --type f --hidden --exclude '.git'"
 export FZF_ALT_C_COMMAND="fdfind --type d --hidden --exclude '.git'"
 
 # change to ctrl-p override
-export FZF_CTRL_T_OPTS="${FZF_DEFAULT_OPTS} --preview-label='Files' --preview 'bat -n --color=always {}'" 
+export FZF_CTRL_T_OPTS="${FZF_DEFAULT_OPTS} --preview-label='Files' --preview 'batcat -n --color=always {}'" 
 
 # change to ctrl-h override
 export FZF_CTRL_R_OPTS="${FZF_DEFAULT_OPTS} --preview-label='History Commands'" # history

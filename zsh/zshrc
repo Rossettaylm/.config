@@ -42,4 +42,4 @@ source $ZSH/oh-my-zsh.sh
 # mappings
 [ -f "$ZSH_HOME/mappings.zsh" ] && source $ZSH_HOME/mappings.zsh
 
-[[ -f "/etc/resolv.conf" && `cat /etc/resolv.conf | grep nameserver | wc -l` > 0 ]] && set_proxy
+# [[ -f "/etc/resolv.conf" && `cat /etc/resolv.conf | grep nameserver | wc -l` > 0 ]] && set_proxy

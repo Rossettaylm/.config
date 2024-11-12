@@ -1,0 +1,3 @@
+[submodule "depends/fzf"]
+	path = depends/fzf
+	url = git@github.com:Rossettaylm/fzf.git
