@@ -377,7 +377,7 @@ Plug 'airblade/vim-rooter'
 " Plug 'puremourning/vimspector', {'do': './install_gadget.py --enable-c --enable-python --enable-go'}
 
 " Auto Complete
-Plug 'neoclide/coc.nvim', { 'commit': '63dd239bfe02998810b39d039827e2510885b57b', 'do': 'yarn install --frozen-lockfile' }
+Plug 'neoclide/coc.nvim', { 'branch': 'master', 'do': 'yarn install --frozen-lockfile' }
 " Plug 'neoclide/coc.nvim', {'branch': 'release', 'tag': 'v0.0.79'}
 Plug 'wellle/tmux-complete.vim'
 
@@ -540,21 +540,22 @@ let g:airline_powerline_fonts = 0
 
 
 " ==================== coc.nvim ====================
-let g:coc_global_extensions = [
-	\ 'coc-diagnostic',
-	\ 'coc-clangd',
-	\ 'coc-cmake',
-	\ 'coc-explorer',
-	\ 'coc-gitignore',
-	\ 'coc-json',
-	\ 'coc-lists',
-	\ 'coc-prettier',
-	\ 'coc-sh',
-	\ 'coc-pyright',
-	\ 'coc-snippets',
-	\ 'coc-translator',
-	\ 'coc-vimlsp',
-	\ 'coc-yank']
+" let g:coc_global_extensions = [
+" 	\ 'coc-diagnostic',
+" 	\ 'coc-clangd',
+" 	\ 'coc-cmake',
+" 	\ 'coc-explorer',
+" 	\ 'coc-gitignore',
+" 	\ 'coc-json',
+" 	\ 'coc-lists',
+" 	\ 'coc-prettier',
+" 	\ 'coc-sh',
+" 	\ 'coc-pyright',
+" 	\ 'coc-snippets',
+" 	\ 'coc-translator',
+" 	\ 'coc-vimlsp',
+" 	\ 'coc-yank']
+
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
       \ CheckBackspace() ? "\<Tab>" :
@@ -1074,7 +1075,7 @@ endif
 noremap <c-g> :LazyGit<CR>
 let g:lazygit_floating_window_winblend = 0 " transparency of floating window
 let g:lazygit_floating_window_scaling_factor = 1.0 " scaling factor for floating window
-let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
+let g:lazygit_floating_window_border_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
 let g:lazygit_use_neovim_remote = 1 " for neovim-remote support
 
 
